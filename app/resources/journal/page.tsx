@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Download,
   ExternalLink,
+  Calendar,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -293,7 +294,56 @@ export default function JournalPage() {
 
       {/* Free Template */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Free Downloadable Template</h2>
+        <h2 className="text-3xl font-bold mb-6">Digital Tracking Tools</h2>
+
+        {/* Interactive Journal Tool */}
+        <Card className="bg-primary/10 border-primary/30 mb-6">
+          <CardContent className="pt-6">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                  <Calendar className="h-5 w-5 text-primary" />
+                  Interactive Wound Tracker
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Use our free digital journal tool to track your wound healing
+                  progress right in your browser. Features include calendar
+                  view, wound measurements, pain tracking, and data export. All
+                  data is stored locally on your device for privacy.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                    <span>Calendar-based entry system</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                    <span>Track pain, drainage, and wound appearance</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                    <span>Export data for your healthcare provider</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                    <span>100% private - all data stored locally</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="shrink-0">
+                <Button size="lg" asChild>
+                  <Link href="/resources/journal/tracker">
+                    Launch Tracker
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Free Template */}
+        <h3 className="text-2xl font-bold mb-4">Free Downloadable Template</h3>
         <Card className="bg-accent/10 border-accent/30">
           <CardContent className="pt-6">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">

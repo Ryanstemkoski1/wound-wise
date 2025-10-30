@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { Heart } from "lucide-react";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -10,35 +11,27 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-primary-foreground">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
+            <Link
+              href="/"
+              className="flex items-center space-x-2 mb-4 group transition-transform hover:scale-105"
+            >
+              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-primary-foreground group-hover:bg-primary/90 transition-colors">
+                <Heart className="w-6 h-6" />
               </div>
               <span className="font-bold text-lg">
                 Wound<span className="text-primary">Wise</span>
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Expert wound care education from Dr. Alvin May
+              Expert wound care education from Dr. Alvin May—empowering patients
+              with knowledge for better healing.
             </p>
             <div className="flex gap-3">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <svg
@@ -53,7 +46,7 @@ export function SiteFooter() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 aria-label="Twitter"
               >
                 <svg
@@ -68,7 +61,7 @@ export function SiteFooter() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -235,23 +228,31 @@ export function SiteFooter() {
         <Separator className="my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {currentYear} WoundWise. All rights reserved.</p>
+          <p>
+            © {currentYear} WoundWise. All rights reserved. Made with{" "}
+            <Heart className="inline h-4 w-4 text-primary" /> for better
+            healing.
+          </p>
           <p className="text-center md:text-right">
             Educational content by{" "}
-            <Link href="/about" className="text-primary hover:underline">
+            <Link
+              href="/about"
+              className="text-primary hover:underline font-medium"
+            >
               Dr. Alvin May, MD
             </Link>
           </p>
         </div>
 
         {/* Amazon Affiliate Disclosure */}
-        <div className="mt-6 p-4 bg-muted rounded-lg">
-          <p className="text-xs text-muted-foreground text-center">
-            <strong>Affiliate Disclosure:</strong> WoundWise is a participant in
-            the Amazon Services LLC Associates Program, an affiliate advertising
-            program designed to provide a means for sites to earn advertising
-            fees by advertising and linking to Amazon.com. As an Amazon
-            Associate, we earn from qualifying purchases.
+        <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-accent/20">
+          <p className="text-xs text-muted-foreground text-center leading-relaxed">
+            <strong className="text-accent">Affiliate Disclosure:</strong>{" "}
+            WoundWise is a participant in the Amazon Services LLC Associates
+            Program, an affiliate advertising program designed to provide a
+            means for sites to earn advertising fees by advertising and linking
+            to Amazon.com. As an Amazon Associate, we earn from qualifying
+            purchases.
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { ChevronRight, Search } from "lucide-react";
+import { ChevronRight, Search, BookOpen, Filter } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -64,7 +64,7 @@ export default function GlossaryPage() {
   return (
     <div className="container py-10">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
         <Link href="/" className="hover:text-foreground transition-colors">
           Home
         </Link>
@@ -79,17 +79,65 @@ export default function GlossaryPage() {
         <span className="text-foreground font-medium">Medical Glossary</span>
       </nav>
 
-      {/* Header */}
-      <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-          Medical Glossary
-        </h1>
-        <p className="text-xl text-muted-foreground">
-          Clear explanations of wound care terminology to help you understand
-          medical concepts and communicate effectively with your healthcare
-          team.
-        </p>
-      </div>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background rounded-lg mb-16">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <div className="relative max-w-4xl px-6 py-16 md:py-20 space-y-6">
+          <Badge
+            variant="secondary"
+            className="animate-in fade-in slide-in-from-bottom-4"
+          >
+            <BookOpen className="h-3 w-3 mr-1" />
+            Medical Reference
+          </Badge>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl animate-in fade-in slide-in-from-bottom-4 delay-200">
+            Medical Glossary
+          </h1>
+          <p className="text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 delay-300 max-w-3xl">
+            Clear explanations of wound care terminology to help you understand
+            medical concepts and communicate effectively with your healthcare
+            team.
+          </p>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center animate-in fade-in delay-200">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <BookOpen className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">
+              {glossaryTerms.length}
+            </div>
+            <div className="text-sm text-muted-foreground">Medical Terms</div>
+          </div>
+          <div className="text-center animate-in fade-in delay-300">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <Filter className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">{categories.length}</div>
+            <div className="text-sm text-muted-foreground">Categories</div>
+          </div>
+          <div className="text-center animate-in fade-in delay-500">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <Search className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">Instant</div>
+            <div className="text-sm text-muted-foreground">Search Results</div>
+          </div>
+          <div className="text-center animate-in fade-in delay-700">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <BookOpen className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">A-Z</div>
+            <div className="text-sm text-muted-foreground">
+              Alphabetical Index
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Search and Filters */}
       <div className="mb-8 space-y-4">

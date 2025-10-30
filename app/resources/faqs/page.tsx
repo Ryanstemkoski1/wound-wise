@@ -2,7 +2,12 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { ChevronRight, HelpCircle } from "lucide-react";
+import {
+  ChevronRight,
+  HelpCircle,
+  MessageCircle,
+  CheckCircle2,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -124,13 +129,13 @@ export default function FAQsPage() {
   return (
     <div className="container py-10 max-w-4xl">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
         <Link href="/" className="hover:text-foreground transition-colors">
           Home
         </Link>
         <ChevronRight className="h-4 w-4" />
         <Link
-          href="/resources/glossary"
+          href="/resources"
           className="hover:text-foreground transition-colors"
         >
           Resources
@@ -139,20 +144,72 @@ export default function FAQsPage() {
         <span className="text-foreground font-medium">FAQs</span>
       </nav>
 
-      {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">
-          Frequently Asked Questions
-        </h1>
-        <p className="text-xl text-muted-foreground">
-          Find answers to common questions about wound care, healing, and
-          treatment. For personalized advice, always consult your healthcare
-          provider.
-        </p>
-      </div>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background rounded-lg mb-16">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <div className="relative px-6 py-16 md:py-20 space-y-6">
+          <Badge
+            variant="secondary"
+            className="animate-in fade-in slide-in-from-bottom-4"
+          >
+            <MessageCircle className="h-3 w-3 mr-1" />
+            Common Questions Answered
+          </Badge>
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-in fade-in slide-in-from-bottom-4 delay-200">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 delay-300">
+            Find answers to common questions about wound care, healing, and
+            treatment. For personalized advice, always consult your healthcare
+            provider.
+          </p>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center animate-in fade-in delay-200">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <HelpCircle className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">{allFAQs.length}+</div>
+            <div className="text-sm text-muted-foreground">
+              Questions Answered
+            </div>
+          </div>
+          <div className="text-center animate-in fade-in delay-300">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <MessageCircle className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">
+              {categories.length - 1}
+            </div>
+            <div className="text-sm text-muted-foreground">
+              Topic Categories
+            </div>
+          </div>
+          <div className="text-center animate-in fade-in delay-500">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <CheckCircle2 className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">100%</div>
+            <div className="text-sm text-muted-foreground">Evidence-Based</div>
+          </div>
+          <div className="text-center animate-in fade-in delay-700">
+            <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+              <HelpCircle className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-2xl font-bold mb-1">Free</div>
+            <div className="text-sm text-muted-foreground">
+              Educational Resource
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Important Notice */}
-      <Card className="bg-primary/5 border-primary/20 mb-10">
+      <Card className="bg-primary/5 border-primary/20 mb-10 animate-in fade-in">
         <CardContent className="pt-6">
           <div className="flex gap-4">
             <HelpCircle className="h-6 w-6 text-primary shrink-0 mt-1" />
@@ -172,21 +229,21 @@ export default function FAQsPage() {
       </Card>
 
       {/* Category Filter */}
-      <div className="mb-8">
+      <div className="mb-8 animate-in fade-in">
         <h2 className="text-lg font-semibold mb-4">Browse by Topic</h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-4">
           {categories.map((category) => (
             <Badge
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
-              className="cursor-pointer px-4 py-2 text-sm"
+              className="cursor-pointer px-4 py-2 text-sm hover:scale-105 transition-transform"
               onClick={() => setSelectedCategory(category)}
             >
               {categoryLabels[category] || category}
             </Badge>
           ))}
         </div>
-        <p className="text-sm text-muted-foreground mt-3">
+        <p className="text-sm text-muted-foreground">
           Showing {filteredFAQs.length}{" "}
           {filteredFAQs.length === 1 ? "question" : "questions"}
           {selectedCategory !== "all" &&

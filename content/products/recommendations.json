@@ -1,0 +1,168 @@
+{
+  "products": [
+    {
+      "id": "heel-boot-01",
+      "name": "Pressure Relief Heel Protector Boot",
+      "category": "positioning",
+      "description": "Soft, padded boots designed to protect heels from pressure and friction. Essential for preventing and treating heel pressure injuries.",
+      "useCases": [
+        "Pressure injury prevention",
+        "Heel ulcer protection",
+        "Post-surgical heel care",
+        "Patients with limited mobility"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/heel-boot.jpg",
+      "relatedWounds": ["pressure-injuries"],
+      "relatedTreatments": ["offloading"],
+      "featured": true
+    },
+    {
+      "id": "body-wedge-01",
+      "name": "Positioning Body Wedge Set",
+      "category": "positioning",
+      "description": "Foam wedges for proper body positioning to redistribute pressure and prevent pressure injuries on bony prominences.",
+      "useCases": [
+        "Side-lying positioning",
+        "30-degree angle positioning",
+        "Pressure redistribution",
+        "Post-operative positioning"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/body-wedge.jpg",
+      "relatedWounds": ["pressure-injuries"],
+      "relatedTreatments": ["offloading"],
+      "featured": true
+    },
+    {
+      "id": "hydrocolloid-dressing",
+      "name": "Hydrocolloid Wound Dressings",
+      "category": "dressing",
+      "description": "Self-adhesive dressings that maintain a moist wound environment, promoting faster healing for shallow to moderate wounds.",
+      "useCases": [
+        "Pressure ulcers (Stage 2)",
+        "Minor burns",
+        "Skin tears",
+        "Low-exudate wounds"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/hydrocolloid.jpg",
+      "relatedWounds": ["pressure-injuries", "surgical-wounds"],
+      "relatedTreatments": ["wound-dressing"],
+      "featured": true
+    },
+    {
+      "id": "foam-dressing",
+      "name": "Foam Wound Dressing Pads",
+      "category": "dressing",
+      "description": "Highly absorbent foam dressings ideal for moderate to heavily draining wounds. Provides cushioning and protection.",
+      "useCases": [
+        "Diabetic foot ulcers",
+        "Venous leg ulcers",
+        "Pressure injuries",
+        "High-exudate wounds"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/foam-dressing.jpg",
+      "relatedWounds": [
+        "diabetic-ulcers",
+        "venous-ulcers",
+        "pressure-injuries"
+      ],
+      "relatedTreatments": ["wound-dressing"],
+      "featured": true
+    },
+    {
+      "id": "saline-wound-wash",
+      "name": "Sterile Saline Wound Wash",
+      "category": "cleanser",
+      "description": "Sterile saline solution for gentle, effective wound cleansing. Removes debris without damaging healing tissue.",
+      "useCases": [
+        "Daily wound cleansing",
+        "Removing old dressings",
+        "Irrigating wounds",
+        "Safe for all wound types"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/saline-wash.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-ulcers",
+        "venous-ulcers",
+        "arterial-wounds",
+        "surgical-wounds"
+      ],
+      "relatedTreatments": ["infection-control", "wound-dressing"],
+      "featured": false
+    },
+    {
+      "id": "protein-supplement",
+      "name": "Wound Healing Protein Supplement",
+      "category": "nutrition",
+      "description": "High-quality protein supplement formulated to support wound healing. Contains essential amino acids and collagen peptides.",
+      "useCases": [
+        "Promoting tissue repair",
+        "Supporting immune function",
+        "Addressing malnutrition",
+        "Post-surgical recovery"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/protein-supplement.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-ulcers",
+        "surgical-wounds"
+      ],
+      "relatedTreatments": ["nutrition"],
+      "featured": false
+    },
+    {
+      "id": "medical-tape",
+      "name": "Gentle Medical Tape",
+      "category": "tool",
+      "description": "Hypoallergenic, gentle-adhesive medical tape that won't damage fragile skin. Perfect for securing dressings.",
+      "useCases": [
+        "Securing wound dressings",
+        "Fragile or elderly skin",
+        "Frequent dressing changes",
+        "Sensitive skin"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/medical-tape.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-ulcers",
+        "venous-ulcers",
+        "arterial-wounds",
+        "surgical-wounds"
+      ],
+      "relatedTreatments": ["wound-dressing"],
+      "featured": false
+    },
+    {
+      "id": "compression-socks",
+      "name": "Medical Compression Stockings",
+      "category": "positioning",
+      "description": "Graduated compression stockings to improve venous circulation and reduce leg swelling. Consult physician before use.",
+      "useCases": [
+        "Venous insufficiency",
+        "Leg swelling reduction",
+        "Preventing venous ulcers",
+        "Post-thrombotic syndrome"
+      ],
+      "affiliateLink": "https://www.amazon.com/dp/B0EXAMPLE?tag=woundwise-20",
+      "affiliatePartner": "amazon",
+      "imageUrl": "/images/products/compression-socks.jpg",
+      "relatedWounds": ["venous-ulcers"],
+      "relatedTreatments": ["offloading"],
+      "featured": true
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "id": "pressure-injuries",
+  "slug": "pressure-injuries",
+  "title": "Pressure Injuries (Bedsores)",
+  "subtitle": "Understanding, Preventing, and Treating Pressure Wounds",
+  "description": "Pressure injuries, also known as bedsores or pressure ulcers, develop when sustained pressure restricts blood flow to specific areas of the body. Learn about risk factors, stages, and evidence-based prevention strategies from Dr. Alvin May's clinical experience.",
+  "riskFactors": [
+    "Limited mobility or complete immobility",
+    "Prolonged pressure on small, bony areas (heels, hips, tailbone)",
+    "Poor nutrition and hydration status",
+    "Age-related changes in skin elasticity",
+    "Chronic illnesses affecting blood flow",
+    "Moisture exposure (incontinence)",
+    "Reduced sensation or inability to feel pain"
+  ],
+  "symptoms": [
+    "Redness or discoloration that doesn't fade when pressed",
+    "Warmth or tenderness in affected area",
+    "Skin breakdown or open sores",
+    "Pain or discomfort at pressure points",
+    "Changes in skin texture or firmness",
+    "Purple or maroon discoloration (deep tissue injury)"
+  ],
+  "preventionStrategies": [
+    "Frequent repositioning every 2 hours for immobile patients",
+    "Use of specialized pressure-relief cushions or mattresses",
+    "Maintaining optimal nutrition and hydration",
+    "Regular skin inspection of high-risk areas",
+    "Proper hygiene and moisturization",
+    "Keep skin clean and dry, especially if incontinent",
+    "Heel protection devices and body positioning wedges"
+  ],
+  "treatmentApproaches": [
+    "Pressure offloading with positioning devices",
+    "Appropriate wound dressings based on stage and drainage",
+    "Nutritional support and supplementation",
+    "Infection control and monitoring",
+    "Debridement of dead tissue when necessary",
+    "Moisture management around the wound",
+    "Pain management strategies"
+  ],
+  "sections": [
+    {
+      "heading": "What Are Pressure Injuries?",
+      "content": "Pressure injuries occur when excessive pressure is applied to a specific area for too long, cutting off blood flow to the skin and underlying tissues. Without adequate blood supply, the tissue becomes starved of oxygen and nutrients, leading to damage and potentially an open wound.",
+      "callout": {
+        "type": "example",
+        "title": "Dr. May's Analogy",
+        "content": "Think of sitting on a hard bench during a long sporting event. The soreness you feel afterward is a mild form of pressure injury. Your body was telling you to shift positions, but imagine if you couldn't move for hours or days - that's when serious damage occurs."
+      }
+    },
+    {
+      "heading": "Common Pressure Points",
+      "content": "Pressure injuries most commonly develop over bony prominences where there's less natural cushioning between bone and skin. The most vulnerable areas include:\n\n• Heels - one of the most common sites\n• Sacrum and coccyx (tailbone area)\n• Hips and sides of the pelvis\n• Shoulder blades\n• Back of the head (less common but possible)\n• Elbows and ankles\n\nThese areas are at highest risk because they bear the most pressure when lying down or sitting for extended periods.",
+      "callout": {
+        "type": "tip",
+        "content": "Use a mirror or ask a caregiver to check pressure points daily, especially if you have limited mobility or reduced sensation."
+      }
+    },
+    {
+      "heading": "Stages of Pressure Injuries",
+      "content": "Pressure injuries are classified into stages based on the depth of tissue damage. Understanding these stages helps with proper treatment planning.",
+      "subsections": [
+        {
+          "heading": "Stage 1: Non-Blanchable Erythema",
+          "content": "The skin appears red or discolored but remains intact. When you press on the area, the redness doesn't fade (non-blanchable). The area may feel warm, firm, or soft compared to surrounding tissue. This is the earliest warning sign.",
+          "callout": {
+            "type": "warning",
+            "content": "Stage 1 pressure injuries are reversible if pressure is immediately relieved. Act quickly when you notice persistent redness."
+          }
+        },
+        {
+          "heading": "Stage 2: Partial-Thickness Skin Loss",
+          "content": "The outer layer of skin (epidermis) is damaged or lost, and some of the underlying layer (dermis) may be affected. The wound appears as a shallow, open ulcer with a pink or red wound bed. It may also present as an intact or ruptured blister."
+        },
+        {
+          "heading": "Stage 3: Full-Thickness Skin Loss",
+          "content": "The wound extends through the full thickness of the skin, exposing fat tissue below. The wound bed may show slough (yellow, tan, or gray dead tissue), but muscle and bone are not visible. The wound may have undermining or tunneling."
+        },
+        {
+          "heading": "Stage 4: Full-Thickness Tissue Loss",
+          "content": "This is the most severe stage, with extensive destruction extending through all layers of skin and into muscle, tendon, or bone. Slough or eschar (black, dead tissue) may be present. These wounds often have undermining and tunneling."
+        },
+        {
+          "heading": "Unstageable: Obscured Full-Thickness",
+          "content": "The wound bed is completely covered by slough or eschar, making it impossible to assess the true depth. Once the dead tissue is removed, the wound can be properly staged."
+        },
+        {
+          "heading": "Deep Tissue Pressure Injury",
+          "content": "The skin appears purple or maroon, or there may be a blood-filled blister. This indicates damage to deeper tissues beneath intact skin, often over a bony prominence. These injuries can rapidly evolve to reveal the full extent of tissue damage."
+        }
+      ]
+    },
+    {
+      "heading": "The Critical Role of Offloading",
+      "content": "The single most important intervention for pressure injury healing is eliminating pressure on the affected area. No matter how good the wound dressing or treatment, if pressure continues, the wound cannot heal.\n\nOffloading strategies include:\n\n• Repositioning every 2 hours when in bed\n• Using the 30-degree side-lying position to avoid direct pressure on the sacrum\n• Heel protection devices that keep heels completely off the bed surface\n• Pressure-redistribution mattresses or overlays\n• Special cushions for wheelchair users\n• Body wedges and positioning aids",
+      "callout": {
+        "type": "example",
+        "title": "The Construction Site Analogy",
+        "content": "Imagine trying to repair a road while heavy trucks keep driving over it. The repair crew can't make progress if damage continues. The same is true for pressure injuries - healing requires removing the source of damage first."
+      }
+    },
+    {
+      "heading": "Nutrition: Fueling the Healing Process",
+      "content": "Proper nutrition is absolutely critical for pressure injury healing. Your body needs adequate calories, protein, and specific nutrients to repair damaged tissue.\n\nKey nutritional considerations:\n\n• Protein: The building blocks for new tissue formation. Aim for lean meats, fish, eggs, beans, and dairy products.\n\n• Calories: Sufficient energy to power the healing process. Think of calories as the 'worker bees' of your body's construction crew.\n\n• Vitamin C: Essential for collagen synthesis. Found in citrus fruits, strawberries, and leafy greens.\n\n• Vitamin A: Promotes new cell growth. Found in carrots, sweet potatoes, and spinach.\n\n• Zinc: Vital for cell division and wound closure. Present in seafood, nuts, and whole grains.\n\n• Hydration: Proper water intake supports blood circulation and nutrient delivery to the wound site.",
+      "callout": {
+        "type": "tip",
+        "content": "If you have difficulty eating enough, ask your healthcare provider about nutritional supplements specifically formulated for wound healing."
+      }
+    },
+    {
+      "heading": "Wound Dressing Selection",
+      "content": "Different stages and types of pressure injuries require different dressing approaches. Your wound care provider will select dressings based on the wound's depth, drainage level, and tissue type.\n\nCommon dressing types include:\n\n• Hydrocolloid dressings for shallow wounds with minimal drainage\n• Foam dressings for moderate to heavy drainage\n• Alginate dressings for highly draining wounds\n• Hydrogel dressings for dry wounds needing moisture\n• Transparent films for stage 1 injuries and protection\n• Antimicrobial dressings when infection is a concern\n\nNever attempt to stage or select dressings on your own. Work closely with your wound care team for proper assessment and treatment.",
+      "callout": {
+        "type": "warning",
+        "content": "Do not use 'donut' cushions with a hole in the middle. Despite seeming logical, they actually increase pressure around the wound edges and can make injuries worse."
+      }
+    },
+    {
+      "heading": "Monitoring for Infection",
+      "content": "Pressure injuries are at risk for infection, which can delay healing and lead to serious complications. Watch for these signs:\n\n• Increased pain, redness, or warmth around the wound\n• Pus or cloudy drainage\n• Foul odor\n• Fever or chills\n• Wound edges that appear dark or blackened\n• Red streaks extending from the wound\n\nIf you notice any of these signs, contact your healthcare provider immediately. Infections in pressure injuries can spread to bone (osteomyelitis) or bloodstream (sepsis) if left untreated.",
+      "callout": {
+        "type": "warning",
+        "content": "Osteomyelitis (bone infection) is a serious complication of deep pressure injuries. It requires prolonged antibiotic treatment and sometimes surgery."
+      }
+    },
+    {
+      "heading": "Prevention Is the Best Medicine",
+      "content": "The best approach to pressure injuries is preventing them from ever developing. If you or a loved one has limited mobility:\n\n• Inspect skin daily, especially over bony areas\n• Maintain a repositioning schedule\n• Keep skin clean and dry\n• Address incontinence promptly\n• Ensure adequate nutrition and hydration\n• Use appropriate pressure-redistribution surfaces\n• Seek medical attention at the first sign of skin changes\n\nRemember, pressure injuries are largely preventable with proper care and attention."
+    }
+  ],
+  "relatedProducts": [
+    "heel-boot-01",
+    "body-wedge-01",
+    "hydrocolloid-dressing",
+    "foam-dressing",
+    "saline-wound-wash",
+    "protein-supplement"
+  ],
+  "relatedTreatments": [
+    "offloading",
+    "wound-dressing",
+    "nutrition",
+    "infection-control",
+    "pain-management"
+  ],
+  "images": [
+    {
+      "url": "/images/wounds/pressure-injury-stages.svg",
+      "alt": "Diagram showing all 4 stages of pressure injuries from Stage 1 to Stage 4",
+      "caption": "Stages of pressure injury progression from intact skin (Stage 1) to full-thickness tissue loss (Stage 4)"
+    },
+    {
+      "url": "/images/wounds/pressure-points.svg",
+      "alt": "Diagram showing common pressure points on the human body",
+      "caption": "Common pressure points where injuries develop: heels, sacrum, hips, shoulders, and elbows"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does it take for a pressure injury to heal?",
+      "answer": "Healing time varies greatly depending on the stage and overall health. Stage 1 injuries may resolve in days to weeks with proper care. Stage 3-4 injuries can take months. Factors affecting healing include nutrition, blood flow, infection control, and consistent pressure relief.",
+      "category": "healing"
+    },
+    {
+      "question": "Can pressure injuries heal on their own?",
+      "answer": "Early-stage pressure injuries (Stage 1) may heal on their own if pressure is immediately relieved and proper care is provided. However, Stage 2 and deeper injuries typically require medical intervention, appropriate wound care, and often professional treatment to heal properly.",
+      "category": "treatment"
+    },
+    {
+      "question": "Are pressure injuries only a problem for bedridden people?",
+      "answer": "No. While pressure injuries are most common in immobile or bedridden individuals, they can also develop in wheelchair users, people with reduced sensation (such as from diabetes or spinal cord injury), or anyone who maintains prolonged pressure on bony areas without repositioning.",
+      "category": "prevention"
+    },
+    {
+      "question": "What's the difference between a pressure injury and a diabetic ulcer?",
+      "answer": "Pressure injuries result from sustained pressure cutting off blood flow, typically over bony areas. Diabetic ulcers usually occur on the feet due to nerve damage (neuropathy) and poor circulation related to diabetes. However, people with diabetes can also develop pressure injuries, making proper assessment essential.",
+      "category": "general"
+    },
+    {
+      "question": "Can I shower or bathe with a pressure injury?",
+      "answer": "This depends on the wound stage and your healthcare provider's recommendations. Generally, brief showers are acceptable for most pressure injuries, but avoid prolonged water exposure. Pat the area dry thoroughly and reapply dressings as directed. Never soak in a bathtub with an open wound without medical guidance.",
+      "category": "care"
+    }
+  ],
+  "metadata": {
+    "title": "Pressure Injuries (Bedsores): Complete Prevention & Treatment Guide | WoundWise",
+    "description": "Expert guide to understanding, preventing, and treating pressure injuries. Learn about the 4 stages, risk factors, and evidence-based healing strategies from Dr. Alvin May.",
+    "keywords": [
+      "pressure injuries",
+      "bedsores",
+      "pressure ulcers",
+      "wound care",
+      "pressure sore prevention",
+      "stage 1 pressure injury",
+      "stage 2 pressure injury",
+      "pressure wound treatment",
+      "heel pressure ulcer",
+      "sacral pressure injury"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2024-01-15",
+    "lastUpdated": "2025-10-30",
+    "readingTime": 12,
+    "featured": true
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "terms": [
+    {
+      "term": "Pressure Injury",
+      "slug": "pressure-injury",
+      "definition": "A localized injury to the skin and underlying tissue caused by prolonged pressure, shear, or friction. Often seen in bedridden or otherwise mobility-limited patients.",
+      "relatedTerms": ["bedsore", "pressure-ulcer", "decubitus-ulcer"],
+      "category": "medical"
+    },
+    {
+      "term": "Bedsore",
+      "slug": "bedsore",
+      "definition": "Also known as a pressure ulcer, is a skin injury that occurs due to prolonged pressure on the skin.",
+      "relatedTerms": ["pressure-injury", "pressure-ulcer"],
+      "category": "medical"
+    },
+    {
+      "term": "Debridement",
+      "slug": "debridement",
+      "definition": "The removal of dead (non-viable), foreign material or contaminated tissue from a wound to promote healing.",
+      "relatedTerms": [
+        "autolytic-debridement",
+        "sharp-debridement",
+        "necrotic-tissue"
+      ],
+      "category": "treatment"
+    },
+    {
+      "term": "Exudate",
+      "slug": "exudate",
+      "definition": "Fluid that oozes out of a wound, containing proteins, cells, and debris. Exudate can be clear, yellow, green, or bloody.",
+      "relatedTerms": ["drainage", "wound-fluid"],
+      "category": "medical"
+    },
+    {
+      "term": "Granulation Tissue",
+      "slug": "granulation-tissue",
+      "definition": "New connective tissue formed during wound healing, characterized by a pink or beefy red appearance. Facilitates wound closure in the healing process of secondary intention.",
+      "relatedTerms": ["wound-healing", "tissue-repair"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Offloading",
+      "slug": "offloading",
+      "definition": "Reducing pressure on affected areas to facilitate healing, often using a specialized device or technique.",
+      "relatedTerms": ["pressure-relief", "repositioning"],
+      "category": "treatment"
+    },
+    {
+      "term": "Eschar",
+      "slug": "eschar",
+      "definition": "A thick, dry, hard, black or brown necrotic tissue that forms a scab on a wound.",
+      "relatedTerms": ["necrotic-tissue", "slough", "dead-tissue"],
+      "category": "medical"
+    },
+    {
+      "term": "Slough",
+      "slug": "slough",
+      "definition": "Soft, yellowish or whitish necrotic (dead) tissue that may be present in a wound bed.",
+      "relatedTerms": ["necrotic-tissue", "eschar", "debridement"],
+      "category": "medical"
+    },
+    {
+      "term": "Undermining",
+      "slug": "undermining",
+      "definition": "The formation of a pocket or ledge beneath the intact skin at the wound edge.",
+      "relatedTerms": ["tunneling", "wound-depth"],
+      "category": "medical"
+    },
+    {
+      "term": "Tunneling",
+      "slug": "tunneling",
+      "definition": "Narrow channels extending from the wound bed into surrounding tissue.",
+      "relatedTerms": ["undermining", "sinus-tract"],
+      "category": "medical"
+    },
+    {
+      "term": "Hydrocolloid Dressing",
+      "slug": "hydrocolloid-dressing",
+      "definition": "A type of dressing that forms a gel-like substance when in contact with wound exudate, promoting a moist wound environment.",
+      "relatedTerms": ["wound-dressing", "foam-dressing", "alginate-dressing"],
+      "category": "treatment"
+    },
+    {
+      "term": "Alginate Dressing",
+      "slug": "alginate-dressing",
+      "definition": "Absorbent dressing made from seaweed-derived fibers that absorb exudate and promote healing in heavily draining wounds.",
+      "relatedTerms": [
+        "wound-dressing",
+        "hydrocolloid-dressing",
+        "foam-dressing"
+      ],
+      "category": "treatment"
+    },
+    {
+      "term": "Osteomyelitis",
+      "slug": "osteomyelitis",
+      "definition": "A severe bone infection characterized by inflammation and damage to bone tissue often caused by bacteria.",
+      "relatedTerms": ["bone-infection", "infection"],
+      "pronunciation": "os-tee-oh-my-eh-LY-tis",
+      "category": "medical"
+    },
+    {
+      "term": "Venous Insufficiency",
+      "slug": "venous-insufficiency",
+      "definition": "A condition where veins have problems sending blood from the legs back to the heart, often leading to leg swelling and venous ulcers.",
+      "relatedTerms": ["venous-ulcer", "edema", "leg-swelling"],
+      "category": "medical"
+    },
+    {
+      "term": "Neuropathy",
+      "slug": "neuropathy",
+      "definition": "Nerve damage that can result in loss of sensation, particularly common in people with diabetes.",
+      "relatedTerms": [
+        "diabetic-neuropathy",
+        "nerve-damage",
+        "loss-of-sensation"
+      ],
+      "category": "medical"
+    },
+    {
+      "term": "Peripheral Arterial Disease",
+      "slug": "peripheral-arterial-disease",
+      "definition": "A condition where narrowed arteries reduce blood flow to the limbs, often causing pain and slow wound healing.",
+      "relatedTerms": ["arterial-insufficiency", "poor-circulation", "pad"],
+      "category": "medical"
+    },
+    {
+      "term": "Epithelialization",
+      "slug": "epithelialization",
+      "definition": "The formation of new skin cells at the wound edges to cover the wound.",
+      "relatedTerms": ["wound-healing", "skin-regeneration"],
+      "category": "medical"
+    },
+    {
+      "term": "Maceration",
+      "slug": "maceration",
+      "definition": "Softening and breakdown of skin or wound tissue due to prolonged exposure to moisture.",
+      "relatedTerms": ["moisture-damage", "periwound-damage"],
+      "category": "medical"
+    },
+    {
+      "term": "Biofilm",
+      "slug": "biofilm",
+      "definition": "A protective layer formed by a community of bacteria in the wound, which can hinder healing.",
+      "relatedTerms": ["bacterial-infection", "chronic-infection"],
+      "category": "medical"
+    },
+    {
+      "term": "Autolytic Debridement",
+      "slug": "autolytic-debridement",
+      "definition": "The body's natural process of breaking down and removing dead tissue.",
+      "relatedTerms": ["debridement", "natural-healing"],
+      "category": "treatment"
+    }
+  ]
+}

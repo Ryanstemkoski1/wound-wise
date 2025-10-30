@@ -1,0 +1,210 @@
+{
+  "slug": "surgical-wounds",
+  "title": "Surgical Wounds",
+  "subtitle": "Managing Non-Healing and Dehisced Surgical Incisions",
+  "description": "Sometimes surgical wounds don't heal as expected or reopen unexpectedly (dehiscence). Learn about the causes of surgical wound complications, risk factors for poor healing, and evidence-based strategies to support optimal healing after surgery.",
+  "featured": false,
+  "metadata": {
+    "title": "Surgical Wounds: Dehiscence, Non-Healing & Treatment | WoundWise",
+    "description": "Expert guidance on surgical wound complications from Dr. Alvin May. Learn about wound dehiscence, infection prevention, and post-operative healing strategies.",
+    "keywords": [
+      "surgical wounds",
+      "wound dehiscence",
+      "post-operative complications",
+      "incision healing",
+      "surgical site infection",
+      "non-healing wounds",
+      "Dr. Alvin May"
+    ],
+    "lastUpdated": "2024-01-15",
+    "readingTime": 10
+  },
+  "quickInfo": {
+    "riskFactors": [
+      "Poor circulation or vascular disease",
+      "Diabetes mellitus",
+      "Obesity or excess weight",
+      "Smoking or tobacco use",
+      "Malnutrition or low protein intake",
+      "Chronic steroid use or immunosuppression",
+      "Advanced age",
+      "Infection at surgical site",
+      "Excessive tension on incision",
+      "Poor surgical technique or complications"
+    ],
+    "warningSigns": [
+      "Wound edges separating or opening",
+      "Increased pain, redness, or warmth at incision",
+      "Fever or chills",
+      "Pus or foul-smelling drainage",
+      "Excessive swelling at surgical site",
+      "Bleeding from incision",
+      "Sutures or staples breaking or pulling through",
+      "Incision not improving after several days"
+    ],
+    "prevention": [
+      "Follow surgeon's post-operative instructions carefully",
+      "Keep surgical site clean and dry",
+      "Avoid activities that stress the incision",
+      "Use splints, braces, or support as prescribed",
+      "Manage swelling with ice, elevation, compression as directed",
+      "Ensure adequate nutrition, especially protein",
+      "Quit smoking before surgery if possible",
+      "Control blood sugar if diabetic",
+      "Report any concerning changes immediately"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Understanding Surgical Wound Complications",
+      "content": "Sometimes, after a surgical procedure, a wound may not heal as expected. Sometimes a wound may reopen unexpectedly, causing what we call a 'non-healing surgical wound' or a 'wound dehiscence.' There may be a number of reasons why something like this happens. I know it sounds scary, but I see occurrences like this every day, and they are often quite treatable. Let's dive right into those reasons.",
+      "callouts": [
+        {
+          "type": "info",
+          "content": "Wound dehiscence refers to the partial or complete separation of surgical incision edges. While it can be concerning, most cases are manageable with proper treatment. The key is early recognition and prompt intervention."
+        }
+      ]
+    },
+    {
+      "heading": "Tension on the Surgical Scar",
+      "content": "One common reason for a surgical wound separating (or dehiscing) is tension along the surgical scar. Surgical scars overlying joints or on load-bearing areas of the body could be at a higher risk of unexpectedly reopening.\n\nExamples of such surgical sites might be incisions over the knee or ankle joints or incisions on the foot or buttock. For better or worse, pain at the surgical site can actually help to limit the movement or use of these body parts to give them time to heal.",
+      "subsections": [
+        {
+          "heading": "How Swelling Increases Tension",
+          "content": "If there happens to be a lot of soft tissue swelling underneath an incision, this can also put a stretch on the skin that may increase the risk of wound separation. Think of the skin over a swollen area like a balloon being inflated—the more swelling, the more tension on the overlying skin.\n\nIn certain situations, your surgeon might choose to use a splint or a cast to help reduce tension when the surgery is in or around a joint, or they may instruct you to use ice or a compression wrap to keep swelling down at the surgical site.",
+          "callouts": [
+            {
+              "type": "tip",
+              "content": "Every surgery and surgeon is different, and this is in no way medical advice, so consult your medical provider for best practices for supporting the healing of your particular surgical wound. Following your surgeon's specific post-operative instructions is critical for optimal healing."
+            }
+          ]
+        },
+        {
+          "heading": "Pressure on Surgical Sites",
+          "content": "Similarly, surgical sites in areas where the skin is under regular pressure, like the skin of the backside or feet, may also be at increased risk for separation from pressure and tension that pulls the healing wound edges apart.\n\nIn these situations, offloading the surgical site is key to supporting wound healing. Using pillows or specialized body positioners under or around the surgical site can reduce or completely relieve unwanted pressure on the wound edges."
+        }
+      ]
+    },
+    {
+      "heading": "Poor Blood Supply to the Surgical Site",
+      "content": "Sometimes, when wounds have a hard time healing, it can be due to a less than ideal blood supply to the surgical site. This is particularly true in the case of surgeries occurring in areas affected by poor circulation.\n\nConditions like arterial disease and diabetes can wreak havoc on wound healing. When surgery is performed in an area affected by circulation problems, the tissues already have a poor blood flow environment. Then, on top of this, when a surgeon has to cut through tissues (including blood vessels), it further destroys some of the blood flow to the area.",
+      "callouts": [
+        {
+          "type": "warning",
+          "content": "Existing circulation issues plus newly surgically severed blood vessels can make it even harder for oxygen and nutrients to reach a surgical wound compared to even before the surgery. This is why patients with vascular disease, diabetes, or peripheral arterial disease face higher risks of surgical wound complications."
+        }
+      ],
+      "subsections": [
+        {
+          "heading": "Pre-Surgical Vascular Assessment",
+          "content": "For this reason, surgeons will often do extensive testing to assess the circulation of the tissue in certain high-risk individuals. This might include:\n\n- Ankle-brachial index (ABI) testing for leg surgeries\n- Doppler ultrasound to assess blood flow\n- Transcutaneous oxygen measurement (TcPO2) to measure tissue oxygenation\n- Vascular imaging studies in select cases\n\nEven still, complications from poor blood flow can occur, causing a wound to dehisce or fail to heal. If you have known circulatory problems, discuss this with your surgeon before any planned procedure so appropriate precautions can be taken."
+        }
+      ]
+    },
+    {
+      "heading": "Infection",
+      "content": "Infection can also play a role in delaying wound healing. Despite taking every precaution during a surgical procedure, wounds can still sometimes become seeded with bacteria, which can lead to inflammation and infection that can impair the body's ability to heal. In some cases, infections like this can cause the wound to open, resulting in a dehisced surgical wound.",
+      "subsections": [
+        {
+          "heading": "Recognizing Surgical Site Infection",
+          "content": "**Early Signs of Infection:**\n- Increased pain at the wound site (more tender or sensitive than before)\n- Redness around the wound that spreads or worsens over time\n- Increased drainage from the incision\n- Increased warmth around the wound (hotter than surrounding skin)\n\n**Late Signs of Infection** (require immediate medical attention):\n- Presence of pus or thick, yellowish fluid coming from the wound\n- Strong, foul smell from the incision\n- Increased swelling around the wound (area feels tight or looks puffy)\n- Fever or chills\n- Red streaking from the wound",
+          "callouts": [
+            {
+              "type": "warning",
+              "content": "A wound infection doesn't look like just one thing. It represents a clinical picture made up of varying combinations of findings, so identifying only one of the signs above may or may not represent an actual infection. However, if you experience two or more early signs or just one late sign of infection, contact your healthcare provider immediately. Early detection and prompt intervention are key for preventing wound deterioration."
+            }
+          ]
+        },
+        {
+          "heading": "Preventing Surgical Site Infections",
+          "content": "**Pre-Operative:**\n- Shower with antibacterial soap before surgery as instructed\n- Don't shave surgical area (increases infection risk)\n- Control blood sugar if diabetic\n- Optimize nutrition in weeks before surgery\n- Stop smoking if possible\n\n**Post-Operative:**\n- Keep incision clean and dry as instructed\n- Wash hands before touching incision or changing dressings\n- Follow dressing change instructions precisely\n- Don't submerge incision in water until cleared by surgeon\n- Avoid touching incision unnecessarily\n- Watch for signs of infection and report immediately"
+        }
+      ]
+    },
+    {
+      "heading": "Nutrition and Smoking",
+      "content": "Other factors, like poor nutrition and smoking, can also contribute to a non-healing or dehisced surgical wound. These, as well as other medical conditions and lifestyle choices, can cripple the body's natural healing mechanisms and make it more challenging for the wound to heal properly.",
+      "subsections": [
+        {
+          "heading": "The Critical Role of Nutrition",
+          "content": "Your body needs building blocks to repair surgical wounds. Without adequate nutrition, healing cannot occur optimally, regardless of how well other aspects of care are managed.\n\n**Protein**: The most critical nutrient for wound healing. Aim for 1.25-1.5 grams of protein per kilogram of body weight daily when healing surgical wounds. Include lean meats, fish, eggs, dairy, beans, and legumes.\n\n**Vitamin C**: Essential for collagen synthesis. Include citrus fruits, strawberries, bell peppers, and leafy greens.\n\n**Vitamin A**: Supports cell growth and immune function. Found in carrots, sweet potatoes, and spinach.\n\n**Zinc**: Plays a vital role in cell division and wound closure. Present in seafood, nuts, and whole grains.\n\n**Hydration**: Water transports nutrients to tissues and removes waste products. Aim for adequate fluid intake unless restricted by medical conditions.\n\nIf you're malnourished or have difficulty eating, discuss protein supplementation with your healthcare provider. Sometimes liquid protein supplements are necessary to meet increased needs during healing."
+        },
+        {
+          "heading": "Smoking: A Major Barrier to Healing",
+          "content": "Smoking has devastating effects on surgical wound healing:\n\n- **Reduces Oxygen**: Carbon monoxide in smoke binds to hemoglobin, reducing oxygen delivery to tissues\n- **Constricts Blood Vessels**: Nicotine causes vasoconstriction, further limiting blood flow to wounds\n- **Impairs Immune Function**: Reduces white blood cell function, increasing infection risk\n- **Delays Collagen Formation**: Disrupts the body's ability to build new tissue\n- **Increases Dehiscence Risk**: Smokers have significantly higher rates of wound separation\n\nIdeally, quit smoking at least 4-6 weeks before scheduled surgery and don't resume until wounds are fully healed. Even if you can't quit long-term, abstaining during the peri-operative period significantly improves outcomes.\n\nNicotine replacement (patches, gum) is less harmful than smoking but still impairs healing. Discuss with your surgeon."
+        }
+      ]
+    },
+    {
+      "heading": "Managing Non-Healing Surgical Wounds",
+      "content": "Managing non-healing surgical wounds can be complex. In some cases, additional procedures or interventions may be necessary. It's crucial to work closely with your healthcare provider to develop a personalized treatment plan tailored to your specific wound care needs and situation.",
+      "subsections": [
+        {
+          "heading": "Treatment Approaches",
+          "content": "**Wound Debridement**: Removal of dead or infected tissue to promote healthy granulation tissue growth. May be performed in office or operating room depending on extent.\n\n**Antibiotics for Infection Control**: Oral or intravenous antibiotics if infection is present. Culture-directed therapy provides best results.\n\n**Specialized Wound Dressings**: Various dressing types based on wound characteristics:\n- Negative pressure wound therapy (wound vac) for deep or large wounds\n- Alginate or foam dressings for moderate to heavy drainage\n- Hydrocolloid dressings for light drainage\n- Antimicrobial dressings if infection is present or high risk\n\n**Addressing Underlying Causes**: Can't heal the wound without addressing why it's not healing:\n- Improve blood sugar control if diabetic\n- Revascularization if poor circulation\n- Optimize nutrition\n- Smoking cessation\n- Reduce tension on wound (offloading, splinting)\n- Manage edema\n\n**Advanced Therapies**: For wounds that don't respond to standard treatment:\n- Skin substitutes or grafts\n- Hyperbaric oxygen therapy\n- Growth factor therapies\n- Surgical revision and reclosure"
+        },
+        {
+          "heading": "The Importance of Patience",
+          "content": "Wound healing can take time, so patience is also a key factor. It is important to follow your doctor's instructions regarding wound care, such as keeping the wound clean and dry, changing dressings as advised, and avoiding activities that may cause unnecessary stress to the wound bed.\n\nSecondary intention healing (allowing wound to heal from the bottom up) often takes significantly longer than primary healing (surgical closure), but can achieve excellent results with proper care.\n\nSet realistic expectations: a wound that took weeks to develop won't heal overnight. Gradual progress is still progress."
+        }
+      ]
+    },
+    {
+      "heading": "Post-Operative Wound Care Instructions",
+      "content": "Proper post-operative care is essential for preventing complications and supporting optimal healing. While your surgeon will provide specific instructions for your particular procedure, general principles apply to most surgical wounds.",
+      "subsections": [
+        {
+          "heading": "Keeping the Wound Clean",
+          "content": "**Initial Period** (usually first 24-48 hours):\n- Keep dressing dry and intact unless instructed otherwise\n- Don't remove initial surgical dressing unless directed\n- Avoid getting incision wet\n\n**After Initial Period**:\n- Gently clean incision with mild soap and water as instructed\n- Pat dry with clean towel\n- Apply new dressing if required\n- Some incisions can be left open to air after initial healing period\n\n**Always**:\n- Wash hands before and after touching incision\n- Use clean materials\n- Don't pick at scabs or crusts\n- Don't apply lotions, ointments, or powders unless prescribed"
+        },
+        {
+          "heading": "Activity Restrictions",
+          "content": "**Respect Your Limitations**: Your surgeon provides activity restrictions for good reason—to prevent tension on the incision while it heals.\n\nCommon restrictions include:\n- No heavy lifting (usually >10 pounds) for specified period\n- No strenuous exercise or activity for several weeks\n- Limited range of motion for joint surgeries\n- Driving restrictions, especially if pain medication prescribed\n- Work restrictions based on job requirements\n\n**Gradual Return to Activity**: Follow your surgeon's guidelines for progressively increasing activity. Doing too much too soon is a common cause of wound complications.\n\n**Pain as a Guide**: Some post-surgical pain is normal, but severe pain—especially if worsening rather than improving—may indicate a problem. Don't push through severe pain."
+        },
+        {
+          "heading": "Managing Swelling",
+          "content": "**Ice**: Apply as directed by surgeon (typically 15-20 minutes at a time, with breaks between)\n\n**Elevation**: Keep surgical site elevated above heart level when resting, especially in first days after surgery\n\n**Compression**: If prescribed, wear compression garments as directed\n\n**Movement**: Gentle movement and range of motion exercises as instructed can reduce swelling and prevent stiffness without compromising healing"
+        },
+        {
+          "heading": "When to Call Your Surgeon",
+          "content": "Contact your surgeon immediately if you experience:\n- Wound edges separating or opening\n- Signs of infection (fever, increased pain, redness, warmth, pus, foul odor)\n- Excessive bleeding or drainage\n- Severe pain not controlled by prescribed medication\n- Red streaking from incision\n- Numbness or weakness in area that wasn't present before\n- Any concerns about healing progress\n\nDon't wait to 'see if it gets better'—early intervention prevents complications."
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is it normal for my surgical incision to drain fluid?",
+      "answer": "Some drainage is normal in the first few days after surgery—typically clear to slightly bloody fluid. However, excessive drainage, thick yellow or green pus, or foul-smelling discharge is not normal and indicates infection. Also, drainage that continues beyond the first week or increases rather than decreases should be reported to your surgeon. When in doubt, contact your surgeon's office to describe the drainage—they can advise whether it's normal or concerning."
+    },
+    {
+      "question": "How long should I keep my incision covered?",
+      "answer": "This varies by surgery type and surgeon preference. Many incisions are kept covered with a dressing for 24-48 hours, then can be left open to air if they're clean, dry, and approximated (edges together). Some surgeries require dressings for longer periods. Follow your specific surgeon's instructions. If your incision is draining, has sutures or staples, or is in an area prone to friction or contamination, it should remain covered until your surgeon advises otherwise."
+    },
+    {
+      "question": "Can I shower after surgery?",
+      "answer": "Timing varies by procedure. Many surgeons allow showering after 24-48 hours, but you should keep the incision dry during that shower (using plastic wrap or waterproof dressing). Some allow gentle water over the incision after a few days. Submersion in bathtubs, pools, or hot tubs is typically prohibited until incisions are fully healed and cleared by your surgeon—usually at least 2-3 weeks, often longer. Submersion significantly increases infection risk. Always follow your surgeon's specific instructions."
+    },
+    {
+      "question": "What if my incision opens up?",
+      "answer": "Contact your surgeon immediately. Small areas of superficial separation may be managed with local wound care and dressings. Larger or deeper dehiscence may require surgical revision and reclosure. In some cases, wounds are allowed to heal by secondary intention (from bottom up) if reclosure isn't appropriate. The treatment depends on the extent of separation, presence of infection, and location of the wound. Don't attempt to close it yourself—seek professional evaluation."
+    },
+    {
+      "question": "How long does it take for surgical incisions to heal?",
+      "answer": "Healing timelines vary by surgery type, location, and individual factors. Superficial wounds may heal within 1-2 weeks. Deeper incisions take 2-3 weeks for initial healing, but full tissue strength doesn't return for months. Sutures or staples are typically removed 7-14 days after surgery, but this doesn't mean the wound is fully healed. Tensile strength continues to increase for up to a year after surgery. Factors that slow healing include diabetes, poor circulation, smoking, malnutrition, infection, and certain medications. Follow up with your surgeon to ensure healing is progressing appropriately."
+    }
+  ],
+  "relatedProducts": [
+    "body-wedge",
+    "foam-dressing",
+    "medical-tape",
+    "protein-supplement",
+    "saline-wound-wash"
+  ],
+  "relatedTreatments": [
+    "wound-dressings",
+    "infection-control",
+    "nutrition-healing",
+    "offloading-positioning"
+  ]
+}

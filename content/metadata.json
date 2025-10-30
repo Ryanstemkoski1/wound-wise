@@ -1,0 +1,26 @@
+{
+  "siteName": "WoundWise",
+  "siteUrl": "https://woundwise.com",
+  "description": "Expert wound care education from Dr. Alvin May. Learn about pressure injuries, diabetic ulcers, and effective healing strategies.",
+  "author": {
+    "name": "Dr. Alvin May",
+    "title": "Wound Care Specialist",
+    "credentials": "MD",
+    "bio": "Dr. Alvin May is a dedicated wound care physician with years of experience helping patients understand and heal chronic wounds. Author of 'Heal Your Wound' and creator of the 'Wound Healing Journal', Dr. May believes in empowering patients through education and compassionate care.",
+    "image": "/images/dr-may.jpg"
+  },
+  "social": {
+    "twitter": "",
+    "facebook": "",
+    "linkedin": "",
+    "youtube": ""
+  },
+  "contact": {
+    "email": "contact@woundwise.com"
+  },
+  "legal": {
+    "privacyPolicy": "/legal/privacy",
+    "termsOfService": "/legal/terms",
+    "medicalDisclaimer": "/legal/disclaimer"
+  }
+}

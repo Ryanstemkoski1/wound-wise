@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Heart,
   BookOpen,
@@ -105,15 +106,16 @@ const quickLinks = [
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Enhanced with gradient and animations */}
+      {/* Hero Section - Two Column with Image */}
       <Section
         variant="full"
         container={false}
         className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background"
       >
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="container relative mx-auto px-4 py-16 md:py-24 lg:py-32">
-          <div className="max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          {/* Left Column - Text Content */}
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <Badge
               className="mb-6 animate-in fade-in delay-200"
               variant="secondary"
@@ -126,12 +128,12 @@ export default function Home() {
                 Education & Guidance
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 delay-700">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-4 delay-700">
               Comprehensive, evidence-based resources created by Dr. Alvin May
               to empower your wound healing journey. From prevention to
               treatment, we&apos;re here to help.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 delay-1000">
+            <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-4 delay-1000">
               <Button size="lg" asChild className="group">
                 <Link href="/wounds">
                   Explore Wound Types
@@ -144,7 +146,7 @@ export default function Home() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground animate-in fade-in delay-1000">
+            <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-muted-foreground animate-in fade-in delay-1000">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary" />
                 <span>Doctor-Authored</span>
@@ -157,6 +159,25 @@ export default function Home() {
                 <CheckCircle2 className="h-5 w-5 text-primary" />
                 <span>Patient-Focused</span>
               </div>
+            </div>
+          </div>
+
+          {/* Right Column - Hero Image */}
+          <div className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-right-4 duration-1000 delay-300">
+            <Image
+              src="/images/homepage-hero.png"
+              alt="Compassionate wound care - healthcare professional providing patient care"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+              <p className="text-base md:text-lg font-medium">
+                &ldquo;Empowering patients with knowledge and compassionate care
+                for better wound healing outcomes.&rdquo;
+              </p>
+              <p className="text-sm mt-2 opacity-90">— Dr. Alvin May</p>
             </div>
           </div>
         </div>

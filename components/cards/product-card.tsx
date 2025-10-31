@@ -50,18 +50,20 @@ export function ProductCard({ product }: ProductCardProps) {
   const CategoryIcon =
     categoryIcons[product.category as keyof typeof categoryIcons] || Package;
 
+  // Generate local image path based on product ID
+  const localImagePath = `/images/products/${product.id}.png`;
+
   return (
     <Card className="h-full flex flex-col">
       <CardHeader>
         <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-white flex items-center justify-center">
-          {product.imageUrl && !imageError ? (
+          {!imageError ? (
             <Image
-              src={product.imageUrl}
+              src={product.imageUrl || localImagePath}
               alt={product.name}
               fill
-              className="object-contain"
+              className="object-contain p-4"
               onError={() => setImageError(true)}
-              unoptimized
             />
           ) : (
             <CategoryIcon className="w-24 h-24 text-muted-foreground/30" />

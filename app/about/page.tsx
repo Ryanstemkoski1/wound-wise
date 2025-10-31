@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ChevronRight,
   GraduationCap,
@@ -115,6 +116,71 @@ export default function AboutPage() {
               <div className="text-3xl font-bold text-primary mb-1">100%</div>
               <div className="text-sm text-muted-foreground">
                 Patient-Focused
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Doctor Photo Section */}
+      <Section variant="narrow">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/images/dr-may.png"
+              alt="Dr. Alvin May - Board-certified wound care specialist"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Meet Dr. Alvin May</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                A board-certified general surgeon with decades of experience in
+                wound care, Dr. May has dedicated his career to helping patients
+                understand and heal from chronic wounds.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-primary/10 shrink-0">
+                  <GraduationCap className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">
+                    Board-Certified Surgeon
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Specialized training in general surgery with focus on wound
+                    care
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-primary/10 shrink-0">
+                  <BookOpen className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">Published Author</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Author of &quot;Heal Your Wound&quot; and creator of the
+                    Wound Healing Journal
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-primary/10 shrink-0">
+                  <Heart className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">Patient Advocate</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Dedicated to empowering patients through education and
+                    compassionate care
+                  </p>
+                </div>
               </div>
             </div>
           </div>

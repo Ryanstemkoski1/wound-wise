@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getWoundType,
   getWoundTypeSlugs,
@@ -237,6 +238,19 @@ export default async function WoundPage({ params }: WoundPageProps) {
                 </ul>
               </div>
             )}
+        </div>
+      </Section>
+
+      {/* Hero Image */}
+      <Section variant="narrow" noPadding className="py-8">
+        <div className="relative w-full h-96 rounded-xl overflow-hidden">
+          <Image
+            src={`/images/wounds/${wound.slug}-hero.png`}
+            alt={`${wound.title} - Professional medical care scene`}
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </Section>
 

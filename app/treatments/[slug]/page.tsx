@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ProductCard } from "@/components/cards/product-card";
@@ -118,6 +119,19 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
         <div className="mt-6 flex items-center gap-4">
           <ShareButtons title={treatment.title} variant="compact" />
           <PrintButton />
+        </div>
+      </Section>
+
+      {/* Hero Image */}
+      <Section variant="narrow" noPadding className="py-8">
+        <div className="relative w-full h-96 rounded-xl overflow-hidden">
+          <Image
+            src={`/images/treatments/${treatment.slug}-hero.png`}
+            alt={`${treatment.title} - Professional medical treatment scene`}
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </Section>
 

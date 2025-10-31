@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -59,27 +61,32 @@ const renderWoundIcon = (slug: string, className: string) => {
 };
 
 export function WoundCard({ wound }: WoundCardProps) {
+  // Generate hero image path based on slug
+  const heroImagePath = `/images/wounds/${wound.slug}-hero.png`;
+
   return (
     <Link href={`/wounds/${wound.slug}`} className="group">
       <Card className="h-full transition-all hover:shadow-lg hover:border-primary/50">
         <CardHeader>
-          {wound.images && wound.images.length > 0 ? (
-            <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-muted">
-              <Image
-                src={wound.images[0].url}
-                alt={wound.images[0].alt}
-                fill
-                className="object-cover transition-transform group-hover:scale-105"
-              />
-            </div>
-          ) : (
-            <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-linear-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+          <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-linear-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+            <Image
+              src={heroImagePath}
+              alt={`${wound.title} - ${wound.subtitle}`}
+              fill
+              className="object-cover transition-transform group-hover:scale-105"
+              onError={(e) => {
+                // Hide image on error and show icon fallback
+                e.currentTarget.style.display = "none";
+              }}
+            />
+            {/* Icon fallback - will show if image fails to load */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               {renderWoundIcon(
                 wound.slug,
                 "h-20 w-20 text-primary/40 transition-transform group-hover:scale-110"
               )}
             </div>
-          )}
+          </div>
           <div className="flex items-start justify-between gap-2">
             <CardTitle className="text-xl group-hover:text-primary transition-colors">
               {wound.title}

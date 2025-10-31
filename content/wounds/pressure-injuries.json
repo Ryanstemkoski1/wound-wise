@@ -204,12 +204,12 @@
   ],
   "images": [
     {
-      "url": "/images/wounds/pressure-injury-stages.svg",
+      "url": "/images/wounds/pressure-injury-stages.png",
       "alt": "Diagram showing all 4 stages of pressure injuries from Stage 1 to Stage 4",
       "caption": "Stages of pressure injury progression from intact skin (Stage 1) to full-thickness tissue loss (Stage 4)"
     },
     {
-      "url": "/images/wounds/pressure-points.svg",
+      "url": "/images/wounds/pressure-points.png",
       "alt": "Diagram showing common pressure points on the human body",
       "caption": "Common pressure points where injuries develop: heels, sacrum, hips, shoulders, and elbows"
     }

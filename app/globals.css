@@ -297,7 +297,7 @@
 
 /* Prose styling for content pages */
 .prose {
-  max-width: 65ch;
+  max-width: 100%;
 }
 
 .prose p {

@@ -15,6 +15,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Section } from "@/components/common/section";
 
 const woundTypes = [
   {
@@ -105,7 +106,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Enhanced with gradient and animations */}
-      <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background">
+      <Section
+        variant="full"
+        container={false}
+        className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background"
+      >
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container relative mx-auto px-4 py-16 md:py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
@@ -155,10 +160,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Featured Wound Types */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Common Wound Types
@@ -211,10 +216,10 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-      </section>
+      </Section>
 
       {/* Why WoundWise - Enhanced */}
-      <section className="bg-muted/50 py-16 md:py-24">
+      <Section container={false} className="bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -247,10 +252,10 @@ export default function Home() {
             })}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* About Dr. May - New Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <Section>
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -321,10 +326,10 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Quick Links Grid */}
-      <section className="bg-muted/50 py-16 md:py-24">
+      <Section container={false} className="bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -370,10 +375,10 @@ export default function Home() {
             })}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Latest Updates / Blog Preview - New Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <Section>
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
@@ -429,10 +434,14 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA Section - Enhanced */}
-      <section className="bg-linear-to-b from-primary/5 to-background py-16 md:py-24">
+      <Section
+        variant="full"
+        container={false}
+        className="bg-linear-to-b from-primary/5 to-background"
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
@@ -480,7 +489,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

@@ -14,6 +14,7 @@ import { WoundCard } from "@/components/cards/wound-card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Section } from "@/components/common/section";
 
 export const metadata: Metadata = {
   title: "Wound Types Guide | WoundWise",
@@ -39,7 +40,11 @@ export default async function WoundsPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section - Enhanced */}
-      <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background border-b">
+      <Section
+        variant="full"
+        container={false}
+        className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background border-b"
+      >
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container relative mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
@@ -67,10 +72,10 @@ export default async function WoundsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Statistics Section - New */}
-      <section className="bg-muted/50 py-12 border-b">
+      <Section container={false} className="bg-muted/50 border-b py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             <div className="text-center animate-in fade-in delay-200">
@@ -111,11 +116,11 @@ export default async function WoundsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Featured Wounds */}
       {featuredWounds.length > 0 && (
-        <section className="container mx-auto px-4 py-16 md:py-20">
+        <Section>
           <div className="mb-10 text-center md:text-left animate-in fade-in slide-in-from-bottom-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">
               Most Common Wound Types
@@ -135,28 +140,32 @@ export default async function WoundsPage() {
               </div>
             ))}
           </div>
-        </section>
+        </Section>
       )}
 
       {/* All Other Wounds */}
       {regularWounds.length > 0 && (
-        <section className="container mx-auto px-4 py-16 bg-muted/30">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold mb-2">Additional Wound Types</h2>
-            <p className="text-muted-foreground">
-              Specialized information for less common wound presentations
-            </p>
+        <Section container={false} className="bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold mb-2">
+                Additional Wound Types
+              </h2>
+              <p className="text-muted-foreground">
+                Specialized information for less common wound presentations
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {regularWounds.map((wound, index) => (
+                <WoundCard key={index} wound={wound} />
+              ))}
+            </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {regularWounds.map((wound) => (
-              <WoundCard key={wound.id} wound={wound} />
-            ))}
-          </div>
-        </section>
+        </Section>
       )}
 
       {/* Educational Resources CTA - Enhanced */}
-      <section className="container mx-auto px-4 py-16 md:py-20">
+      <Section>
         <div className="max-w-4xl mx-auto">
           <Card className="bg-linear-to-br from-primary/5 to-accent/5 border-primary/20 shadow-lg">
             <CardContent className="p-8 md:p-12 text-center">
@@ -212,10 +221,10 @@ export default async function WoundsPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* Quick Facts Section - Enhanced */}
-      <section className="bg-muted/50 py-16 md:py-20">
+      <Section container={false} className="bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12 animate-in fade-in">
@@ -309,7 +318,7 @@ export default async function WoundsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

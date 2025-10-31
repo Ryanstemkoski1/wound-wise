@@ -15,6 +15,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import productsData from "@/content/products/recommendations.json";
 import { ProductCard } from "@/components/cards/product-card";
+import { Section } from "@/components/common/section";
 import type { Product } from "@/types/content";
 
 type Category =
@@ -61,47 +62,55 @@ export default function ProductsPage() {
   }, [products]);
 
   return (
-    <div className="container py-10">
+    <div>
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-        <Link href="/" className="hover:text-foreground transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <Link
-          href="/resources"
-          className="hover:text-foreground transition-colors"
-        >
-          Resources
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <span className="text-foreground font-medium">Products</span>
-      </nav>
+      <Section variant="narrow" className="py-6">
+        <nav className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <Link
+            href="/resources"
+            className="hover:text-foreground transition-colors"
+          >
+            Resources
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <span className="text-foreground font-medium">Products</span>
+        </nav>
+      </Section>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-linear-to-b from-accent/5 via-background to-background rounded-lg mb-16">
+      <Section
+        variant="full"
+        container={false}
+        className="relative overflow-hidden bg-linear-to-b from-accent/5 via-background to-background"
+      >
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="relative max-w-3xl px-6 py-16 md:py-20 space-y-6">
-          <Badge
-            variant="secondary"
-            className="animate-in fade-in slide-in-from-bottom-4"
-          >
-            <ShoppingBag className="h-3 w-3 mr-1" />
-            Curated Recommendations
-          </Badge>
-          <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-in fade-in slide-in-from-bottom-4 delay-200">
-            Recommended Wound Care Products
-          </h1>
-          <p className="text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 delay-300">
-            Quality products to support your wound healing journey. These
-            recommendations are based on Dr. May&apos;s clinical experience and
-            wound care best practices.
-          </p>
+        <div className="container relative mx-auto px-4 py-16 md:py-20">
+          <div className="max-w-3xl space-y-6">
+            <Badge
+              variant="secondary"
+              className="animate-in fade-in slide-in-from-bottom-4"
+            >
+              <ShoppingBag className="h-3 w-3 mr-1" />
+              Curated Recommendations
+            </Badge>
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-in fade-in slide-in-from-bottom-4 delay-200">
+              Recommended Wound Care Products
+            </h1>
+            <p className="text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 delay-300">
+              Quality products to support your wound healing journey. These
+              recommendations are based on Dr. May&apos;s clinical experience
+              and wound care best practices.
+            </p>
+          </div>
         </div>
-      </section>
+      </Section>
 
       {/* Statistics Section */}
-      <section className="mb-16">
+      <Section>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center animate-in fade-in delay-200">
             <div className="mx-auto w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-3">
@@ -138,32 +147,34 @@ export default function ProductsPage() {
             <div className="text-sm text-muted-foreground">Trusted Source</div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Affiliate Disclosure */}
-      <Card className="bg-accent/10 border-accent/30 mb-12 animate-in fade-in">
-        <CardContent className="pt-6">
-          <div className="flex gap-4">
-            <Package className="h-6 w-6 text-accent shrink-0 mt-1" />
-            <div>
-              <p className="font-semibold text-accent-foreground mb-2">
-                Affiliate Disclosure
-              </p>
-              <p className="text-sm text-muted-foreground">
-                WoundWise participates in the Amazon Associates Program. When
-                you purchase products through our links, we may earn a small
-                commission at no additional cost to you. This helps support our
-                educational mission. All recommendations are based on clinical
-                knowledge and wound care expertise.
-              </p>
+      <Section className="pt-0">
+        <Card className="bg-accent/10 border-accent/30 animate-in fade-in">
+          <CardContent className="pt-6">
+            <div className="flex gap-4">
+              <Package className="h-6 w-6 text-accent shrink-0 mt-1" />
+              <div>
+                <p className="font-semibold text-accent-foreground mb-2">
+                  Affiliate Disclosure
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  WoundWise participates in the Amazon Associates Program. When
+                  you purchase products through our links, we may earn a small
+                  commission at no additional cost to you. This helps support
+                  our educational mission. All recommendations are based on
+                  clinical knowledge and wound care expertise.
+                </p>
+              </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </Section>
 
       {/* Featured Products */}
       {featuredProducts.length > 0 && (
-        <section className="mb-12">
+        <Section className="pt-0">
           <div className="mb-8 text-center animate-in fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">
               Featured Products
@@ -183,36 +194,38 @@ export default function ProductsPage() {
               </div>
             ))}
           </div>
-        </section>
+        </Section>
       )}
 
       {/* Category Filter */}
-      <div className="mb-12 animate-in fade-in">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Browse by Category
-        </h2>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {categories.map((category) => (
-            <Badge
-              key={category}
-              variant={selectedCategory === category ? "default" : "outline"}
-              className="cursor-pointer px-4 py-2 text-sm hover:scale-105 transition-transform"
-              onClick={() => setSelectedCategory(category)}
-            >
-              {categoryLabels[category]}
-            </Badge>
-          ))}
+      <Section className="pt-0">
+        <div className="animate-in fade-in">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Browse by Category
+          </h2>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {categories.map((category) => (
+              <Badge
+                key={category}
+                variant={selectedCategory === category ? "default" : "outline"}
+                className="cursor-pointer px-4 py-2 text-sm hover:scale-105 transition-transform"
+                onClick={() => setSelectedCategory(category)}
+              >
+                {categoryLabels[category]}
+              </Badge>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Showing {filteredProducts.length}{" "}
+            {filteredProducts.length === 1 ? "product" : "products"}
+            {selectedCategory !== "all" &&
+              ` in ${categoryLabels[selectedCategory]}`}
+          </p>
         </div>
-        <p className="text-sm text-muted-foreground">
-          Showing {filteredProducts.length}{" "}
-          {filteredProducts.length === 1 ? "product" : "products"}
-          {selectedCategory !== "all" &&
-            ` in ${categoryLabels[selectedCategory]}`}
-        </p>
-      </div>
+      </Section>
 
       {/* Product Grid */}
-      <section>
+      <Section className="pt-0">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
@@ -229,29 +242,31 @@ export default function ProductsPage() {
             </CardContent>
           </Card>
         )}
-      </section>
+      </Section>
 
       {/* Important Notice */}
-      <Card className="bg-primary/5 border-primary/20 mt-12">
-        <CardContent className="pt-6">
-          <h3 className="font-semibold text-primary mb-3">
-            Important: Consult Your Healthcare Provider
-          </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-            These product recommendations are for educational purposes only.
-            Always consult with your healthcare provider, wound care specialist,
-            or physician before using any wound care products.
-          </p>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Your healthcare team can assess your specific wound and recommend
-            the most appropriate products for your individual situation. What
-            works for one type of wound may not be suitable for another.
-          </p>
-        </CardContent>
-      </Card>
+      <Section className="pt-0">
+        <Card className="bg-primary/5 border-primary/20">
+          <CardContent className="pt-6">
+            <h3 className="font-semibold text-primary mb-3">
+              Important: Consult Your Healthcare Provider
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+              These product recommendations are for educational purposes only.
+              Always consult with your healthcare provider, wound care
+              specialist, or physician before using any wound care products.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Your healthcare team can assess your specific wound and recommend
+              the most appropriate products for your individual situation. What
+              works for one type of wound may not be suitable for another.
+            </p>
+          </CardContent>
+        </Card>
+      </Section>
 
       {/* Additional Resources */}
-      <section className="mt-12">
+      <Section className="pt-0">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
           Learn More About Wound Care
         </h2>
@@ -322,7 +337,7 @@ export default function ProductsPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

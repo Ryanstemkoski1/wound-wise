@@ -15,6 +15,7 @@ import { YouMayAlsoLike } from "@/components/features/you-may-also-like";
 import { ShareButtons } from "@/components/features/share-buttons";
 import { PrintButton } from "@/components/features/print-button";
 import { getRelatedContent } from "@/lib/related-content";
+import { Section } from "@/components/common/section";
 
 interface WoundPageProps {
   params: Promise<{
@@ -73,10 +74,14 @@ export default async function WoundPage({ params }: WoundPageProps) {
   const relatedProducts = await getProductsForWound(slug);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div>
       {/* Hero Section */}
-      <section className="bg-linear-to-b from-primary/5 to-background border-b">
-        <div className="container mx-auto px-4 py-12 md:py-20">
+      <Section
+        variant="full"
+        container={false}
+        className="bg-linear-to-b from-primary/5 to-background border-b py-12 md:py-20"
+      >
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Link
               href="/wounds"
@@ -126,11 +131,11 @@ export default async function WoundPage({ params }: WoundPageProps) {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Quick Info Cards */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+      <Section variant="narrow">
+        <div className="grid gap-6 md:grid-cols-3 mb-12">
           {/* Risk Factors */}
           {wound.quickInfo?.riskFactors &&
             wound.quickInfo.riskFactors.length > 0 && (
@@ -233,11 +238,11 @@ export default async function WoundPage({ params }: WoundPageProps) {
               </div>
             )}
         </div>
-      </section>
+      </Section>
 
       {/* Main Content */}
-      <article className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
+      <Section variant="narrow">
+        <article className="prose prose-lg max-w-none">
           {wound.sections.map((section, index) => (
             <section key={index} className="mb-12">
               <h2 className="text-3xl font-bold mb-4">{section.heading}</h2>
@@ -263,12 +268,12 @@ export default async function WoundPage({ params }: WoundPageProps) {
                 ))}
             </section>
           ))}
-        </div>
-      </article>
+        </article>
+      </Section>
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <section className="bg-muted/30 py-16">
+        <Section variant="default" container={false} className="bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-2">Recommended Products</h2>
@@ -283,80 +288,78 @@ export default async function WoundPage({ params }: WoundPageProps) {
               </div>
             </div>
           </div>
-        </section>
+        </Section>
       )}
 
       {/* Related Content */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="max-w-6xl mx-auto space-y-16">
-          {(() => {
-            const related = getRelatedContent(slug);
-            return (
-              <>
-                {/* Related Treatments */}
-                {related.relatedTreatments.length > 0 && (
-                  <RelatedContent
-                    items={related.relatedTreatments}
-                    title="Recommended Treatments"
-                    description={`Evidence-based treatment approaches for ${wound.title.toLowerCase()}`}
-                  />
-                )}
+      <Section variant="default">
+        {(() => {
+          const related = getRelatedContent(slug);
+          return (
+            <>
+              {/* Related Treatments */}
+              {related.relatedTreatments.length > 0 && (
+                <RelatedContent
+                  items={related.relatedTreatments}
+                  title="Recommended Treatments"
+                  description={`Evidence-based treatment approaches for ${wound.title.toLowerCase()}`}
+                />
+              )}
 
-                {/* Related Wound Types */}
-                {related.relatedWounds.length > 0 && (
-                  <RelatedContent
-                    items={related.relatedWounds}
-                    title="Related Wound Types"
-                    description="Similar wounds you might want to learn about"
-                  />
-                )}
+              {/* Related Wound Types */}
+              {related.relatedWounds.length > 0 && (
+                <RelatedContent
+                  items={related.relatedWounds}
+                  title="Related Wound Types"
+                  description="Similar wounds you might want to learn about"
+                />
+              )}
 
-                {/* Related Resources */}
-                {related.relatedResources.length > 0 && (
-                  <RelatedContent
-                    items={related.relatedResources}
-                    title="Helpful Resources"
-                    description="Tools and guides to support your healing journey"
-                    variant="compact"
-                  />
-                )}
-              </>
-            );
-          })()}
-        </div>
-      </section>
+              {/* Related Resources */}
+              {related.relatedResources.length > 0 && (
+                <RelatedContent
+                  items={related.relatedResources}
+                  title="Helpful Resources"
+                  description="Tools and guides to support your healing journey"
+                  variant="compact"
+                />
+              )}
+            </>
+          );
+        })()}
+      </Section>
 
       {/* FAQs */}
       {wound.faqs && wound.faqs.length > 0 && (
-        <section className="container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-6">
-              {wound.faqs.map((faq, index) => (
-                <div key={index} className="border-b pb-6 last:border-b-0">
-                  <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
+        <Section variant="narrow">
+          <h2 className="text-3xl font-bold mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {wound.faqs.map((faq, index) => (
+              <div key={index} className="border-b pb-6 last:border-b-0">
+                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
           </div>
-        </section>
+        </Section>
       )}
 
       {/* You May Also Like */}
-      <section className="container mx-auto px-4 py-16 bg-muted/20">
-        <div className="max-w-6xl mx-auto">
-          <YouMayAlsoLike pageId={slug} />
+      <Section variant="default" container={false} className="bg-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <YouMayAlsoLike pageId={slug} />
+          </div>
         </div>
-      </section>
+      </Section>
 
       {/* Related Treatments CTA */}
       {wound.relatedTreatments.length > 0 && (
-        <section className="bg-primary/5 py-12">
+        <Section variant="narrow" container={false} className="bg-primary/5">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-2xl font-bold mb-4">
@@ -371,7 +374,7 @@ export default async function WoundPage({ params }: WoundPageProps) {
               </Button>
             </div>
           </div>
-        </section>
+        </Section>
       )}
     </div>
   );

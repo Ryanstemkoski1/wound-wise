@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
@@ -24,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SearchBar } from "@/components/features/search-bar";
 import { cn } from "@/lib/utils";
+import { Logo } from "../common/logo";
 
 const woundTypes = [
   {
@@ -98,27 +98,17 @@ export function SiteHeader() {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
 
+  // Close mobile menu when route changes
+  React.useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 transition-all duration-300">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between gap-4">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center space-x-3 group transition-transform hover:scale-105 shrink-0"
-          >
-            <Image
-              src="/logo.png"
-              alt="WoundWise Logo"
-              width={40}
-              height={40}
-              className="h-10 w-auto object-contain"
-              priority
-            />
-            <span className="font-bold text-xl">
-              Wound<span className="text-primary">Wise</span>
-            </span>
-          </Link>
+          <Logo />
 
           {/* Search Bar - Desktop */}
           <div className="hidden md:flex flex-1 max-w-md">
@@ -196,11 +186,12 @@ export function SiteHeader() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/about" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    About Dr. May
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  asChild
+                >
+                  <Link href="/about">About Dr. May</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -225,19 +216,22 @@ export function SiteHeader() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <SheetHeader>
+            <SheetContent
+              side="right"
+              className="w-[300px] sm:w-[400px] flex flex-col p-0"
+            >
+              <SheetHeader className="px-6 pt-6 pb-4">
                 <SheetTitle>Menu</SheetTitle>
               </SheetHeader>
 
               {/* Mobile Search */}
-              <div className="mt-6 mb-4">
+              <div className="px-6 mb-4">
                 <SearchBar placeholder="Search..." />
               </div>
 
               <Separator className="mb-4" />
 
-              <nav className="flex flex-col gap-4">
+              <nav className="flex flex-col gap-4 px-6 pb-6 overflow-y-auto flex-1">
                 <div>
                   <h3 className="mb-2 text-sm font-semibold">Wound Types</h3>
                   <div className="flex flex-col gap-2">
@@ -245,7 +239,6 @@ export function SiteHeader() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        onClick={() => setIsOpen(false)}
                         className={cn(
                           "text-sm px-3 py-2 rounded-md hover:bg-accent transition-colors",
                           pathname === item.href && "bg-accent"
@@ -256,7 +249,6 @@ export function SiteHeader() {
                     ))}
                     <Link
                       href="/wounds"
-                      onClick={() => setIsOpen(false)}
                       className="text-sm px-3 py-2 rounded-md bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors"
                     >
                       View All →
@@ -275,7 +267,6 @@ export function SiteHeader() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        onClick={() => setIsOpen(false)}
                         className={cn(
                           "text-sm px-3 py-2 rounded-md hover:bg-accent transition-colors",
                           pathname === item.href && "bg-accent"
@@ -296,7 +287,6 @@ export function SiteHeader() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        onClick={() => setIsOpen(false)}
                         className={cn(
                           "text-sm px-3 py-2 rounded-md hover:bg-accent transition-colors",
                           pathname === item.href && "bg-accent"
@@ -312,7 +302,6 @@ export function SiteHeader() {
 
                 <Link
                   href="/about"
-                  onClick={() => setIsOpen(false)}
                   className={cn(
                     "text-sm px-3 py-2 rounded-md hover:bg-accent transition-colors",
                     pathname === "/about" && "bg-accent"

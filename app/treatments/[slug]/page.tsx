@@ -11,6 +11,7 @@ import { YouMayAlsoLike } from "@/components/features/you-may-also-like";
 import { ShareButtons } from "@/components/features/share-buttons";
 import { PrintButton } from "@/components/features/print-button";
 import { getRelatedContent } from "@/lib/related-content";
+import { Section } from "@/components/common/section";
 
 // Placeholder: In real implementation, this would load from JSON
 const treatments = {
@@ -98,25 +99,27 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
     : [];
 
   return (
-    <div className="container py-10">
+    <div>
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
-        <Link href="/" className="hover:text-foreground transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <Link
-          href="/treatments"
-          className="hover:text-foreground transition-colors"
-        >
-          Treatments
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <span className="text-foreground font-medium">{treatment.title}</span>
-      </nav>
+      <Section variant="narrow" className="py-6">
+        <nav className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <Link
+            href="/treatments"
+            className="hover:text-foreground transition-colors"
+          >
+            Treatments
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <span className="text-foreground font-medium">{treatment.title}</span>
+        </nav>
+      </Section>
 
       {/* Hero Section */}
-      <div className="max-w-4xl mb-12">
+      <Section variant="narrow">
         <div className="flex items-center gap-3 mb-4">
           {treatment.featured && (
             <Badge variant="default">Essential Treatment</Badge>
@@ -144,10 +147,10 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
           <ShareButtons title={treatment.title} variant="compact" />
           <PrintButton />
         </div>
-      </div>
+      </Section>
 
       {/* Placeholder Content - Replace with actual treatment content */}
-      <div className="max-w-4xl space-y-12 mb-16">
+      <Section variant="narrow" className="pt-0">
         <section>
           <h2 className="text-3xl font-bold tracking-tight mb-6">
             Coming Soon
@@ -169,11 +172,11 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
             </CardContent>
           </Card>
         </section>
-      </div>
+      </Section>
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <section className="border-t pt-12 mb-12">
+        <Section variant="default" className="border-t">
           <div className="mb-8">
             <h2 className="text-3xl font-bold tracking-tight mb-2">
               Recommended Products
@@ -187,11 +190,11 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-        </section>
+        </Section>
       )}
 
       {/* Related Content */}
-      <section className="border-t pt-12 mb-12">
+      <Section variant="default" className="border-t">
         <div className="space-y-12">
           {(() => {
             const related = getRelatedContent(slug);
@@ -221,17 +224,19 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
           {/* You May Also Like */}
           <YouMayAlsoLike pageId={slug} />
         </div>
-      </section>
+      </Section>
 
       {/* Back to Treatments */}
-      <div className="border-t pt-8 text-center">
-        <Link
-          href="/treatments"
-          className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
-        >
-          ← Back to All Treatments
-        </Link>
-      </div>
+      <Section variant="narrow" className="border-t py-8">
+        <div className="text-center">
+          <Link
+            href="/treatments"
+            className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+          >
+            ← Back to All Treatments
+          </Link>
+        </div>
+      </Section>
     </div>
   );
 }

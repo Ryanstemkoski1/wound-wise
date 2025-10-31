@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Heart } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { NewsletterSignup } from "@/components/features/newsletter-signup";
+import { Logo } from "../common/logo";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -13,22 +13,9 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link
-              href="/"
-              className="flex items-center space-x-3 mb-4 group transition-transform hover:scale-105"
-            >
-              <Image
-                src="/logo.png"
-                alt="WoundWise Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto object-contain"
-              />
-              <span className="font-bold text-lg">
-                Wound<span className="text-primary">Wise</span>
-              </span>
-            </Link>
-            <p className="text-sm text-muted-foreground mb-4">
+            <Logo />
+
+            <p className="text-sm text-muted-foreground my-4">
               Expert wound care education from Dr. Alvin May—empowering patients
               with knowledge for better healing.
             </p>

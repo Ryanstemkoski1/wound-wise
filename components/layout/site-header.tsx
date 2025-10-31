@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
@@ -21,7 +22,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { SearchBar } from "@/components/search-bar";
+import { SearchBar } from "@/components/features/search-bar";
 import { cn } from "@/lib/utils";
 
 const woundTypes = [
@@ -104,23 +105,16 @@ export function SiteHeader() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2 group transition-transform hover:scale-105 shrink-0"
+            className="flex items-center space-x-3 group transition-transform hover:scale-105 shrink-0"
           >
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-primary-foreground group-hover:bg-primary/90 transition-colors">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="WoundWise Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
             <span className="font-bold text-xl">
               Wound<span className="text-primary">Wise</span>
             </span>

@@ -10,7 +10,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { getAllWoundTypes } from "@/lib/content-loader";
-import { WoundCard } from "@/components/wound-card";
+import { WoundCard } from "@/components/cards/wound-card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";

@@ -4,13 +4,13 @@ import Link from "next/link";
 import { ChevronRight, Clock, BookOpen } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ProductCard } from "@/components/product-card";
+import { ProductCard } from "@/components/cards/product-card";
 import { getAllProducts } from "@/lib/content-loader";
-import { RelatedContent } from "@/components/related-content";
-import { YouMayAlsoLike } from "@/components/you-may-also-like";
+import { RelatedContent } from "@/components/features/related-content";
+import { YouMayAlsoLike } from "@/components/features/you-may-also-like";
+import { ShareButtons } from "@/components/features/share-buttons";
+import { PrintButton } from "@/components/features/print-button";
 import { getRelatedContent } from "@/lib/related-content";
-import { ShareButtons } from "@/components/share-buttons";
-import { PrintButton } from "@/components/print-button";
 
 // Placeholder: In real implementation, this would load from JSON
 const treatments = {

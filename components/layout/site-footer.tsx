@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import { Heart } from "lucide-react";
-import { NewsletterSignup } from "@/components/newsletter-signup";
+import { Separator } from "@/components/ui/separator";
+import { NewsletterSignup } from "@/components/features/newsletter-signup";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -14,11 +15,15 @@ export function SiteFooter() {
           <div className="md:col-span-1">
             <Link
               href="/"
-              className="flex items-center space-x-2 mb-4 group transition-transform hover:scale-105"
+              className="flex items-center space-x-3 mb-4 group transition-transform hover:scale-105"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-primary-foreground group-hover:bg-primary/90 transition-colors">
-                <Heart className="w-6 h-6" />
-              </div>
+              <Image
+                src="/logo.png"
+                alt="WoundWise Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto object-contain"
+              />
               <span className="font-bold text-lg">
                 Wound<span className="text-primary">Wise</span>
               </span>

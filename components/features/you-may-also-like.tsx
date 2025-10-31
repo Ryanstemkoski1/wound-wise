@@ -1,4 +1,4 @@
-import { RelatedContent } from "@/components/related-content";
+import { RelatedContent } from "@/components/features/related-content";
 import { getYouMayAlsoLike } from "@/lib/related-content";
 
 interface YouMayAlsoLikeProps {

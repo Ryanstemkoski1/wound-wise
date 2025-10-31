@@ -10,7 +10,7 @@ import {
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
-import { TreatmentCard } from "@/components/treatment-card";
+import { TreatmentCard } from "@/components/cards/treatment-card";
 import {
   Card,
   CardContent,
@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Section } from "@/components/common/section";
 
 export const metadata: Metadata = {
   title: "Wound Care Treatments & Strategies",
@@ -97,51 +98,57 @@ export default function TreatmentsPage() {
   const otherTreatments = treatments.filter((t) => !t.featured);
 
   return (
-    <div className="container py-10">
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-        <Link href="/" className="hover:text-foreground transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <span className="text-foreground font-medium">Treatments</span>
-      </nav>
-
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background rounded-lg mb-16">
+      <Section
+        variant="full"
+        container={false}
+        className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background border-b py-16 md:py-24"
+      >
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="relative mx-auto max-w-4xl text-center space-y-6 px-6 py-16 md:py-20">
-          <Badge
-            variant="secondary"
-            className="animate-in fade-in slide-in-from-bottom-4"
-          >
-            Evidence-Based Treatment Strategies
-          </Badge>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl animate-in fade-in slide-in-from-bottom-4 delay-200">
-            Comprehensive Wound Care Treatments
-          </h1>
-          <p className="text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 delay-300 max-w-3xl mx-auto">
-            Evidence-based strategies and best practices for managing chronic
-            wounds, based on Dr. May&apos;s decades of clinical experience and
-            published research.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-in fade-in slide-in-from-bottom-4 delay-500">
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary/90"
-            >
-              <Link href="/wounds">View Wound Types</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/resources/glossary">Medical Glossary</Link>
-            </Button>
+        <div className="container relative mx-auto px-4">
+          {/* Breadcrumb */}
+          <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8 max-w-7xl mx-auto">
+            <Link href="/" className="hover:text-foreground transition-colors">
+              Home
+            </Link>
+            <ChevronRight className="h-4 w-4" />
+            <span className="text-foreground font-medium">
+              Treatment & Care
+            </span>
+          </nav>
+
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="mb-6" variant="secondary">
+              <Heart className="mr-1 h-3 w-3" />
+              Evidence-Based Approaches
+            </Badge>
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">
+              Wound Care Treatments & Strategies
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              Comprehensive, evidence-based treatment approaches from Dr. Alvin
+              May to support your wound healing journey.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link href="/wounds">
+                  Explore Wound Types
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="/resources/products">
+                  View Recommended Products
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Statistics Section */}
-      <section className="mb-16">
+      <Section variant="default" className="py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center animate-in fade-in delay-200">
             <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
@@ -178,10 +185,10 @@ export default function TreatmentsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Core Treatment Strategies */}
-      <section className="mb-16">
+      <Section variant="default">
         <div className="mb-8 text-center animate-in fade-in">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
             Core Treatment Strategies
@@ -203,11 +210,11 @@ export default function TreatmentsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </Section>
 
       {/* Additional Treatments */}
       {otherTreatments.length > 0 && (
-        <section className="mb-16">
+        <Section variant="default">
           <div className="mb-8">
             <h2 className="text-3xl font-bold tracking-tight mb-2">
               Additional Treatment Approaches
@@ -221,11 +228,11 @@ export default function TreatmentsPage() {
               <TreatmentCard key={treatment.slug} treatment={treatment} />
             ))}
           </div>
-        </section>
+        </Section>
       )}
 
       {/* Holistic Approach Section */}
-      <section className="mb-16">
+      <Section variant="default">
         <div className="mb-8 text-center animate-in fade-in">
           <Badge variant="outline" className="mb-4">
             <Sparkles className="h-3 w-3 mr-1" />
@@ -295,10 +302,10 @@ export default function TreatmentsPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* Call to Action */}
-      <section className="relative overflow-hidden rounded-lg">
+      <Section variant="default">
         <Card className="border-primary/20 bg-linear-to-br from-primary/5 to-accent/5">
           <CardContent className="p-8 md:p-12 text-center">
             <div className="mx-auto max-w-3xl space-y-6">
@@ -363,7 +370,7 @@ export default function TreatmentsPage() {
             </div>
           </CardContent>
         </Card>
-      </section>
+      </Section>
     </div>
   );
 }

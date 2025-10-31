@@ -14,7 +14,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import productsData from "@/content/products/recommendations.json";
-import { ProductCard } from "@/components/product-card";
+import { ProductCard } from "@/components/cards/product-card";
 import type { Product } from "@/types/content";
 
 type Category =

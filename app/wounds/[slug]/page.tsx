@@ -6,15 +6,15 @@ import {
   getWoundTypeSlugs,
   getProductsForWound,
 } from "@/lib/content-loader";
-import { Callout } from "@/components/callout";
-import { ProductCard } from "@/components/product-card";
+import { Callout } from "@/components/common/callout";
+import { ProductCard } from "@/components/cards/product-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { RelatedContent } from "@/components/related-content";
-import { YouMayAlsoLike } from "@/components/you-may-also-like";
+import { RelatedContent } from "@/components/features/related-content";
+import { YouMayAlsoLike } from "@/components/features/you-may-also-like";
+import { ShareButtons } from "@/components/features/share-buttons";
+import { PrintButton } from "@/components/features/print-button";
 import { getRelatedContent } from "@/lib/related-content";
-import { ShareButtons } from "@/components/share-buttons";
-import { PrintButton } from "@/components/print-button";
 
 interface WoundPageProps {
   params: Promise<{

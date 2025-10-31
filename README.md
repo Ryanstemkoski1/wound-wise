@@ -8,7 +8,7 @@ WoundWise is a patient-focused educational platform delivering comprehensive wou
 
 ## 🏗️ Current Status
 
-**Phase 2: Enhanced Features & User Engagement** - ✅ COMPLETE
+**Phase 2.5: Layout Consistency & Multi-Vendor Products** - ✅ COMPLETE
 
 ### ✅ Phase 1 Complete (Foundation & Core Content)
 
@@ -85,6 +85,35 @@ WoundWise is a patient-focused educational platform delivering comprehensive wou
 - Alt text on images
 - Color contrast WCAG AA compliant
 
+### ✅ Phase 2.5 Complete (Layout & Product System)
+
+**1. Section Component Architecture**
+
+- Created reusable Section component (`components/common/section.tsx`)
+- 4 width variants: `default` (max-w-7xl), `narrow` (max-w-4xl), `wide` (max-w-screen-2xl), `full` (max-w-none)
+- Default vertical padding: `py-12 md:py-16` (applied to all sections)
+- `noPadding` prop for custom spacing requirements
+- **All 28 pages refactored** to use standardized Section architecture
+- Consistent vertical spacing site-wide
+
+**2. Multi-Vendor Product System**
+
+- Expanded from 8 to **18 products total**
+  - 8 Amazon products (positioning, dressings, cleansers, nutrition, tools)
+  - 10 La Roche-Posay skincare products (therapeutic balms, moisturizers, cleansers)
+- Multi-partner affiliate support (Amazon, La Roche-Posay, extensible)
+- Enhanced ProductCard component:
+  - Category-specific icons (Bed, Bandage, Droplet, Apple, Wrench, **Sparkles**)
+  - Partner-specific button text ("View on Amazon" vs "View on La Roche-Posay")
+  - Contextual affiliate disclosures
+  - Error handling with fallback to category icons
+- External CDN configuration in `next.config.ts`:
+  - Amazon: `m.media-amazon.com/images/**`
+  - La Roche-Posay: `www.laroche-posay.us/dw/image/**`
+- Updated TypeScript types:
+  - New `skincare` category
+  - `affiliatePartner`: "amazon" | "laroche-posay" | "other"
+
 ### 📋 Next Steps (Phase 3 - Future Enhancements)
 
 1. **Backend Integration**
@@ -122,10 +151,10 @@ WoundWise is a patient-focused educational platform delivering comprehensive wou
 wound-wise/
 ├── app/                          # Next.js App Router
 │   ├── wounds/
-│   │   ├── [slug]/page.tsx      # Dynamic wound type pages
+│   │   ├── [slug]/page.tsx      # Dynamic wound type pages (6 types)
 │   │   └── page.tsx             # Wounds overview
 │   ├── treatments/
-│   │   ├── [slug]/page.tsx      # Dynamic treatment pages
+│   │   ├── [slug]/page.tsx      # Dynamic treatment pages (4 treatments)
 │   │   └── page.tsx             # Treatments overview
 │   ├── resources/
 │   │   ├── journal/
@@ -134,32 +163,56 @@ wound-wise/
 │   │   ├── glossary/page.tsx
 │   │   ├── products/page.tsx
 │   │   └── faqs/page.tsx
+│   ├── legal/
+│   │   ├── terms/page.tsx
+│   │   ├── privacy/page.tsx
+│   │   └── disclaimer/page.tsx
+│   ├── about/page.tsx           # About Dr. May
+│   ├── books/page.tsx           # Published books
+│   ├── contact/page.tsx         # Contact form
 │   ├── search/page.tsx          # Search results page
 │   ├── globals.css              # Tailwind v4 + comprehensive print CSS
 │   ├── layout.tsx               # Root layout
 │   └── page.tsx                 # Homepage
 ├── components/
-│   ├── ui/                      # shadcn/ui components (Button, Card, etc.)
-│   ├── journal/                 # Digital journal components
-│   │   ├── journal-calendar.tsx
-│   │   ├── journal-entry-form.tsx
-│   │   └── journal-settings-dialog.tsx
-│   ├── callout.tsx              # Content callout boxes
-│   ├── product-card.tsx         # Product display cards
-│   ├── wound-card.tsx           # Wound type cards
-│   ├── search-bar.tsx           # Search with auto-suggestions
-│   ├── related-content.tsx      # Related content component
-│   ├── you-may-also-like.tsx    # Content recommendations
-│   ├── newsletter-signup.tsx    # Newsletter subscription form
-│   ├── share-buttons.tsx        # Social sharing buttons
-│   ├── print-button.tsx         # Print trigger button
-│   ├── site-header.tsx          # Main navigation header
-│   └── site-footer.tsx          # Footer with newsletter
+│   ├── ui/                      # shadcn/ui components (Button, Card, Dialog, etc.)
+│   ├── common/                  # Shared components
+│   │   ├── section.tsx          # Consistent layout container (4 variants)
+│   │   ├── callout.tsx          # Content callout boxes
+│   │   └── logo.tsx             # WoundWise logo
+│   ├── cards/                   # Card components
+│   │   ├── product-card.tsx     # Multi-vendor product cards
+│   │   ├── wound-card.tsx       # Wound type cards
+│   │   └── treatment-card.tsx   # Treatment cards
+│   ├── layout/                  # Layout components
+│   │   ├── site-header.tsx      # Main navigation header
+│   │   ├── site-footer.tsx      # Footer with newsletter
+│   │   └── mobile-nav.tsx       # Mobile navigation menu
+│   ├── features/                # Feature-specific components
+│   │   ├── search-bar.tsx       # Search with auto-suggestions
+│   │   ├── related-content.tsx  # Related content component
+│   │   ├── newsletter-signup.tsx # Newsletter subscription form
+│   │   ├── share-buttons.tsx    # Social sharing buttons
+│   │   └── print-button.tsx     # Print trigger button
+│   └── journal/                 # Digital journal components
+│       ├── journal-calendar.tsx
+│       ├── journal-entry-form.tsx
+│       └── journal-settings-dialog.tsx
 ├── content/                     # JSON content storage (no CMS)
 │   ├── wounds/                  # 6 wound type files
+│   │   ├── pressure-injuries.json
+│   │   ├── diabetic-foot-ulcers.json
+│   │   ├── venous-ulcers.json
+│   │   ├── arterial-wounds.json
+│   │   ├── surgical-wounds.json
+│   │   └── non-healing-wounds.json
 │   ├── treatments/              # 4 treatment files
+│   │   ├── infection-control.json
+│   │   ├── wound-dressings.json
+│   │   ├── offloading-positioning.json
+│   │   └── nutrition-healing.json
 │   ├── products/
-│   │   └── recommendations.json
+│   │   └── recommendations.json # 18 products (8 Amazon + 10 La Roche-Posay)
 │   ├── glossary.json
 │   └── metadata.json
 ├── lib/
@@ -167,20 +220,15 @@ wound-wise/
 │   ├── search-index.ts          # Static search index
 │   ├── related-content.ts       # Content relationship mapping
 │   ├── pdf-export.ts            # PDF generation for journal
-│   └── utils.ts                 # Utility functions
+│   └── utils.ts                 # Utility functions (cn helper)
 ├── hooks/
-│   ├── use-journal-data.ts      # Journal localStorage hook
-│   └── use-search.ts            # Search functionality hook
+│   └── use-journal-data.ts      # Journal data management hook
 ├── types/
-│   ├── content.d.ts             # Content TypeScript definitions
-│   ├── journal.ts               # Journal data types
-│   └── search.ts                # Search result types
-├── public/                      # Static assets
-├── docs/                        # Source materials (Dr. May's books)
-├── SYSTEM_DESIGN.md             # ⚠️ CRITICAL: Project architecture
-├── TESTING_CHECKLIST.md         # Phase 2 testing checklist
-└── .github/
-    └── copilot-instructions.md  # AI agent guidelines
+│   └── content.d.ts             # TypeScript definitions
+│       # Product, WoundType, Treatment, etc.
+├── public/
+│   └── images/                  # Static image assets
+└── next.config.ts               # Next.js config with CDN whitelisting
 ```
 
 ## 🎨 Brand Colors
@@ -261,6 +309,26 @@ After running `npm run dev`, explore:
 - Color contrast validation
 - Focus indicators on all interactive elements
 
+### 🛍️ Product Recommendations
+
+- **18 Total Products**: 8 Amazon + 10 La Roche-Posay
+- **Multi-Vendor System**: Scalable affiliate architecture
+- **Categories**: Positioning, Dressings, Cleansers, Nutrition, Tools, Skincare
+- **Smart Display**: Category icons, partner-specific branding
+- **External CDNs**: Optimized image loading from Amazon & La Roche-Posay
+- **Contextual Disclosures**: Transparent affiliate relationships
+
+### 🎯 Section Component System
+
+- **Consistent Layout**: All 28 pages use standardized Section wrapper
+- **4 Width Variants**:
+  - `default` (max-w-7xl) - Standard content width
+  - `narrow` (max-w-4xl) - Reading-focused content
+  - `wide` (max-w-screen-2xl) - Wide layouts
+  - `full` (max-w-none) - Full viewport width
+- **Default Padding**: `py-12 md:py-16` automatically applied
+- **Flexibility**: Override with `noPadding={true}` for custom spacing
+
 ## 📝 Content Management
 
 Content is stored in JSON files (no CMS) for simplicity and version control:
@@ -306,10 +374,12 @@ npx shadcn@latest add accordion alert dialog
 ## 📊 Performance & Quality
 
 - ✅ **Build**: Zero TypeScript errors, successful production build
-- ✅ **SSG**: All 25 routes pre-rendered as static HTML
+- ✅ **SSG**: All 28 routes pre-rendered as static HTML
 - ✅ **Accessibility**: ARIA labels, keyboard navigation, semantic HTML
 - ✅ **Print CSS**: Professional print layouts with headers/footers
 - ✅ **Mobile**: Responsive design, touch-friendly interactions
+- ✅ **Layout Consistency**: Section component standardization across all pages
+- ✅ **Multi-Vendor Products**: 18 products with external CDN optimization
 - 🎯 **Target**: Lighthouse 90+ (performance, accessibility, best practices, SEO)
 
 ## 🧪 Testing
@@ -340,4 +410,5 @@ Private project - All rights reserved
 ---
 
 **Last Updated**: October 31, 2025  
-**Status**: Phase 2 Complete - Production Ready
+**Status**: Phase 2.5 Complete - Production Ready  
+**Pages**: 28 static routes | **Products**: 18 (2 vendors) | **Build**: ✅ Successful

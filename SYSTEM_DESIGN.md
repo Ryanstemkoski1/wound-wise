@@ -250,14 +250,21 @@ export interface Treatment {
 export interface Product {
   id: string;
   name: string;
-  category: "dressing" | "cleanser" | "tool" | "nutrition" | "positioning";
+  category:
+    | "dressing"
+    | "cleanser"
+    | "tool"
+    | "nutrition"
+    | "positioning"
+    | "skincare";
   description: string;
   useCases: string[];
   affiliateLink: string;
-  affiliatePartner: "amazon" | "other";
+  affiliatePartner: "amazon" | "laroche-posay" | "other";
   imageUrl: string;
   relatedWounds: string[];
   relatedTreatments: string[];
+  featured?: boolean;
 }
 
 export interface GlossaryTerm {
@@ -530,93 +537,154 @@ npx shadcn@latest add tooltip
 
 ## Phase-by-Phase Implementation
 
-### Phase 1: Foundation & Core Content (Weeks 1-3)
+### Phase 1: Foundation & Core Content ✅ COMPLETE
 
 **Goal**: Launch MVP with essential pages and content
 
 **Tasks**:
 
-1. **Setup & Configuration** (Week 1)
+1. **Setup & Configuration** ✅
 
-   - [x] Initialize Next.js 16 project
-   - [x] Configure Tailwind CSS v4
-   - [x] Set up shadcn/ui
-   - [ ] Define TypeScript types for content
-   - [ ] Create directory structure
-   - [ ] Set up git repository
+   - ✅ Initialize Next.js 16 project
+   - ✅ Configure Tailwind CSS v4
+   - ✅ Set up shadcn/ui
+   - ✅ Define TypeScript types for content
+   - ✅ Create directory structure
+   - ✅ Set up git repository
 
-2. **Content Migration** (Week 1-2)
+2. **Content Migration** ✅
 
-   - [ ] Extract content from source documents
-   - [ ] Structure into JSON format
-   - [ ] Create content loader utilities
-   - [ ] Optimize and prepare images
-   - [ ] Write content metadata
+   - ✅ Extract content from source documents
+   - ✅ Structure into JSON format
+   - ✅ Create content loader utilities
+   - ✅ Optimize and prepare images
+   - ✅ Write content metadata
 
-3. **Core Pages Development** (Week 2-3)
+3. **Core Pages Development** ✅
 
-   - [ ] Homepage with hero + overview
-   - [ ] About Dr. May page
-   - [ ] 6 wound type pages (dynamic route)
-   - [ ] Basic treatment pages (top 5)
-   - [ ] Glossary page
-   - [ ] Product recommendations page
+   - ✅ Homepage with hero + overview
+   - ✅ About Dr. May page
+   - ✅ 6 wound type pages (dynamic route)
+   - ✅ All treatment pages (4 treatments)
+   - ✅ Glossary page
+   - ✅ Product recommendations page
+   - ✅ Books page
+   - ✅ Contact page
+   - ✅ Search page
 
-4. **Layout & Navigation** (Week 2)
-   - [ ] Header with navigation
-   - [ ] Footer with links
-   - [ ] Mobile-responsive menu
-   - [ ] Breadcrumbs
+4. **Layout & Navigation** ✅
+   - ✅ Header with navigation
+   - ✅ Footer with links
+   - ✅ Mobile-responsive menu
+   - ✅ Legal pages (Privacy, Terms, Disclaimer)
 
-**Deliverables**:
+**Deliverables**: ✅
 
-- Functional website with all main content
-- Responsive design (mobile + desktop)
-- SEO-optimized pages
-- Affiliate product links functional
+- ✅ Functional website with all main content (28 pages)
+- ✅ Responsive design (mobile + desktop)
+- ✅ SEO-optimized pages
+- ✅ Affiliate product links functional (18 products, 2 vendors)
 
 ---
 
-### Phase 2: Enhanced Features (Weeks 4-5)
+### Phase 2: Enhanced Features & User Engagement ✅ COMPLETE
 
 **Goal**: Add interactivity and user engagement features
 
 **Tasks**:
 
-1. **Digital Journal Tool**
+1. **Digital Journal Tool** ✅
 
-   - [ ] Calendar interface
-   - [ ] Wound tracking form
-   - [ ] Local storage for data persistence
-   - [ ] Export to PDF feature
-   - [ ] Print-friendly layout
+   - ✅ Calendar interface with entry badges
+   - ✅ Wound tracking form with measurements
+   - ✅ Local storage for data persistence (privacy-focused)
+   - ✅ Export to PDF feature (jsPDF multi-page)
+   - ✅ JSON export/import for data portability
+   - ✅ Print-friendly layout with comprehensive CSS
+   - ✅ Settings dialog for reminder preferences
+   - ✅ Photo tracking capability
 
-2. **Search Functionality**
+2. **Search Functionality** ✅
 
-   - [ ] Implement content search
-   - [ ] Search results page
-   - [ ] Auto-suggestions
+   - ✅ Static search index (14+ content items)
+   - ✅ Real-time auto-suggestions (2+ characters)
+   - ✅ Search results page with grouping
+   - ✅ Keyboard navigation (Arrow, Enter, Escape)
+   - ✅ Recent searches in localStorage
+   - ✅ Matched term highlighting
+   - ✅ Popular topics and browse categories
 
-3. **Enhanced Navigation**
+3. **Enhanced Navigation** ✅
 
-   - [ ] "Related Content" sections
-   - [ ] "You May Also Like" cards
-   - [ ] Improved internal linking
+   - ✅ "Related Content" component (default + compact variants)
+   - ✅ Content relationship mapping system
+   - ✅ "Recommended Treatments" sections on wound pages
+   - ✅ "Related Wound Types" sections
+   - ✅ "You May Also Like" recommendations
+   - ✅ Category-based styling with icons
+   - ✅ Improved internal linking
 
-4. **User Engagement**
-   - [ ] Newsletter signup form
-   - [ ] Social sharing buttons
-   - [ ] Print-friendly versions
+4. **User Engagement** ✅
 
-**Deliverables**:
+   - ✅ Newsletter signup component (3 variants: default, compact, inline)
+   - ✅ Client-side email validation
+   - ✅ Social sharing buttons (Facebook, Twitter, LinkedIn, Copy Link)
+   - ✅ Print button for medical appointment preparation
+   - ✅ Comprehensive print CSS (250+ lines)
+   - ✅ Footer newsletter integration
+   - ✅ Share/print buttons on all content pages
 
-- Interactive journal tool
-- Site search
-- Improved user engagement
+5. **Accessibility & Polish** ✅
+   - ✅ ARIA labels on all interactive elements
+   - ✅ Screen reader support (role attributes, aria-expanded, aria-controls)
+   - ✅ Keyboard navigation throughout
+   - ✅ Focus indicators on all interactive elements
+   - ✅ Semantic HTML structure
+   - ✅ Alt text on images
+   - ✅ Color contrast WCAG AA compliant
+
+**Deliverables**: ✅
+
+- ✅ Interactive journal tool with PDF/JSON export
+- ✅ Site search with auto-suggestions
+- ✅ Improved user engagement (newsletter, sharing, printing)
+- ✅ Full accessibility compliance
 
 ---
 
-### Phase 3: Polish & Optimization (Week 6)
+### Phase 2.5: Layout Consistency & Multi-Vendor Product System ✅ COMPLETE
+
+**Goal**: Standardize layout architecture and expand product catalog
+
+**Tasks**:
+
+1. **Section Component Architecture** ✅
+
+   - ✅ Created reusable Section component (`components/common/section.tsx`)
+   - ✅ Implemented 4 width variants (default, narrow, wide, full)
+   - ✅ Added default padding system (`py-12 md:py-16`)
+   - ✅ Added `noPadding` prop for custom spacing
+   - ✅ Refactored all 28 pages to use Section component
+   - ✅ Ensured consistent vertical spacing site-wide
+
+2. **Multi-Vendor Product Expansion** ✅
+   - ✅ Added 10 La Roche-Posay skincare products (total: 18 products)
+   - ✅ Updated TypeScript types (`affiliatePartner`, `skincare` category)
+   - ✅ Enhanced ProductCard for multi-partner support
+   - ✅ Added CDN whitelisting for La Roche-Posay images
+   - ✅ Implemented partner-specific button text
+   - ✅ Created contextual affiliate disclosures
+   - ✅ Added Sparkles icon for skincare category
+
+**Deliverables**: ✅
+
+- ✅ Consistent layout system across all pages
+- ✅ Scalable multi-vendor affiliate architecture
+- ✅ Professional product presentation with proper branding
+
+---
+
+### Phase 3: Polish & Optimization (In Progress)
 
 **Goal**: Performance optimization and final touches
 
@@ -712,9 +780,43 @@ Based on content analysis, products fall into these categories:
    - Zinc supplements
 
 5. **Tools & Accessories**
+
    - Wound measurement tools
    - Medical tape
    - Gauze and bandages
+
+6. **Skincare Products**
+   - Therapeutic balms and creams
+   - Moisturizers for dry/sensitive skin
+   - Eczema treatments
+   - Facial cleansers
+   - Thermal spring water mists
+
+### Current Product Inventory (18 Products)
+
+**Amazon Products (8)**:
+
+- Pressure Relief Heel Protector Boot
+- Positioning Body Wedge Set
+- DuoDERM Hydrocolloid Dressings
+- Mepilex Foam Dressings
+- Wound Wash Saline Solution
+- Protein Powder for Wound Healing
+- Medical Grade Adhesive Tape
+- Compression Stockings
+
+**La Roche-Posay Products (10)**:
+
+- Cicaplast Balm B5+ (Featured)
+- Lipikar AP+M Triple Repair Balm (Featured)
+- Lipikar Body Lotion
+- Lipikar Eczema Cream
+- Thermal Spring Water Face Mist
+- Toleriane Hydrating Gentle Cleanser
+- Moisturizing Routine Set (Value Bundle)
+- Lipikar Wash Body & Face
+- Lipikar Cleansing Set (10% off)
+- Lipikar Wash + Moisturizer Set (10% off)
 
 ### Implementation Approach
 
@@ -738,7 +840,24 @@ Based on content analysis, products fall into these categories:
       "relatedTreatments": ["offloading"],
       "affiliateLink": "https://amazon.com/...?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/heel-boot.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/...",
+      "featured": true
+    },
+    {
+      "id": "cicaplast-balm-b5",
+      "name": "La Roche-Posay Cicaplast Balm B5+",
+      "category": "skincare",
+      "description": "Multi-purpose soothing therapeutic cream for dry, irritated skin",
+      "useCases": [
+        "Dry, irritated skin relief",
+        "Post-procedure skin care",
+        "Skin barrier repair"
+      ],
+      "relatedWounds": ["pressure-injuries", "surgical-wounds", "skin-tears"],
+      "relatedTreatments": ["wound-dressings", "nutrition-healing"],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/...",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/...",
       "featured": true
     }
   ]
@@ -748,12 +867,41 @@ Based on content analysis, products fall into these categories:
 #### Product Card Component
 
 ```tsx
-// components/product-card.tsx
+// components/cards/product-card.tsx
 export function ProductCard({ product }: { product: Product }) {
+  // Multi-vendor support
+  const partnerName =
+    product.affiliatePartner === "amazon"
+      ? "Amazon"
+      : product.affiliatePartner === "laroche-posay"
+      ? "La Roche-Posay"
+      : "Partner Site";
+
+  const affiliateDisclosure =
+    product.affiliatePartner === "amazon"
+      ? "As an Amazon Associate, WoundWise earns from qualifying purchases."
+      : "WoundWise may earn a commission from qualifying purchases through our partner links.";
+
+  // Category icons
+  const categoryIcons = {
+    positioning: Bed,
+    dressing: Bandage,
+    cleanser: Droplet,
+    nutrition: Apple,
+    tool: Wrench,
+    skincare: Sparkles,
+  };
+
   return (
     <Card>
       <CardHeader>
-        <Image src={product.imageUrl} alt={product.name} />
+        <Image
+          src={product.imageUrl}
+          alt={product.name}
+          width={300}
+          height={300}
+          // Fallback to category icon on error
+        />
       </CardHeader>
       <CardContent>
         <h3>{product.name}</h3>
@@ -772,25 +920,209 @@ export function ProductCard({ product }: { product: Product }) {
             target="_blank"
             rel="noopener noreferrer sponsored"
           >
-            View on Amazon
+            View on {partnerName}
           </a>
         </Button>
-        <p className="text-sm text-muted-foreground">
-          As an Amazon Associate, WoundWise earns from qualifying purchases.
-        </p>
+        <p className="text-sm text-muted-foreground">{affiliateDisclosure}</p>
       </CardFooter>
     </Card>
   );
 }
 ```
 
+### External Image CDN Configuration
+
+Products load images from external CDNs, configured in `next.config.ts`:
+
+```typescript
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "m.media-amazon.com",
+        pathname: "/images/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.laroche-posay.us",
+        pathname: "/dw/image/**",
+      },
+    ],
+  },
+};
+```
+
 ### Affiliate Link Management
 
-- **Centralized**: All affiliate links in JSON files
+- **Multi-Vendor Support**: Amazon, La Roche-Posay, and extensible to other partners
+- **Centralized Data**: All affiliate links in JSON files
 - **Easy Updates**: Change link once, updates everywhere
-- **Tracking**: Use UTM parameters for analytics
+- **Partner-Specific Branding**: Button text and disclosures adapt to partner
+- **Tracking**: Use UTM parameters for analytics (if needed)
 - **Compliance**: Clear disclosure on every product
 - **rel attributes**: Proper `noopener`, `noreferrer`, `sponsored`
+- **Image Optimization**: Next.js Image component with CDN whitelisting
+
+---
+
+## Component Architecture (Implementation Status)
+
+### Reusable Layout Components
+
+#### Section Component (`components/common/section.tsx`)
+
+**Purpose**: Provides consistent max-width containers and vertical spacing across all pages.
+
+**Status**: ✅ Implemented and deployed to all 28 pages
+
+**Features**:
+
+- 4 width variants with semantic naming
+- Default vertical padding system
+- Optional padding override
+- Flexible container mode
+
+**Props Interface**:
+
+```typescript
+interface SectionProps {
+  children: ReactNode;
+  className?: string;
+  variant?: "default" | "narrow" | "wide" | "full";
+  container?: boolean; // Default: true
+  noPadding?: boolean; // Default: false
+  id?: string;
+}
+```
+
+**Variants**:
+
+- `default`: `max-w-7xl` (1280px) - Standard content sections
+- `narrow`: `max-w-4xl` (896px) - Reading-focused content
+- `wide`: `max-w-screen-2xl` (1536px) - Wide layouts
+- `full`: `max-w-none` - Full viewport width
+
+**Default Behavior**:
+
+- Vertical padding: `py-12 md:py-16` (3rem mobile / 4rem desktop)
+- Horizontal centering: `mx-auto`
+- Horizontal padding: `px-4 md:px-6 lg:px-8` (when container=true)
+
+**Usage Pattern**:
+
+```tsx
+// Standard section - most common
+<Section>
+  <h1>Content</h1>
+</Section>
+
+// Narrow reading width
+<Section variant="narrow">
+  <article>Long-form content...</article>
+</Section>
+
+// Full width without container padding
+<Section variant="full" container={false}>
+  <div className="bg-gradient-to-r...">Hero banner</div>
+</Section>
+
+// Custom spacing override
+<Section noPadding={true} className="py-24">
+  <div>Custom vertical spacing</div>
+</Section>
+```
+
+**Impact**: Standardized layout across all 28 pages, eliminated manual spacing inconsistencies.
+
+### Card Components
+
+#### ProductCard Component (`components/cards/product-card.tsx`)
+
+**Status**: ✅ Implemented with multi-vendor support
+
+**Features**:
+
+- Multi-vendor affiliate system (Amazon, La Roche-Posay, other)
+- 6 category-specific icons (Bed, Bandage, Droplet, Apple, Wrench, Sparkles)
+- Next.js Image optimization with CDN support
+- Partner-specific button text and disclosures
+- Graceful fallback to category icons on image errors
+
+**Category Icons Mapping**:
+
+```typescript
+positioning: Bed;
+dressing: Bandage;
+cleanser: Droplet;
+nutrition: Apple;
+tool: Wrench;
+skincare: Sparkles;
+```
+
+#### WoundCard & TreatmentCard Components
+
+**Status**: ✅ Implemented
+
+**Purpose**: Display wound types and treatments in card format on overview pages
+
+### Feature Components
+
+#### SearchBar Component (`components/features/search-bar.tsx`)
+
+**Status**: ✅ Implemented with auto-suggestions
+
+**Features**:
+
+- Real-time search (minimum 2 characters)
+- Auto-suggestion dropdown
+- Keyboard navigation (Arrow, Enter, Escape)
+- Recent searches in localStorage
+- Relevance scoring algorithm
+
+#### RelatedContent Component (`components/features/related-content.tsx`)
+
+**Status**: ✅ Implemented with 2 variants
+
+**Variants**: `default` (full cards), `compact` (minimal list)
+
+#### NewsletterSignup Component (`components/features/newsletter-signup.tsx`)
+
+**Status**: ✅ Implemented with 3 variants
+
+**Variants**: `default`, `compact`, `inline` (for footer)
+
+#### ShareButtons & PrintButton Components
+
+**Status**: ✅ Implemented
+
+**Platforms**: Facebook, Twitter, LinkedIn, Copy Link
+
+### Journal Components
+
+**Status**: ✅ Complete digital journal system
+
+**Components**:
+
+- `JournalCalendar` - Month navigation with entry badges
+- `JournalEntryForm` - Wound measurements, pain levels, notes
+- `JournalSettingsDialog` - Export (PDF/JSON), import, settings
+
+### Common Components
+
+#### Callout Component (`components/common/callout.tsx`)
+
+**Types**: `info`, `warning`, `tip`, `example`
+
+#### Logo Component (`components/common/logo.tsx`)
+
+**Features**: SVG-based, responsive sizing, brand colors
+
+### shadcn/ui Components
+
+**Installed**: button, card, dialog, input, textarea, select, badge, separator, calendar, accordion, navigation-menu, sheet, alert
+
+**Style**: "new-york" variant with zinc base color
 
 ---
 

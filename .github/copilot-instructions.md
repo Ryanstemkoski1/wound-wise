@@ -43,11 +43,21 @@ The SYSTEM_DESIGN.md is the **single source of truth** for all architectural dec
 ### Project Structure
 
 - `app/` - Next.js App Router pages and layouts
-- `components/` - React components (create this when needed)
-- `components/ui/` - shadcn/ui components (auto-generated)
+- `components/` - React components organized by purpose
+  - `components/ui/` - shadcn/ui components (auto-generated)
+  - `components/common/` - Shared components (Section, Callout, Logo)
+  - `components/cards/` - Card components (ProductCard, WoundCard, TreatmentCard)
+  - `components/layout/` - Layout components (Header, Footer, Navigation)
+  - `components/features/` - Feature-specific components (Newsletter, Search, Share)
+  - `components/journal/` - Digital journal tool components
+- `content/` - JSON-based content storage
+  - `content/wounds/` - Wound type data
+  - `content/treatments/` - Treatment data
+  - `content/products/` - Product recommendations with affiliate links
 - `lib/` - Utility functions and shared logic
-- `hooks/` - Custom React hooks (create when needed)
-- `public/` - Static assets
+- `hooks/` - Custom React hooks
+- `public/` - Static assets (images, icons)
+- `types/` - TypeScript type definitions
 
 ## Styling Conventions
 
@@ -96,6 +106,24 @@ import { cn } from "@/lib/utils";
 ```
 
 ## Component Development
+
+### Key Reusable Components
+
+**Section Component** (`components/common/section.tsx`):
+
+- Provides consistent max-width containers and vertical spacing
+- Variants: `default` (max-w-7xl), `narrow` (max-w-4xl), `wide` (max-w-screen-2xl), `full` (max-w-none)
+- Default padding: `py-12 md:py-16` (applied to all sections unless `noPadding={true}`)
+- Props: `variant`, `container`, `noPadding`, `className`, `id`
+- Usage: Wrap all page sections for consistent layout
+
+**ProductCard Component** (`components/cards/product-card.tsx`):
+
+- Multi-vendor affiliate support (Amazon, La Roche-Posay, other)
+- Category-specific icons (positioning, dressing, cleanser, nutrition, tool, skincare)
+- Contextual affiliate disclosures based on partner
+- Next.js Image with error handling and fallback to category icons
+- Button text adapts to partner: "View on Amazon" vs "View on La Roche-Posay"
 
 ### shadcn/ui Integration
 
@@ -157,3 +185,10 @@ npm run lint   # Run ESLint
 - **PostCSS** only includes `@tailwindcss/postcss` plugin
 - **React 19** introduces new patterns - prefer built-in hooks and features
 - **Server Components first** - only use client components when necessary (forms, interactivity, browser APIs)
+- **Product System** - Multi-vendor affiliate support (Amazon, La Roche-Posay, extensible)
+  - Product images served from CDNs (whitelisted in `next.config.ts`)
+  - 18 products total: 8 Amazon + 10 La Roche-Posay skincare products
+  - TypeScript types enforce valid categories and affiliate partners
+- **Section Component** - All pages use consistent Section wrapper with default padding
+  - Override with `noPadding={true}` for custom spacing requirements
+  - All 28 pages refactored to use standardized Section architecture

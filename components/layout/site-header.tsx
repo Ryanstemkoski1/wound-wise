@@ -50,9 +50,9 @@ const woundTypes = [
 
 const treatments = [
   {
-    title: "Wound Dressing",
-    href: "/treatments/wound-dressing",
-    description: "Selecting and applying appropriate dressings",
+    title: "Wound Dressings Guide",
+    href: "/treatments/wound-dressings",
+    description: "Choosing the right dressing for your wound",
   },
   {
     title: "Infection Control",
@@ -61,13 +61,13 @@ const treatments = [
   },
   {
     title: "Offloading & Positioning",
-    href: "/treatments/offloading",
-    description: "Pressure relief techniques and devices",
+    href: "/treatments/offloading-positioning",
+    description: "Reducing pressure to promote healing",
   },
   {
-    title: "Nutrition & Healing",
-    href: "/treatments/nutrition",
-    description: "Dietary support for wound recovery",
+    title: "Nutrition for Wound Healing",
+    href: "/treatments/nutrition-healing",
+    description: "Fueling your body's repair process",
   },
 ];
 

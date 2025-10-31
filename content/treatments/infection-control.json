@@ -1,0 +1,99 @@
+{
+  "id": "infection-control",
+  "slug": "infection-control",
+  "title": "Infection Control",
+  "subtitle": "Preventing and Managing Wound Infections",
+  "description": "Effective infection control is a critical aspect of managing chronic wounds. Left unchecked, wound infections can be devastating to the healing process and lead to severe complications. Learn to recognize signs of infection, implement proper wound cleansing techniques, and follow evidence-based prevention measures.",
+  "featured": true,
+  "keyBenefits": [
+    "Early detection of infection signs",
+    "Proper wound cleansing protocols",
+    "Evidence-based prevention strategies"
+  ],
+  "sections": [
+    {
+      "heading": "Understanding Infection Control",
+      "content": "Effective infection control is a critical aspect of managing chronic wounds. Left unchecked, wound infections can be devastating to the healing process and lead to severe complications. By using stringent infection control measures, you can greatly reduce the risk of complications and accelerate the healing process.\n\nUnderstanding the signs of infection, implementing proper wound cleansing techniques, and following appropriate infection prevention measures are essential for successful wound management."
+    },
+    {
+      "heading": "Early Signs of Infection",
+      "content": "Recognizing infection early is crucial for preventing complications. Watch for these early warning signs that indicate your wound may be developing an infection:",
+      "subsections": [
+        {
+          "heading": "Increased Pain",
+          "content": "The wound site may start to feel more tender or sensitive than before. This heightened pain level is your body's way of signaling that something isn't right."
+        },
+        {
+          "heading": "Spreading Redness",
+          "content": "You might notice redness around the wound that spreads or worsens over time. This expanding area of redness indicates inflammation spreading beyond the wound site."
+        },
+        {
+          "heading": "Increased Drainage",
+          "content": "Another early sign, though harder to interpret, is increased drainage from the wound bed. More fluid coming from the wound than usual can indicate infection."
+        },
+        {
+          "heading": "Increased Warmth",
+          "content": "Finally, there will be increased warmth around the wound—that is, the wound and the skin immediately around it are hotter than the surrounding skin."
+        }
+      ],
+      "callout": {
+        "type": "tip",
+        "content": "Continually take inventory of the appearance of your wound. Early detection is key to preventing complications."
+      }
+    },
+    {
+      "heading": "Late Signs of Infection",
+      "content": "These more concerning signs may call for immediate medical attention. Late signs of infection indicate the infection has progressed and requires prompt intervention:",
+      "subsections": [
+        {
+          "heading": "Pus or Thick Discharge",
+          "content": "One of the late signs is the presence of pus or a thick, yellowish fluid coming from the wound. Pus can have a strong smell and may be a sign that bacteria in the wound bed is causing an infection."
+        },
+        {
+          "heading": "New or Increased Swelling",
+          "content": "Additionally, if you notice an increase in new swelling around the wound, this could also be a late sign of infection. Swelling may cause the area to feel tight or look puffy."
+        }
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Seek Immediate Medical Attention",
+        "content": "If you experience pus, significant swelling, or fever alongside your wound symptoms, contact your healthcare provider immediately."
+      }
+    },
+    {
+      "heading": "When to Contact Your Healthcare Provider",
+      "content": "It is important to realize that a wound infection doesn't look like just one thing. It represents a clinical picture made up of varying combinations of findings, so identifying only one of the signs or symptoms above may or may not represent an actual wound infection.",
+      "callout": {
+        "type": "info",
+        "title": "Contact Guidelines",
+        "content": "Contact your healthcare provider for further evaluation if you experience:\n• Two or more early signs of infection, OR\n• Just one late sign of infection\n\nRemember, when it comes to wound complications, early detection and prompt intervention are key for preventing wound deterioration and fostering healing."
+      }
+    },
+    {
+      "heading": "Prevention Through Proper Wound Care",
+      "content": "The best defense against infection is maintaining a clean wound environment through proper cleansing techniques and consistent wound care routines. Work closely with your wound care provider to establish an effective infection prevention strategy tailored to your specific wound type and healing needs.\n\nRegular wound cleansing, appropriate dressing changes, and maintaining good overall hygiene are fundamental to preventing infections. Your wound care provider will guide you on the specific protocols best suited for your situation."
+    }
+  ],
+  "relatedProducts": [
+    "saline-wound-wash",
+    "foam-dressing",
+    "hydrocolloid-dressing"
+  ],
+  "relatedWounds": ["pressure-injuries", "diabetic-ulcers", "surgical-wounds"],
+  "metadata": {
+    "title": "Wound Infection Control: Prevention & Treatment | WoundWise",
+    "description": "Expert guidance on wound infection control from Dr. Alvin May. Learn to recognize infection signs, proper wound cleansing, and prevention strategies.",
+    "keywords": [
+      "wound infection",
+      "infection control",
+      "wound cleansing",
+      "signs of infection",
+      "Dr. Alvin May"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2024-01-15",
+    "lastUpdated": "2024-01-15",
+    "readingTime": 8,
+    "featured": true
+  }
+}

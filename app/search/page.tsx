@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useSearch } from "@/hooks/use-search";
+import { Section } from "@/components/common/section";
 
 function SearchResults() {
   const searchParams = useSearchParams();
@@ -60,7 +61,7 @@ function SearchResults() {
     <div className="min-h-screen bg-linear-to-b from-background to-muted/20">
       {/* Header */}
       <div className="bg-card border-b">
-        <div className="container py-8">
+        <Section variant="narrow" className="py-8">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
             <Link href="/" className="hover:text-foreground transition-colors">
@@ -96,10 +97,10 @@ function SearchResults() {
               )}
             </p>
           )}
-        </div>
+        </Section>
       </div>
 
-      <div className="container py-12">
+      <Section variant="narrow" className="py-12">
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Results */}
           <div className="lg:col-span-2 space-y-8">
@@ -493,7 +494,7 @@ function SearchResults() {
             </Card>
           </div>
         </div>
-      </div>
+      </Section>
     </div>
   );
 }

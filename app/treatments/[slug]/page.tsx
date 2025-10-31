@@ -1,11 +1,15 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronRight, Clock, BookOpen } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ChevronRight, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ProductCard } from "@/components/cards/product-card";
-import { getAllProducts } from "@/lib/content-loader";
+import {
+  getTreatment,
+  getTreatmentSlugs,
+  getAllProducts,
+} from "@/lib/content-loader";
+import { Callout } from "@/components/common/callout";
 import { RelatedContent } from "@/components/features/related-content";
 import { YouMayAlsoLike } from "@/components/features/you-may-also-like";
 import { ShareButtons } from "@/components/features/share-buttons";
@@ -13,48 +17,22 @@ import { PrintButton } from "@/components/features/print-button";
 import { getRelatedContent } from "@/lib/related-content";
 import { Section } from "@/components/common/section";
 
-// Placeholder: In real implementation, this would load from JSON
-const treatments = {
-  "infection-control": {
-    slug: "infection-control",
-    title: "Infection Control",
-    subtitle: "Preventing and Managing Wound Infections",
-    description:
-      "Effective infection control is critical for wound healing. Learn to recognize signs of infection, implement proper cleansing techniques, and follow evidence-based prevention measures.",
-    featured: true,
-    metadata: {
-      title: "Wound Infection Control: Prevention & Treatment | WoundWise",
-      description:
-        "Expert guidance on wound infection control from Dr. Alvin May. Learn to recognize infection signs, proper wound cleansing, and prevention strategies.",
-      keywords: [
-        "wound infection",
-        "infection control",
-        "wound cleansing",
-        "signs of infection",
-        "Dr. Alvin May",
-      ],
-      readingTime: 8,
-      lastUpdated: "2024-01-15",
-    },
-    relatedProducts: [
-      "saline-wound-wash",
-      "foam-dressing",
-      "hydrocolloid-dressing",
-    ],
-  },
-};
-
 type TreatmentPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+  const slugs = await getTreatmentSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({
   params,
 }: TreatmentPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const treatment = treatments[slug as keyof typeof treatments];
+  const treatment = await getTreatment(slug);
 
-  if (!treatment) {
+  if (!treatment || !treatment.metadata) {
     return {
       title: "Treatment Not Found",
     };
@@ -68,7 +46,7 @@ export async function generateMetadata({
       title: treatment.metadata.title,
       description: treatment.metadata.description,
       type: "article",
-      publishedTime: treatment.metadata.lastUpdated,
+      publishedTime: treatment.metadata.publishDate,
     },
     twitter: {
       card: "summary_large_image",
@@ -78,15 +56,9 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
-  return Object.keys(treatments).map((slug) => ({
-    slug,
-  }));
-}
-
 export default async function TreatmentPage({ params }: TreatmentPageProps) {
   const { slug } = await params;
-  const treatment = treatments[slug as keyof typeof treatments];
+  const treatment = await getTreatment(slug);
 
   if (!treatment) {
     notFound();
@@ -126,7 +98,7 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
           )}
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Clock className="h-4 w-4" />
-            <span>{treatment.metadata.readingTime} min read</span>
+            <span>{treatment.metadata?.readingTime} min read</span>
           </div>
         </div>
 
@@ -149,29 +121,35 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
         </div>
       </Section>
 
-      {/* Placeholder Content - Replace with actual treatment content */}
+      {/* Treatment Content */}
       <Section variant="narrow" className="pt-0">
-        <section>
-          <h2 className="text-3xl font-bold tracking-tight mb-6">
-            Coming Soon
-          </h2>
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <BookOpen className="h-5 w-5" />
-                Content In Development
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Comprehensive treatment content is being developed from Dr.
-                May&apos;s published works. This page will include detailed
-                guidance, step-by-step instructions, best practices, and
-                evidence-based strategies for {treatment.title.toLowerCase()}.
-              </p>
-            </CardContent>
-          </Card>
-        </section>
+        <article className="prose prose-lg max-w-none">
+          {treatment.sections?.map((section, index) => (
+            <section key={index} className="mb-12">
+              <h2 className="text-3xl font-bold mb-4">{section.heading}</h2>
+              <div className="text-lg leading-relaxed whitespace-pre-line mb-6">
+                {section.content}
+              </div>
+
+              {section.callout && <Callout callout={section.callout} />}
+
+              {section.subsections &&
+                section.subsections.map((subsection, subIndex) => (
+                  <div key={subIndex} className="ml-6 mb-8">
+                    <h3 className="text-2xl font-semibold mb-3">
+                      {subsection.heading}
+                    </h3>
+                    <div className="text-base leading-relaxed whitespace-pre-line">
+                      {subsection.content}
+                    </div>
+                    {subsection.callout && (
+                      <Callout callout={subsection.callout} />
+                    )}
+                  </div>
+                ))}
+            </section>
+          ))}
+        </article>
       </Section>
 
       {/* Related Products */}

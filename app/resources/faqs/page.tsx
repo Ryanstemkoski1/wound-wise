@@ -16,6 +16,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Section } from "@/components/common/section";
 
 // Import wound data to extract FAQs
 import pressureInjuries from "@/content/wounds/pressure-injuries.json";
@@ -127,47 +128,45 @@ export default function FAQsPage() {
   }, [selectedCategory, allFAQs]);
 
   return (
-    <div className="container py-10 max-w-4xl">
+    <div>
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
-        <Link href="/" className="hover:text-foreground transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <Link
-          href="/resources"
-          className="hover:text-foreground transition-colors"
-        >
-          Resources
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <span className="text-foreground font-medium">FAQs</span>
-      </nav>
+      <Section variant="narrow" className="py-6">
+        <nav className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <Link
+            href="/resources"
+            className="hover:text-foreground transition-colors"
+          >
+            Resources
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <span className="text-foreground font-medium">FAQs</span>
+        </nav>
+      </Section>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background rounded-lg mb-16">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="relative px-6 py-16 md:py-20 space-y-6">
-          <Badge
-            variant="secondary"
-            className="animate-in fade-in slide-in-from-bottom-4"
-          >
+      <Section variant="narrow">
+        <div className="space-y-6">
+          <Badge variant="secondary">
             <MessageCircle className="h-3 w-3 mr-1" />
             Common Questions Answered
           </Badge>
-          <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-in fade-in slide-in-from-bottom-4 delay-200">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             Frequently Asked Questions
           </h1>
-          <p className="text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 delay-300">
+          <p className="text-xl text-muted-foreground">
             Find answers to common questions about wound care, healing, and
             treatment. For personalized advice, always consult your healthcare
             provider.
           </p>
         </div>
-      </section>
+      </Section>
 
       {/* Statistics Section */}
-      <section className="mb-16">
+      <Section variant="narrow">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center animate-in fade-in delay-200">
             <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
@@ -206,53 +205,55 @@ export default function FAQsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Important Notice */}
-      <Card className="bg-primary/5 border-primary/20 mb-10 animate-in fade-in">
-        <CardContent className="pt-6">
-          <div className="flex gap-4">
-            <HelpCircle className="h-6 w-6 text-primary shrink-0 mt-1" />
-            <div>
-              <p className="font-semibold text-primary mb-2">
-                Educational Information Only
-              </p>
-              <p className="text-sm text-muted-foreground">
-                The answers provided here are for educational purposes and
-                should not replace professional medical advice. Every wound is
-                unique, and treatment should be tailored to your specific
-                situation by qualified healthcare professionals.
-              </p>
+      <Section variant="narrow">
+        <Card className="bg-primary/5 border-primary/20">
+          <CardContent className="pt-6">
+            <div className="flex gap-4">
+              <HelpCircle className="h-6 w-6 text-primary shrink-0 mt-1" />
+              <div>
+                <p className="font-semibold text-primary mb-2">
+                  Educational Information Only
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  The answers provided here are for educational purposes and
+                  should not replace professional medical advice. Every wound is
+                  unique, and treatment should be tailored to your specific
+                  situation by qualified healthcare professionals.
+                </p>
+              </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </Section>
 
       {/* Category Filter */}
-      <div className="mb-8 animate-in fade-in">
-        <h2 className="text-lg font-semibold mb-4">Browse by Topic</h2>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {categories.map((category) => (
-            <Badge
-              key={category}
-              variant={selectedCategory === category ? "default" : "outline"}
-              className="cursor-pointer px-4 py-2 text-sm hover:scale-105 transition-transform"
-              onClick={() => setSelectedCategory(category)}
-            >
-              {categoryLabels[category] || category}
-            </Badge>
-          ))}
+      <Section variant="narrow" className="pt-0">
+        <div className="mb-8 animate-in fade-in">
+          <h2 className="text-lg font-semibold mb-4">Browse by Topic</h2>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {categories.map((category) => (
+              <Badge
+                key={category}
+                variant={selectedCategory === category ? "default" : "outline"}
+                className="cursor-pointer px-4 py-2 text-sm hover:scale-105 transition-transform"
+                onClick={() => setSelectedCategory(category)}
+              >
+                {categoryLabels[category] || category}
+              </Badge>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Showing {filteredFAQs.length}{" "}
+            {filteredFAQs.length === 1 ? "question" : "questions"}
+            {selectedCategory !== "all" &&
+              ` in ${categoryLabels[selectedCategory]}`}
+          </p>
         </div>
-        <p className="text-sm text-muted-foreground">
-          Showing {filteredFAQs.length}{" "}
-          {filteredFAQs.length === 1 ? "question" : "questions"}
-          {selectedCategory !== "all" &&
-            ` in ${categoryLabels[selectedCategory]}`}
-        </p>
-      </div>
 
-      {/* FAQs Accordion */}
-      <section>
+        {/* FAQs Accordion */}
         {filteredFAQs.length > 0 ? (
           <Accordion type="single" collapsible className="space-y-4">
             {filteredFAQs.map((faq, index) => (
@@ -287,10 +288,10 @@ export default function FAQsPage() {
             </CardContent>
           </Card>
         )}
-      </section>
+      </Section>
 
       {/* Still Have Questions */}
-      <section className="mt-12">
+      <Section variant="narrow" className="border-t">
         <h2 className="text-2xl font-bold mb-6">Still Have Questions?</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <Card>
@@ -358,34 +359,36 @@ export default function FAQsPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* Emergency Notice */}
-      <Card className="bg-destructive/10 border-destructive/30 mt-12">
-        <CardContent className="pt-6">
-          <h3 className="font-semibold text-destructive mb-3">
-            When to Seek Immediate Medical Attention
-          </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-            If you experience any of these symptoms, seek emergency medical care
-            immediately:
-          </p>
-          <ul className="list-disc pl-6 space-y-1 text-sm text-muted-foreground">
-            <li>Uncontrolled bleeding</li>
-            <li>
-              Signs of severe infection (high fever, spreading redness, severe
-              pain)
-            </li>
-            <li>
-              Wound that won&apos;t stop bleeding after 10 minutes of direct
-              pressure
-            </li>
-            <li>Deep wounds or wounds exposing bone, muscle, or tendons</li>
-            <li>Wounds from animal or human bites</li>
-            <li>Loss of sensation or ability to move the affected area</li>
-          </ul>
-        </CardContent>
-      </Card>
+      <Section variant="narrow" className="border-t">
+        <Card className="bg-destructive/10 border-destructive/30">
+          <CardContent className="pt-6">
+            <h3 className="font-semibold text-destructive mb-3">
+              When to Seek Immediate Medical Attention
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+              If you experience any of these symptoms, seek emergency medical
+              care immediately:
+            </p>
+            <ul className="list-disc pl-6 space-y-1 text-sm text-muted-foreground">
+              <li>Uncontrolled bleeding</li>
+              <li>
+                Signs of severe infection (high fever, spreading redness, severe
+                pain)
+              </li>
+              <li>
+                Wound that won&apos;t stop bleeding after 10 minutes of direct
+                pressure
+              </li>
+              <li>Deep wounds or wounds exposing bone, muscle, or tendons</li>
+              <li>Wounds from animal or human bites</li>
+              <li>Loss of sensation or ability to move the affected area</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </Section>
     </div>
   );
 }

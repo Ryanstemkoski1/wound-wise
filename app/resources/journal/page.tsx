@@ -11,6 +11,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Section } from "@/components/common/section";
 
 export const metadata: Metadata = {
   title: "Wound Healing Journal | Track Your Healing Progress | WoundWise",
@@ -27,27 +28,29 @@ export const metadata: Metadata = {
 
 export default function JournalPage() {
   return (
-    <div className="container py-10">
+    <div>
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
-        <Link href="/" className="hover:text-foreground transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <Link
-          href="/resources/glossary"
-          className="hover:text-foreground transition-colors"
-        >
-          Resources
-        </Link>
-        <ChevronRight className="h-4 w-4" />
-        <span className="text-foreground font-medium">
-          Wound Healing Journal
-        </span>
-      </nav>
+      <Section variant="narrow" className="py-6">
+        <nav className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <Link
+            href="/resources/glossary"
+            className="hover:text-foreground transition-colors"
+          >
+            Resources
+          </Link>
+          <ChevronRight className="h-4 w-4" />
+          <span className="text-foreground font-medium">
+            Wound Healing Journal
+          </span>
+        </nav>
+      </Section>
 
       {/* Hero Section */}
-      <div className="max-w-3xl mb-12">
+      <Section variant="narrow">
         <Badge className="mb-4">Patient Empowerment Tool</Badge>
         <h1 className="text-4xl font-bold tracking-tight mb-4">
           The Wound Healing Journal
@@ -57,10 +60,10 @@ export default function JournalPage() {
           track your progress, and communicate more effectively with your
           healthcare team.
         </p>
-      </div>
+      </Section>
 
       {/* Why Keep a Journal */}
-      <section className="mb-12">
+      <Section variant="narrow">
         <h2 className="text-3xl font-bold mb-6">
           Why Keep a Wound Healing Journal?
         </h2>
@@ -122,10 +125,10 @@ export default function JournalPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* What to Track */}
-      <section className="mb-12">
+      <Section variant="narrow">
         <h2 className="text-3xl font-bold mb-6">What Should You Track?</h2>
         <Card>
           <CardContent className="pt-6">
@@ -190,10 +193,10 @@ export default function JournalPage() {
             </div>
           </CardContent>
         </Card>
-      </section>
+      </Section>
 
       {/* Dr. May's Journal */}
-      <section className="mb-12">
+      <Section variant="default" className="bg-muted/30">
         <div className="bg-linear-to-br from-primary/10 to-accent/10 rounded-lg p-8 border border-primary/20">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
@@ -290,10 +293,10 @@ export default function JournalPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Free Template */}
-      <section className="mb-12">
+      <Section variant="narrow">
         <h2 className="text-3xl font-bold mb-6">Digital Tracking Tools</h2>
 
         {/* Interactive Journal Tool */}
@@ -376,10 +379,10 @@ export default function JournalPage() {
             </div>
           </CardContent>
         </Card>
-      </section>
+      </Section>
 
       {/* Tips for Effective Journaling */}
-      <section className="mb-12">
+      <Section variant="narrow" className="border-t">
         <h2 className="text-3xl font-bold mb-6">
           Tips for Effective Journaling
         </h2>
@@ -449,10 +452,10 @@ export default function JournalPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* Related Resources */}
-      <section>
+      <Section variant="narrow" className="border-t">
         <h2 className="text-3xl font-bold mb-6">Related Resources</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <Card>
@@ -525,7 +528,7 @@ export default function JournalPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

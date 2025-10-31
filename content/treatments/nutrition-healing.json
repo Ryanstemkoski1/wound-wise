@@ -1,0 +1,107 @@
+{
+  "id": "nutrition-healing",
+  "slug": "nutrition-healing",
+  "title": "Nutrition for Wound Healing",
+  "subtitle": "Fueling Your Body's Repair Process",
+  "description": "Discover the critical role of nutrition and hydration in wound healing. Learn about protein requirements, essential vitamins and minerals, and practical dietary strategies to support your body's natural healing process.",
+  "featured": true,
+  "keyBenefits": [
+    "Protein and calorie requirements",
+    "Essential vitamins and minerals",
+    "Practical meal planning tips"
+  ],
+  "sections": [
+    {
+      "heading": "Nutrition: Fueling Your Body's Healing Process",
+      "content": "Another very important aspect of wound management is nutrition. Proper nutrition and hydration are crucial for wound healing. When it comes to nutrition, think of your body as a construction site—it needs the right materials to build and repair tissues. A well-balanced diet provides these building blocks, helping your body heal properly.",
+      "callout": {
+        "type": "example",
+        "title": "The Construction Site Analogy",
+        "content": "Just as a construction crew needs raw materials, energy, and tools to build a structure, your body needs calories for energy, protein for building blocks, and vitamins and minerals as the 'power tools' to repair damaged tissue."
+      }
+    },
+    {
+      "heading": "Calories: The Worker Bees",
+      "content": "First and foremost, calories are incredibly important. Just getting a sufficient amount of energy (calories) in the form of food and drink is so important because those calories are the 'worker bees' of the construction crew.\n\nWithout energy, work at the wound bed construction site is slow and drags out over time. Your body needs adequate caloric intake to fuel all the complex healing processes happening at the cellular level."
+    },
+    {
+      "heading": "Protein: The Building Blocks",
+      "content": "Getting enough protein is key. Foods like lean meats, fish, eggs, beans, and dairy products are rich in protein and provide the necessary amino acids that support tissue repair and regeneration.\n\nThink of protein as the building blocks that will fill in your wound and cover it closed. Including adequate protein in your diet helps your body rebuild damaged tissues, such as skin, muscles, and blood vessels.",
+      "callout": {
+        "type": "tip",
+        "title": "Protein Sources",
+        "content": "Aim to include a protein source with every meal: eggs at breakfast, chicken or fish at lunch, beans or lean meat at dinner. Snacks like Greek yogurt, nuts, or cheese can help you meet your protein needs throughout the day."
+      }
+    },
+    {
+      "heading": "Vitamins and Minerals: The Power Tools",
+      "content": "Vitamins and minerals are like the power tools that ensure everything runs as smoothly and as efficiently as possible. These micronutrients play specific roles in the healing process:",
+      "subsections": [
+        {
+          "heading": "Vitamin C",
+          "content": "Found in citrus fruits and leafy greens, Vitamin C is essential for collagen synthesis, which is a key component in wound healing. Collagen provides structure to your skin and helps wounds close properly.\n\nGood sources: Oranges, strawberries, bell peppers, broccoli, kale, tomatoes"
+        },
+        {
+          "heading": "Vitamin A",
+          "content": "Found in carrots, sweet potatoes, and spinach, Vitamin A promotes the growth of new cells and supports the immune system's ability to fight infection.\n\nGood sources: Sweet potatoes, carrots, spinach, butternut squash, cantaloupe"
+        },
+        {
+          "heading": "Zinc",
+          "content": "Present in seafood, nuts, and whole grains, zinc plays a vital role in cell division and wound closure. It also supports immune function and protein synthesis.\n\nGood sources: Oysters, beef, pumpkin seeds, chickpeas, cashews, oatmeal"
+        }
+      ]
+    },
+    {
+      "heading": "Hydration: The Transportation System",
+      "content": "Water is like the transportation system that moves all the materials where they need to go and keeps everything flowing smoothly. Staying properly hydrated supports healthy blood circulation and ensures that protein, essential nutrients, and oxygen are able to reach the wound site efficiently.\n\nProper hydration also aids in the removal of waste products and toxins from the body, promoting overall tissue health.",
+      "subsections": [
+        {
+          "heading": "Benefits of Proper Hydration",
+          "content": "Adequate hydration provides multiple benefits for wound healing:\n\n• Supports healthy blood circulation\n• Ensures nutrients and oxygen reach the wound site\n• Aids in removal of waste products and toxins\n• Promotes overall tissue health\n• Helps maintain skin elasticity and integrity"
+        },
+        {
+          "heading": "How to Stay Hydrated",
+          "content": "To ensure that you're well hydrated, aim to drink plenty of water throughout the day. It's especially important to increase your fluid intake when you have a wound.\n\nIn addition to water, you can also obtain hydration from other sources like herbal teas as well as fruits and vegetables with high water content (cucumbers, watermelon, oranges, celery)."
+        }
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Important Note About Hydration",
+        "content": "There are a number of medical conditions that require strict control of one's water intake, such as heart failure or kidney disease. Please consult with your doctor if you are considering active hydration as a part of your wound care plan."
+      }
+    },
+    {
+      "heading": "Putting It All Together",
+      "content": "Remember, proper nutrition and hydration provide the fuel and the tools your body needs to heal effectively. A well-balanced diet—rich in protein and essential vitamins and minerals—serves as the building blocks for tissue repair and regeneration.\n\nAdequate hydration supports healthy blood circulation and overall tissue health. By taking care of your nutrition and hydration, you're giving your body the best chance to heal optimally.",
+      "callout": {
+        "type": "tip",
+        "title": "Sample Daily Meal Plan for Wound Healing",
+        "content": "Breakfast: Eggs with spinach and whole grain toast, orange juice\nSnack: Greek yogurt with berries\nLunch: Grilled chicken salad with mixed greens, bell peppers, and nuts\nSnack: Carrots and hummus\nDinner: Salmon with sweet potato and broccoli\nEvenings: Herbal tea and a small handful of pumpkin seeds\n\nThis provides protein at every meal, multiple servings of vitamins A and C, zinc from various sources, and encourages hydration throughout the day."
+      }
+    }
+  ],
+  "relatedProducts": ["protein-supplement"],
+  "relatedWounds": [
+    "pressure-injuries",
+    "diabetic-ulcers",
+    "venous-ulcers",
+    "surgical-wounds",
+    "arterial-wounds"
+  ],
+  "metadata": {
+    "title": "Nutrition for Wound Healing | WoundWise",
+    "description": "Expert nutrition guidance for wound healing from Dr. Alvin May. Learn about protein, vitamins, minerals, and dietary strategies to accelerate healing.",
+    "keywords": [
+      "wound nutrition",
+      "protein for healing",
+      "wound healing diet",
+      "vitamins for wounds",
+      "Dr. Alvin May"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2024-01-15",
+    "lastUpdated": "2024-01-15",
+    "readingTime": 8,
+    "featured": true
+  }
+}

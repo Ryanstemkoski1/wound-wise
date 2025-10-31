@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -9,11 +8,21 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Package, Bed, Bandage, Droplet, Apple, Wrench } from "lucide-react";
 import type { Product } from "@/types/content";
 
 interface ProductCardProps {
   product: Product;
 }
+
+// Category icon mapping
+const categoryIcons = {
+  positioning: Bed,
+  dressing: Bandage,
+  cleanser: Droplet,
+  nutrition: Apple,
+  tool: Wrench,
+};
 
 export function ProductCard({ product }: ProductCardProps) {
   // Format category for display
@@ -22,16 +31,15 @@ export function ProductCard({ product }: ProductCardProps) {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 
+  // Get category icon
+  const CategoryIcon =
+    categoryIcons[product.category as keyof typeof categoryIcons] || Package;
+
   return (
     <Card className="h-full flex flex-col">
       <CardHeader>
-        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-muted">
-          <Image
-            src={product.imageUrl}
-            alt={product.name}
-            fill
-            className="object-contain p-4"
-          />
+        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
+          <CategoryIcon className="w-24 h-24 text-muted-foreground/30" />
         </div>
         <div className="flex items-start justify-between gap-2">
           <CardTitle className="text-lg">{product.name}</CardTitle>

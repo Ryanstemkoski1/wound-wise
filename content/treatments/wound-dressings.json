@@ -1,0 +1,124 @@
+{
+  "id": "wound-dressings",
+  "slug": "wound-dressings",
+  "title": "Wound Dressings Guide",
+  "subtitle": "Choosing the Right Dressing for Your Wound",
+  "description": "Comprehensive guide to wound dressing types, selection criteria, and application techniques for optimal moisture balance and healing environment. Learn how to match the right dressing to your wound's characteristics.",
+  "featured": true,
+  "keyBenefits": [
+    "Understand different dressing types",
+    "Match dressings to wound characteristics",
+    "Learn proper application techniques"
+  ],
+  "sections": [
+    {
+      "heading": "Understanding Wound Dressings",
+      "content": "After cleaning, the next step in treating your wound is to apply one or more dressings to the wound bed. The dressings chosen by your wound care provider will depend on the type of wound you have, the wound's location, and the environmental conditions for the wound.\n\nProper wound dressings create an optimal healing environment, manage moisture balance, protect the wound from contamination, and support the body's natural healing process."
+    },
+    {
+      "heading": "Types of Wound Dressings",
+      "content": "There are many types of dressings available on the market. Each type has specific properties that make it suitable for certain wound conditions. Understanding these differences helps you and your provider choose the most effective option.",
+      "subsections": [
+        {
+          "heading": "Alginate Dressings",
+          "content": "Absorbent dressings made from seaweed-derived fibers that absorb exudate and promote healing.\n\nBest for: Moderate to highly draining wounds, pressure ulcers"
+        },
+        {
+          "heading": "Hydrocolloid Dressings",
+          "content": "Self-adhesive dressings that create a moist healing environment and protect the wound.\n\nBest for: Light to moderately draining wounds, pressure ulcers"
+        },
+        {
+          "heading": "Foam Dressings",
+          "content": "Highly absorbent dressings that wick away moisture while maintaining a moist wound bed.\n\nBest for: Moderate to heavily draining wounds, pressure ulcers"
+        },
+        {
+          "heading": "Hydrogel Dressings",
+          "content": "Water-based dressings that donate moisture to dry wounds and facilitate autolytic debridement.\n\nBest for: Dry or minimally draining wounds, partial-thickness burns"
+        },
+        {
+          "heading": "Transparent Films",
+          "content": "Thin, adhesive dressings that allow oxygen exchange while preventing bacteria and fluid entry.\n\nBest for: Superficial wounds, minor abrasions, surgical incisions"
+        },
+        {
+          "heading": "Collagen Dressings",
+          "content": "Protein-based dressings that promote new tissue growth and granulation.\n\nBest for: Chronic wounds with minimal to heavy drainage, pressure ulcers"
+        },
+        {
+          "heading": "Antimicrobial Dressings",
+          "content": "Dressings containing agents like silver or honey that help prevent or manage infection.\n\nBest for: Infected chronic wounds, wounds at risk of infection"
+        },
+        {
+          "heading": "Silver-Impregnated Dressings",
+          "content": "Specialized antimicrobial dressings with sustained silver release for infection control.\n\nBest for: Infected chronic wounds, wounds at risk of infection"
+        }
+      ]
+    },
+    {
+      "heading": "How to Apply a Dressing",
+      "content": "Proper dressing application is essential for optimal wound healing. Follow these steps to ensure your dressing protects the wound effectively:",
+      "subsections": [
+        {
+          "heading": "Step 1: Gather Supplies",
+          "content": "Have a new dressing, tape, and clean gloves ready before you begin. Being prepared prevents contamination during the process."
+        },
+        {
+          "heading": "Step 2: Maintain Sterility",
+          "content": "Open the packaging carefully, touching only the corners of the dressing. Maintaining sterility prevents introducing bacteria to the wound."
+        },
+        {
+          "heading": "Step 3: Size Appropriately",
+          "content": "If necessary (and consistent with manufacturer's instructions), cut the dressing to the appropriate size for the wound. The dressing should extend slightly beyond the wound edges."
+        },
+        {
+          "heading": "Step 4: Center and Cover",
+          "content": "Carefully center the prepared dressing over the wound, taking care that it covers the entire wound surface without wrinkles or gaps."
+        },
+        {
+          "heading": "Step 5: Secure Properly",
+          "content": "Use medical tape applied firmly but not too tight, allowing for proper circulation and comfort. If using multiple pieces of tape, apply them in a crisscross pattern for added stability."
+        },
+        {
+          "heading": "Step 6: Dispose Safely",
+          "content": "Carefully remove the gloves by turning them inside out to avoid contamination. Dispose of the gloves in an appropriate waste container. Thoroughly wash your hands with soap and water."
+        }
+      ],
+      "callout": {
+        "type": "tip",
+        "content": "Daily wound cleansing is like giving your wound a spa session. It cleanses the tissues, removes debris, revitalizes tissues, and improves circulation to help prevent infection and optimize healing."
+      }
+    },
+    {
+      "heading": "Important Considerations",
+      "content": "Your particular wound dressing may be one of many product types: a cream, an ointment, a powder, or a sheet of some type of material. Your wound might also require using a secondary dressing to cover the first (primary) dressing.",
+      "callout": {
+        "type": "warning",
+        "title": "Follow Provider Instructions",
+        "content": "Always heed attention to your provider's wound dressing instructions and avoid aggressively disturbing the wound during your dressing changes. Gentle technique protects delicate healing tissue."
+      }
+    }
+  ],
+  "relatedProducts": ["hydrocolloid-dressing", "foam-dressing", "medical-tape"],
+  "relatedWounds": [
+    "pressure-injuries",
+    "diabetic-ulcers",
+    "venous-ulcers",
+    "surgical-wounds"
+  ],
+  "metadata": {
+    "title": "Wound Dressing Selection Guide | WoundWise",
+    "description": "Expert guide to wound dressing types and selection from Dr. Alvin May. Learn about hydrocolloid, foam, alginate dressings and when to use each type.",
+    "keywords": [
+      "wound dressing",
+      "dressing types",
+      "hydrocolloid",
+      "foam dressing",
+      "wound care",
+      "Dr. Alvin May"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2024-01-15",
+    "lastUpdated": "2024-01-15",
+    "readingTime": 10,
+    "featured": true
+  }
+}

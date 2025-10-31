@@ -340,16 +340,22 @@
   nav,
   .no-print,
   button,
+  input,
+  textarea,
+  select,
   [role="banner"],
   [role="navigation"],
-  [role="complementary"] {
+  [role="complementary"],
+  [class*="share"],
+  [class*="newsletter"],
+  [class*="social"] {
     display: none !important;
   }
 
   /* Optimize page layout */
   body {
-    background: white;
-    color: black;
+    background: white !important;
+    color: black !important;
     font-size: 12pt;
     line-height: 1.5;
   }
@@ -357,74 +363,191 @@
   /* Ensure content takes full width */
   main,
   .container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0.5in;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.5in !important;
   }
 
   /* Improve readability */
-  h1,
-  h2,
-  h3,
+  h1 {
+    font-size: 24pt;
+    margin-top: 0;
+    margin-bottom: 12pt;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 18pt;
+    margin-bottom: 10pt;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-top: 14pt;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+  }
+
   h4,
   h5,
   h6 {
+    font-size: 12pt;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
     page-break-after: avoid;
-    page-break-inside: avoid;
   }
 
-  p,
+  p {
+    margin-bottom: 10pt;
+    orphans: 3;
+    widows: 3;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 10pt;
+  }
+
   li {
     orphans: 3;
     widows: 3;
   }
 
-  /* Card and border adjustments */
-  .border,
-  .card {
-    border: 1px solid #ddd;
+  /* Tables */
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse;
+    width: 100%;
   }
 
-  /* Remove shadows and backgrounds */
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8pt;
+  }
+
+  /* Card and border adjustments */
+  .border,
+  .card,
+  [class*="card"] {
+    border: 1px solid #ddd !important;
+    background: white !important;
+    page-break-inside: avoid;
+    margin-bottom: 12pt;
+  }
+
+  /* Remove shadows, gradients, and backgrounds */
   * {
     box-shadow: none !important;
     text-shadow: none !important;
+    background-image: none !important;
   }
 
-  /* Expand links */
+  /* Badges and labels */
+  [class*="badge"],
+  [class*="label"] {
+    border: 1px solid #999;
+    padding: 2pt 6pt;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Links - show URLs for external links */
   a[href^="http"]:after {
     content: " (" attr(href) ")";
-    font-size: 90%;
+    font-size: 9pt;
     color: #666;
+    word-wrap: break-word;
+  }
+
+  /* Internal links - don't show URL */
+  a[href^="/"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Callouts and alerts */
+  [class*="callout"],
+  [class*="alert"] {
+    border: 2px solid #333;
+    padding: 10pt;
+    margin: 10pt 0;
+    page-break-inside: avoid;
   }
 
   /* Journal calendar optimization */
-  .calendar-grid {
+  .calendar-grid,
+  [class*="calendar"] {
     page-break-inside: avoid;
   }
 
   /* Entry cards - ensure they don't split awkwardly */
-  [class*="entry-card"],
-  [class*="card"] {
+  [class*="entry-card"] {
     page-break-inside: avoid;
-    margin-bottom: 1em;
+    margin-bottom: 12pt;
+    border: 1px solid #ccc;
+    padding: 10pt;
   }
 
-  /* Add page header */
+  /* Add page header and footer */
   @page {
     margin: 0.75in;
+    size: letter;
 
     @top-center {
-      content: "WoundWise.com - Wound Care Journal";
-      font-size: 10pt;
+      content: "WoundWise.com - Expert Wound Care Education";
+      font-size: 9pt;
+      color: #666;
+      font-family: sans-serif;
+    }
+
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 9pt;
+      color: #666;
+    }
+
+    @bottom-left {
+      content: "© 2025 WoundWise";
+      font-size: 9pt;
       color: #666;
     }
   }
 
-  /* Print URL in footer */
+  /* First page - larger top margin for title */
   @page :first {
-    @bottom-right {
-      content: counter(page);
-    }
+    margin-top: 1in;
+  }
+
+  /* Ensure related content sections print properly */
+  [class*="related"] {
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
+  /* Product cards */
+  [class*="product"] {
+    page-break-inside: avoid;
+    border: 1px solid #ddd;
+    padding: 10pt;
+    margin-bottom: 10pt;
+  }
+
+  /* Grid layouts - convert to single column for print */
+  [class*="grid"] {
+    display: block !important;
+  }
+
+  [class*="grid"] > * {
+    width: 100% !important;
+    margin-bottom: 10pt;
   }
 }

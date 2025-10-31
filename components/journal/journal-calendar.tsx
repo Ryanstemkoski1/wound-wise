@@ -115,13 +115,23 @@ export function JournalCalendar({
           {monthNames[currentMonth.month]} {currentMonth.year}
         </h3>
         <div className="flex gap-2">
-          <Button variant="outline" size="sm" onClick={previousMonth}>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={previousMonth}
+            aria-label="Previous month"
+          >
             <ChevronLeft className="h-4 w-4" />
           </Button>
           <Button variant="outline" size="sm" onClick={goToToday}>
             Today
           </Button>
-          <Button variant="outline" size="sm" onClick={nextMonth}>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={nextMonth}
+            aria-label="Next month"
+          >
             <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
@@ -159,6 +169,14 @@ export function JournalCalendar({
               key={day}
               onClick={() => onDateSelect(dateStr)}
               disabled={beforeStart}
+              aria-label={`${monthNames[currentMonth.month]} ${day}, ${
+                currentMonth.year
+              }${
+                hasEntries
+                  ? ` - ${entryCount} ${entryCount === 1 ? "entry" : "entries"}`
+                  : ""
+              }${today ? " (Today)" : ""}`}
+              aria-pressed={isSelected}
               className={cn(
                 "aspect-square rounded-md border transition-all relative",
                 "hover:border-primary/50 hover:shadow-sm",

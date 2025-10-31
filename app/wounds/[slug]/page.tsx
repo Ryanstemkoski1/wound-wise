@@ -13,6 +13,8 @@ import { Button } from "@/components/ui/button";
 import { RelatedContent } from "@/components/related-content";
 import { YouMayAlsoLike } from "@/components/you-may-also-like";
 import { getRelatedContent } from "@/lib/related-content";
+import { ShareButtons } from "@/components/share-buttons";
+import { PrintButton } from "@/components/print-button";
 
 interface WoundPageProps {
   params: Promise<{
@@ -104,6 +106,12 @@ export default async function WoundPage({ params }: WoundPageProps) {
             </p>
             <p className="text-lg leading-relaxed">{wound.description}</p>
 
+            {/* Share Buttons */}
+            <div className="mt-6 flex items-center gap-4">
+              <ShareButtons title={wound.title} variant="compact" />
+              <PrintButton />
+            </div>
+
             <div className="flex flex-wrap gap-2 mt-6">
               {wound.metadata.featured && (
                 <Badge variant="secondary">Featured Content</Badge>
@@ -124,99 +132,106 @@ export default async function WoundPage({ params }: WoundPageProps) {
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
           {/* Risk Factors */}
-          {wound.riskFactors.length > 0 && (
-            <div className="bg-card border rounded-lg p-6">
-              <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-destructive"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                  />
-                </svg>
-                Risk Factors
-              </h3>
-              <ul className="text-sm space-y-2">
-                {wound.riskFactors.slice(0, 5).map((factor, index) => (
-                  <li key={index} className="text-muted-foreground">
-                    • {factor}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {wound.quickInfo?.riskFactors &&
+            wound.quickInfo.riskFactors.length > 0 && (
+              <div className="bg-card border rounded-lg p-6">
+                <h3 className="font-semibold mb-3 flex items-center gap-2">
+                  <svg
+                    className="w-5 h-5 text-destructive"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    />
+                  </svg>
+                  Risk Factors
+                </h3>
+                <ul className="text-sm space-y-2">
+                  {wound.quickInfo.riskFactors
+                    .slice(0, 5)
+                    .map((factor, index) => (
+                      <li key={index} className="text-muted-foreground">
+                        • {factor}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            )}
 
           {/* Symptoms */}
-          {wound.symptoms.length > 0 && (
-            <div className="bg-card border rounded-lg p-6">
-              <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-accent-foreground"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  />
-                </svg>
-                Warning Signs
-              </h3>
-              <ul className="text-sm space-y-2">
-                {wound.symptoms.slice(0, 5).map((symptom, index) => (
-                  <li key={index} className="text-muted-foreground">
-                    • {symptom}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {wound.quickInfo?.warningSigns &&
+            wound.quickInfo.warningSigns.length > 0 && (
+              <div className="bg-card border rounded-lg p-6">
+                <h3 className="font-semibold mb-3 flex items-center gap-2">
+                  <svg
+                    className="w-5 h-5 text-accent-foreground"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                  Warning Signs
+                </h3>
+                <ul className="text-sm space-y-2">
+                  {wound.quickInfo.warningSigns
+                    .slice(0, 5)
+                    .map((symptom, index) => (
+                      <li key={index} className="text-muted-foreground">
+                        • {symptom}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            )}
 
           {/* Prevention */}
-          {wound.preventionStrategies.length > 0 && (
-            <div className="bg-card border rounded-lg p-6">
-              <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-                Prevention
-              </h3>
-              <ul className="text-sm space-y-2">
-                {wound.preventionStrategies
-                  .slice(0, 5)
-                  .map((strategy, index) => (
-                    <li key={index} className="text-muted-foreground">
-                      • {strategy}
-                    </li>
-                  ))}
-              </ul>
-            </div>
-          )}
+          {wound.quickInfo?.prevention &&
+            wound.quickInfo.prevention.length > 0 && (
+              <div className="bg-card border rounded-lg p-6">
+                <h3 className="font-semibold mb-3 flex items-center gap-2">
+                  <svg
+                    className="w-5 h-5 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                  Prevention
+                </h3>
+                <ul className="text-sm space-y-2">
+                  {wound.quickInfo.prevention
+                    .slice(0, 5)
+                    .map((strategy, index) => (
+                      <li key={index} className="text-muted-foreground">
+                        • {strategy}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            )}
         </div>
       </section>
 

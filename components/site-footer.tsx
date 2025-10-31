@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Heart } from "lucide-react";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -223,6 +224,11 @@ export function SiteFooter() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Newsletter Signup */}
+        <div className="mt-12 mb-8">
+          <NewsletterSignup variant="inline" />
         </div>
 
         <Separator className="my-8" />

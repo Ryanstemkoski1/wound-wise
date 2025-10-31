@@ -116,6 +116,14 @@ export function SearchBar({
             }
           }}
           className="pl-9 pr-9"
+          aria-label="Search WoundWise"
+          aria-expanded={showDropdown && suggestions.length > 0}
+          aria-autocomplete="list"
+          aria-controls={
+            showDropdown && suggestions.length > 0
+              ? "search-suggestions"
+              : undefined
+          }
         />
         {query && (
           <Button
@@ -124,6 +132,7 @@ export function SearchBar({
             size="sm"
             onClick={handleClear}
             className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 p-0 hover:bg-transparent"
+            aria-label="Clear search"
           >
             <X className="h-4 w-4 text-muted-foreground hover:text-foreground" />
           </Button>
@@ -134,6 +143,8 @@ export function SearchBar({
       {showDropdown && suggestions.length > 0 && (
         <div
           ref={dropdownRef}
+          id="search-suggestions"
+          role="listbox"
           className="absolute top-full left-0 right-0 mt-1 bg-popover border rounded-md shadow-lg z-50 max-h-[300px] overflow-y-auto"
         >
           <div className="py-1">
@@ -141,6 +152,8 @@ export function SearchBar({
               <button
                 key={index}
                 type="button"
+                role="option"
+                aria-selected={selectedIndex === index}
                 onClick={() => handleSuggestionClick(suggestion)}
                 className={cn(
                   "w-full text-left px-4 py-2 text-sm hover:bg-accent transition-colors flex items-center gap-2",

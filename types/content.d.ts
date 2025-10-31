@@ -6,20 +6,26 @@
  */
 
 export interface WoundType {
-  id: string;
+  id?: string;
   slug: string;
   title: string;
   subtitle: string;
   description: string;
-  riskFactors: string[];
-  symptoms: string[];
-  preventionStrategies: string[];
-  treatmentApproaches: string[];
+  featured?: boolean;
+  quickInfo?: {
+    riskFactors: string[];
+    warningSigns: string[];
+    prevention: string[];
+  };
+  riskFactors?: string[]; // Legacy field
+  symptoms?: string[]; // Legacy field
+  preventionStrategies?: string[]; // Legacy field
+  treatmentApproaches?: string[];
   sections: ContentSection[];
-  relatedProducts: string[]; // Product IDs
+  relatedProducts?: string[]; // Product IDs
   relatedTreatments: string[]; // Treatment slugs
-  images: ImageAsset[];
-  faqs: FAQ[];
+  images?: ImageAsset[];
+  faqs?: FAQ[];
   metadata: PageMetadata;
 }
 

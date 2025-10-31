@@ -9,6 +9,8 @@ import { getAllProducts } from "@/lib/content-loader";
 import { RelatedContent } from "@/components/related-content";
 import { YouMayAlsoLike } from "@/components/you-may-also-like";
 import { getRelatedContent } from "@/lib/related-content";
+import { ShareButtons } from "@/components/share-buttons";
+import { PrintButton } from "@/components/print-button";
 
 // Placeholder: In real implementation, this would load from JSON
 const treatments = {
@@ -136,6 +138,12 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
         )}
 
         <p className="text-lg leading-relaxed">{treatment.description}</p>
+
+        {/* Share and Print Buttons */}
+        <div className="mt-6 flex items-center gap-4">
+          <ShareButtons title={treatment.title} variant="compact" />
+          <PrintButton />
+        </div>
       </div>
 
       {/* Placeholder Content - Replace with actual treatment content */}

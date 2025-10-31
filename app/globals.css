@@ -331,3 +331,100 @@
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+/* Print Styles */
+@media print {
+  /* Hide navigation and non-essential elements */
+  header,
+  footer,
+  nav,
+  .no-print,
+  button,
+  [role="banner"],
+  [role="navigation"],
+  [role="complementary"] {
+    display: none !important;
+  }
+
+  /* Optimize page layout */
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Ensure content takes full width */
+  main,
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0.5in;
+  }
+
+  /* Improve readability */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Card and border adjustments */
+  .border,
+  .card {
+    border: 1px solid #ddd;
+  }
+
+  /* Remove shadows and backgrounds */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Expand links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #666;
+  }
+
+  /* Journal calendar optimization */
+  .calendar-grid {
+    page-break-inside: avoid;
+  }
+
+  /* Entry cards - ensure they don't split awkwardly */
+  [class*="entry-card"],
+  [class*="card"] {
+    page-break-inside: avoid;
+    margin-bottom: 1em;
+  }
+
+  /* Add page header */
+  @page {
+    margin: 0.75in;
+
+    @top-center {
+      content: "WoundWise.com - Wound Care Journal";
+      font-size: 10pt;
+      color: #666;
+    }
+  }
+
+  /* Print URL in footer */
+  @page :first {
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+}

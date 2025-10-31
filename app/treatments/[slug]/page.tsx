@@ -6,6 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ProductCard } from "@/components/product-card";
 import { getAllProducts } from "@/lib/content-loader";
+import { RelatedContent } from "@/components/related-content";
+import { YouMayAlsoLike } from "@/components/you-may-also-like";
+import { getRelatedContent } from "@/lib/related-content";
 
 // Placeholder: In real implementation, this would load from JSON
 const treatments = {
@@ -178,6 +181,39 @@ export default async function TreatmentPage({ params }: TreatmentPageProps) {
           </div>
         </section>
       )}
+
+      {/* Related Content */}
+      <section className="border-t pt-12 mb-12">
+        <div className="space-y-12">
+          {(() => {
+            const related = getRelatedContent(slug);
+            return (
+              <>
+                {/* Applicable Wound Types */}
+                {related.relatedWounds.length > 0 && (
+                  <RelatedContent
+                    items={related.relatedWounds}
+                    title="Applicable Wound Types"
+                    description={`Wound conditions where ${treatment.title.toLowerCase()} is commonly used`}
+                  />
+                )}
+
+                {/* Related Treatments */}
+                {related.relatedTreatments.length > 0 && (
+                  <RelatedContent
+                    items={related.relatedTreatments}
+                    title="Related Treatments"
+                    description="Complementary treatment approaches"
+                  />
+                )}
+              </>
+            );
+          })()}
+
+          {/* You May Also Like */}
+          <YouMayAlsoLike pageId={slug} />
+        </div>
+      </section>
 
       {/* Back to Treatments */}
       <div className="border-t pt-8 text-center">

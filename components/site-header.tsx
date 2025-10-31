@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { SearchBar } from "@/components/search-bar";
 import { cn } from "@/lib/utils";
 
 const woundTypes = [
@@ -99,11 +100,11 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 transition-all duration-300">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center justify-between gap-4">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2 group transition-transform hover:scale-105"
+            className="flex items-center space-x-2 group transition-transform hover:scale-105 shrink-0"
           >
             <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-primary-foreground group-hover:bg-primary/90 transition-colors">
               <svg
@@ -124,6 +125,11 @@ export function SiteHeader() {
               Wound<span className="text-primary">Wise</span>
             </span>
           </Link>
+
+          {/* Search Bar - Desktop */}
+          <div className="hidden md:flex flex-1 max-w-md">
+            <SearchBar />
+          </div>
 
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden md:flex">
@@ -229,7 +235,15 @@ export function SiteHeader() {
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
               </SheetHeader>
-              <nav className="flex flex-col gap-4 mt-8">
+
+              {/* Mobile Search */}
+              <div className="mt-6 mb-4">
+                <SearchBar placeholder="Search..." />
+              </div>
+
+              <Separator className="mb-4" />
+
+              <nav className="flex flex-col gap-4">
                 <div>
                   <h3 className="mb-2 text-sm font-semibold">Wound Types</h3>
                   <div className="flex flex-col gap-2">

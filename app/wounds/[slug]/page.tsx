@@ -10,6 +10,9 @@ import { Callout } from "@/components/callout";
 import { ProductCard } from "@/components/product-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { RelatedContent } from "@/components/related-content";
+import { YouMayAlsoLike } from "@/components/you-may-also-like";
+import { getRelatedContent } from "@/lib/related-content";
 
 interface WoundPageProps {
   params: Promise<{
@@ -268,6 +271,46 @@ export default async function WoundPage({ params }: WoundPageProps) {
         </section>
       )}
 
+      {/* Related Content */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto space-y-16">
+          {(() => {
+            const related = getRelatedContent(slug);
+            return (
+              <>
+                {/* Related Treatments */}
+                {related.relatedTreatments.length > 0 && (
+                  <RelatedContent
+                    items={related.relatedTreatments}
+                    title="Recommended Treatments"
+                    description={`Evidence-based treatment approaches for ${wound.title.toLowerCase()}`}
+                  />
+                )}
+
+                {/* Related Wound Types */}
+                {related.relatedWounds.length > 0 && (
+                  <RelatedContent
+                    items={related.relatedWounds}
+                    title="Related Wound Types"
+                    description="Similar wounds you might want to learn about"
+                  />
+                )}
+
+                {/* Related Resources */}
+                {related.relatedResources.length > 0 && (
+                  <RelatedContent
+                    items={related.relatedResources}
+                    title="Helpful Resources"
+                    description="Tools and guides to support your healing journey"
+                    variant="compact"
+                  />
+                )}
+              </>
+            );
+          })()}
+        </div>
+      </section>
+
       {/* FAQs */}
       {wound.faqs && wound.faqs.length > 0 && (
         <section className="container mx-auto px-4 py-16">
@@ -288,6 +331,13 @@ export default async function WoundPage({ params }: WoundPageProps) {
           </div>
         </section>
       )}
+
+      {/* You May Also Like */}
+      <section className="container mx-auto px-4 py-16 bg-muted/20">
+        <div className="max-w-6xl mx-auto">
+          <YouMayAlsoLike pageId={slug} />
+        </div>
+      </section>
 
       {/* Related Treatments CTA */}
       {wound.relatedTreatments.length > 0 && (

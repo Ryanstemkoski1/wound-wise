@@ -9,6 +9,7 @@ import {
   Download,
   Settings,
   Trash2,
+  FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -18,6 +19,7 @@ import { useJournalData } from "@/hooks/use-journal-data";
 import { JournalCalendar } from "@/components/journal/journal-calendar";
 import { JournalEntryForm } from "@/components/journal/journal-entry-form";
 import { JournalSettingsDialog } from "@/components/journal/journal-settings-dialog";
+import { exportJournalToPDF } from "@/lib/pdf-export";
 
 export default function InteractiveJournalPage() {
   const {
@@ -220,6 +222,23 @@ export default function InteractiveJournalPage() {
               >
                 <Download className="mr-2 h-4 w-4" />
                 Export Data (JSON)
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full"
+                onClick={() => {
+                  const journalData = {
+                    settings,
+                    entries,
+                    version: "1.0.0",
+                    lastModified: Date.now(),
+                  };
+                  exportJournalToPDF(journalData);
+                }}
+              >
+                <FileText className="mr-2 h-4 w-4" />
+                Export as PDF
               </Button>
               <Button
                 variant="outline"

@@ -61,7 +61,7 @@ export interface Product {
   description: string;
   useCases: string[];
   affiliateLink: string;
-  affiliatePartner: "amazon" | "other";
+  affiliatePartner: "amazon" | "laroche-posay" | "other";
   imageUrl: string;
   relatedWounds: string[]; // Wound type slugs
   relatedTreatments: string[]; // Treatment slugs

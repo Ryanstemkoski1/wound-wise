@@ -11,11 +11,11 @@
         "Post-surgical heel care",
         "Patients with limited mobility"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B07XQZW9YN?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B0DMT5X4WQ?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/heel-boot.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/81f4iE6IXFL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg",
       "relatedWounds": ["pressure-injuries"],
-      "relatedTreatments": ["offloading"],
+      "relatedTreatments": ["offloading-positioning"],
       "featured": true
     },
     {
@@ -29,16 +29,16 @@
         "Pressure redistribution",
         "Post-operative positioning"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B07FNSF7YK?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B0925GXGZX?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/body-wedge.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/81SAyt5-3ML._AC_SX679_.jpg",
       "relatedWounds": ["pressure-injuries"],
-      "relatedTreatments": ["offloading"],
+      "relatedTreatments": ["offloading-positioning"],
       "featured": true
     },
     {
       "id": "hydrocolloid-dressing",
-      "name": "Hydrocolloid Wound Dressings",
+      "name": "DuoDERM Hydrocolloid Dressings",
       "category": "dressing",
       "description": "Self-adhesive dressings that maintain a moist wound environment, promoting faster healing for shallow to moderate wounds.",
       "useCases": [
@@ -47,16 +47,16 @@
         "Skin tears",
         "Low-exudate wounds"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B00BRGUNV2?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B00J7ULP3K?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/hydrocolloid.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/71MbbUqPgYL._AC_SX679_.jpg",
       "relatedWounds": ["pressure-injuries", "surgical-wounds"],
-      "relatedTreatments": ["wound-dressing"],
+      "relatedTreatments": ["wound-dressings"],
       "featured": true
     },
     {
       "id": "foam-dressing",
-      "name": "Foam Wound Dressing Pads",
+      "name": "Mepilex Foam Wound Dressing",
       "category": "dressing",
       "description": "Highly absorbent foam dressings ideal for moderate to heavily draining wounds. Provides cushioning and protection.",
       "useCases": [
@@ -65,20 +65,20 @@
         "Pressure injuries",
         "High-exudate wounds"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B07V47ZRCX?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B0BVN2K91K?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/foam-dressing.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/71X2oLRKgKL._SX522_.jpg",
       "relatedWounds": [
         "diabetic-ulcers",
         "venous-ulcers",
         "pressure-injuries"
       ],
-      "relatedTreatments": ["wound-dressing"],
+      "relatedTreatments": ["wound-dressings"],
       "featured": true
     },
     {
       "id": "saline-wound-wash",
-      "name": "Sterile Saline Wound Wash",
+      "name": "NeilMed Sterile Saline Wound Wash",
       "category": "cleanser",
       "description": "Sterile saline solution for gentle, effective wound cleansing. Removes debris without damaging healing tissue.",
       "useCases": [
@@ -87,9 +87,9 @@
         "Irrigating wounds",
         "Safe for all wound types"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B00XKRH0XG?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B00EC6DE7Y?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/saline-wash.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/61saGMMm33L._AC_SX679_.jpg",
       "relatedWounds": [
         "pressure-injuries",
         "diabetic-ulcers",
@@ -97,12 +97,12 @@
         "arterial-wounds",
         "surgical-wounds"
       ],
-      "relatedTreatments": ["infection-control", "wound-dressing"],
+      "relatedTreatments": ["infection-control", "wound-dressings"],
       "featured": false
     },
     {
       "id": "protein-supplement",
-      "name": "Wound Healing Protein Supplement",
+      "name": "Juven Therapeutic Nutrition Powder",
       "category": "nutrition",
       "description": "High-quality protein supplement formulated to support wound healing. Contains essential amino acids and collagen peptides.",
       "useCases": [
@@ -111,20 +111,20 @@
         "Addressing malnutrition",
         "Post-surgical recovery"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B00K6PDV62?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B07FMP1Y31?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/protein-supplement.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/61TWAoJeamL._AC_SX679_.jpg",
       "relatedWounds": [
         "pressure-injuries",
         "diabetic-ulcers",
         "surgical-wounds"
       ],
-      "relatedTreatments": ["nutrition"],
+      "relatedTreatments": ["nutrition-healing"],
       "featured": false
     },
     {
       "id": "medical-tape",
-      "name": "Gentle Medical Tape",
+      "name": "3M Micropore Gentle Paper Tape",
       "category": "tool",
       "description": "Hypoallergenic, gentle-adhesive medical tape that won't damage fragile skin. Perfect for securing dressings.",
       "useCases": [
@@ -133,9 +133,9 @@
         "Frequent dressing changes",
         "Sensitive skin"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B00NUQ3HPS?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B00MNXH442?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/medical-tape.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/71sdolUVb5L._AC_SY300_SX300_QL70_FMwebp_.jpg",
       "relatedWounds": [
         "pressure-injuries",
         "diabetic-ulcers",
@@ -143,12 +143,12 @@
         "arterial-wounds",
         "surgical-wounds"
       ],
-      "relatedTreatments": ["wound-dressing"],
+      "relatedTreatments": ["wound-dressings"],
       "featured": false
     },
     {
       "id": "compression-socks",
-      "name": "Medical Compression Stockings",
+      "name": "Amazon Basic Care Compression Stockings",
       "category": "positioning",
       "description": "Graduated compression stockings to improve venous circulation and reduce leg swelling. Consult physician before use.",
       "useCases": [
@@ -157,12 +157,210 @@
         "Preventing venous ulcers",
         "Post-thrombotic syndrome"
       ],
-      "affiliateLink": "https://www.amazon.com/dp/B07MVTNQ6R?tag=woundwise-20",
+      "affiliateLink": "https://www.amazon.com/dp/B0D14XD5NF?tag=woundwise-20",
       "affiliatePartner": "amazon",
-      "imageUrl": "/images/products/compression-socks.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/71iKOMCXiOL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg",
       "relatedWounds": ["venous-ulcers"],
-      "relatedTreatments": ["offloading"],
+      "relatedTreatments": ["offloading-positioning"],
       "featured": true
+    },
+    {
+      "id": "cicaplast-balm-b5",
+      "name": "La Roche-Posay Cicaplast Balm B5+",
+      "category": "skincare",
+      "description": "Multi-purpose soothing therapeutic cream for dry skin irritations. Formulated with Tribioma™ prebiotic complex, madecassoside, and vitamin B5 to help restore skin barrier and soothe irritated areas. Suitable for face, body, and hands.",
+      "useCases": [
+        "Dry, irritated skin around wounds",
+        "Post-procedure skin care",
+        "Chapped, cracked skin",
+        "Skin barrier restoration",
+        "Sensitive skin relief"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/body/body-lotion/cicaplast-balm-b5-for-dry-skin-irritations-3606000437449.html?srsltid=AfmBOorCh4kPa2BT0UznN74D9eDwF_qFz1E8fjGbys6UctH5KrghbtY8",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw3310cc71/img/cicaplastbalmb5/40ml/LaRochePosay-Product-Skincare-Cicaplast-Baume-B5+-40ml-3337875816809-ATF-AV1-(1)-1500x1500.jpg",
+      "relatedWounds": ["pressure-injuries", "surgical-wounds", "skin-tears"],
+      "relatedTreatments": ["wound-dressings", "nutrition-healing"],
+      "featured": true
+    },
+    {
+      "id": "lipikar-apm-balm",
+      "name": "La Roche-Posay Lipikar AP+M Triple Repair Moisturizer",
+      "category": "skincare",
+      "description": "Body cream moisturizer clinically shown to reduce dry, rough skin with 48-hour hydration. Contains ceramides, shea butter, and prebiotic thermal water to rebalance skin microbiome and restore barrier function.",
+      "useCases": [
+        "Very dry skin management",
+        "Skin barrier support",
+        "Eczema-prone skin",
+        "Post-healing skin hydration",
+        "Preventing skin breakdown"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/body/body-lotion/lipikar-ap-m-triple-repair-body-moisturizer-for-dry-skin-lipikarbalmap.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc3baf099/product/March%202023%20packshot%20updates/LIpikar-AP_Tripple-Repair-Moisturizer_400ml-Pump.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-foot-ulcers",
+        "venous-ulcers"
+      ],
+      "relatedTreatments": ["nutrition-healing", "infection-control"],
+      "featured": true
+    },
+    {
+      "id": "lipikar-body-lotion",
+      "name": "La Roche-Posay Lipikar Body Lotion",
+      "category": "skincare",
+      "description": "Daily moisturizing body lotion for normal to dry skin. Lightweight formula with shea butter and glycerin provides long-lasting hydration without greasy residue.",
+      "useCases": [
+        "Daily skin hydration",
+        "Normal to dry skin",
+        "Maintaining healthy skin barrier",
+        "Sensitive skin care"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/body/body-lotion/lipikar-body-lotion-for-normal-to-dry-skin-3337875549615.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw8b2f3571/product/March%202023%20packshot%20updates/Toleriane_HydratingGentleCleanser_400ml-Pump.jpg",
+      "relatedWounds": ["pressure-injuries", "skin-tears"],
+      "relatedTreatments": ["nutrition-healing"],
+      "featured": false
+    },
+    {
+      "id": "lipikar-eczema-cream",
+      "name": "La Roche-Posay Lipikar Eczema Cream",
+      "category": "skincare",
+      "description": "Soothing eczema cream with colloidal oatmeal clinically shown to relieve itchy, irritated skin. Helps restore skin barrier and provides targeted relief for eczema-prone areas.",
+      "useCases": [
+        "Eczema relief",
+        "Itchy, irritated skin",
+        "Skin barrier restoration",
+        "Sensitive skin conditions"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/body/body-lotion/lipikar-eczema-cream-3337875588621.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw4e705b2f/img/3337875588621/la-roche-posay-lipikar-eczema-cream-for-eczema-treatment-3337875588621-1.jpg",
+      "relatedWounds": ["skin-tears", "surgical-wounds"],
+      "relatedTreatments": ["nutrition-healing", "infection-control"],
+      "featured": false
+    },
+    {
+      "id": "thermal-spring-water",
+      "name": "La Roche-Posay Thermal Spring Water Face Mist",
+      "category": "skincare",
+      "description": "Soothing face and body mist rich in selenium and minerals. Refreshes, calms, and hydrates sensitive skin throughout the day. Can be used after cleansing or anytime skin needs relief.",
+      "useCases": [
+        "Sensitive skin soothing",
+        "Hydration boost",
+        "Post-procedure comfort",
+        "Skin refreshment"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/face/face-toner/thermal-spring-water-face-mist-thermalspringwater.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw2fd3b293/img/thermalspringwater/la-roche-posay-thermal-spring-water-face-mist-facial-mist-face-spray-3433422404397-1.jpg",
+      "relatedWounds": ["burns", "surgical-wounds", "skin-tears"],
+      "relatedTreatments": ["wound-dressings", "infection-control"],
+      "featured": false
+    },
+    {
+      "id": "toleriane-cleanser",
+      "name": "La Roche-Posay Toleriane Hydrating Gentle Cleanser",
+      "category": "skincare",
+      "description": "Dermatologist-recommended facial cleanser for normal to dry skin. Cream cleanser maintains skin's natural pH and barrier while gently removing impurities. Fragrance-free and non-comedogenic.",
+      "useCases": [
+        "Gentle face cleansing",
+        "Sensitive skin care",
+        "Pre-wound care preparation",
+        "Maintaining skin health"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/face/face-wash/toleriane-hydrating-gentle-facial-cleanser-tolerianehydratinggentlefacialcleanser.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw8b2f3571/product/March%202023%20packshot%20updates/Toleriane_HydratingGentleCleanser_400ml-Pump.jpg",
+      "relatedWounds": ["surgical-wounds", "burns", "skin-tears"],
+      "relatedTreatments": ["infection-control"],
+      "featured": false
+    },
+    {
+      "id": "moisturizing-routine-set",
+      "name": "La Roche-Posay Dry Skin Routine Set",
+      "category": "skincare",
+      "description": "Complete moisturizing skincare routine value set featuring face moisturizer, body cream, and therapeutic balm. Provides comprehensive hydration for very dry, sensitive skin.",
+      "useCases": [
+        "Complete dry skin care",
+        "Full-body hydration routine",
+        "Sensitive skin management",
+        "Skin barrier support system"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/skin-concern/dry-skin/moisturizing-skin-care-routine-for-dry-skin-facebodymoistureset.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwf44c58d3/product/Set14-DRM-AP_Cicaplast.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-foot-ulcers",
+        "venous-ulcers"
+      ],
+      "relatedTreatments": ["nutrition-healing"],
+      "featured": false
+    },
+    {
+      "id": "lipikar-wash-body-face",
+      "name": "La Roche-Posay Lipikar Wash AP+ Body & Face Wash",
+      "category": "skincare",
+      "description": "Moisturizing body and face wash for extra dry, sensitive skin. Provides 24-hour hydration starting in the shower. Gentle, soap-free formula suitable for babies and adults.",
+      "useCases": [
+        "Gentle cleansing for dry skin",
+        "Pre-wound care hygiene",
+        "Sensitive skin bathing",
+        "Family-friendly skincare"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/our-products/body/body-wash/lipikar-wash-ap--moisturizing-body-face-wash-lipikarwashap.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwc16b6bea/img/3337875751032/1_LipikarWashAP+_400mlPump.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-foot-ulcers",
+        "skin-tears"
+      ],
+      "relatedTreatments": ["infection-control"],
+      "featured": false
+    },
+    {
+      "id": "lipikar-cleansing-set",
+      "name": "La Roche-Posay Lipikar AP+ Cleansing Oil & Moisturizer Set",
+      "category": "skincare",
+      "description": "Value set combining gentle foaming cleansing oil with AP+M triple repair moisturizer. Complete routine for dry to very dry skin with 10% savings.",
+      "useCases": [
+        "Complete dry skin routine",
+        "Gentle cleansing and moisturizing",
+        "Skin barrier restoration",
+        "Value skincare set"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/offers/exclusive-value-sets/lipikar-ap--cleansing-oil-ap-m-moisturizing-cream-set-lipikaroilandbalmset.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwe3337315/img/0_Bundles/la-roche-posay-lipikar-oil-and-lipikar-balm-set_1500x1500.jpg",
+      "relatedWounds": ["pressure-injuries", "venous-ulcers"],
+      "relatedTreatments": ["infection-control", "nutrition-healing"],
+      "featured": false
+    },
+    {
+      "id": "lipikar-wash-moisturizer-set",
+      "name": "La Roche-Posay Lipikar AP+ Body Wash & Moisturizer Set",
+      "category": "skincare",
+      "description": "Value set pairing moisturizing body wash with AP+M triple repair cream. Comprehensive cleansing and hydration routine for dry, sensitive skin with 10% savings.",
+      "useCases": [
+        "Complete body care routine",
+        "Dry skin management system",
+        "Gentle cleansing plus moisture",
+        "Family skincare value set"
+      ],
+      "affiliateLink": "https://www.laroche-posay.us/offers/exclusive-value-sets/lipikar-ap--body-wash-ap-m-moisturizing-cream-set-lipikarwashandbalmset.html",
+      "affiliatePartner": "laroche-posay",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dwe1f39696/img/0_Bundles/la-roche-posay-lipikar-wash-and-lipikar-balm-set_1500x1500.jpg",
+      "relatedWounds": [
+        "pressure-injuries",
+        "diabetic-foot-ulcers",
+        "venous-ulcers"
+      ],
+      "relatedTreatments": ["infection-control", "nutrition-healing"],
+      "featured": false
     }
   ]
 }

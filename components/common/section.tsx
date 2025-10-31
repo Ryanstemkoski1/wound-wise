@@ -6,6 +6,7 @@ interface SectionProps {
   className?: string;
   variant?: "default" | "narrow" | "wide" | "full";
   container?: boolean;
+  noPadding?: boolean; // Disable default vertical padding
   id?: string;
 }
 
@@ -27,6 +28,7 @@ const maxWidths = {
  *   - 'wide' (1536px): Dashboard or grid-heavy layouts
  *   - 'full': No max-width restriction
  * @param container - If true, adds container mx-auto px-4 wrapper (default: true)
+ * @param noPadding - If true, removes default py-12 md:py-16 padding (default: false)
  * @param className - Additional Tailwind classes to merge
  * @param id - Optional ID for anchor linking
  *
@@ -55,21 +57,23 @@ export function Section({
   className,
   variant = "default",
   container = true,
+  noPadding = false,
   id,
 }: SectionProps) {
   const maxWidth = maxWidths[variant];
+  const basePadding = noPadding ? "" : "py-12 md:py-16";
 
   if (!container) {
-    // No container wrapper, just apply className
+    // No container wrapper, but still apply default padding unless disabled
     return (
-      <section id={id} className={cn(className)}>
+      <section id={id} className={cn(basePadding, className)}>
         {children}
       </section>
     );
   }
 
   return (
-    <section id={id} className={cn("py-12 md:py-16", className)}>
+    <section id={id} className={cn(basePadding, className)}>
       <div className={cn("container mx-auto px-4", maxWidth)}>{children}</div>
     </section>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -8,7 +10,17 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Package, Bed, Bandage, Droplet, Apple, Wrench } from "lucide-react";
+import {
+  Package,
+  Bed,
+  Bandage,
+  Droplet,
+  Apple,
+  Wrench,
+  Sparkles,
+} from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
 import type { Product } from "@/types/content";
 
 interface ProductCardProps {
@@ -22,9 +34,12 @@ const categoryIcons = {
   cleanser: Droplet,
   nutrition: Apple,
   tool: Wrench,
+  skincare: Sparkles,
 };
 
 export function ProductCard({ product }: ProductCardProps) {
+  const [imageError, setImageError] = useState(false);
+
   // Format category for display
   const categoryLabel = product.category
     .split("-")
@@ -38,8 +53,19 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="h-full flex flex-col">
       <CardHeader>
-        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
-          <CategoryIcon className="w-24 h-24 text-muted-foreground/30" />
+        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-white flex items-center justify-center">
+          {product.imageUrl && !imageError ? (
+            <Image
+              src={product.imageUrl}
+              alt={product.name}
+              fill
+              className="object-contain"
+              onError={() => setImageError(true)}
+              unoptimized
+            />
+          ) : (
+            <CategoryIcon className="w-24 h-24 text-muted-foreground/30" />
+          )}
         </div>
         <div className="flex items-start justify-between gap-2">
           <CardTitle className="text-lg">{product.name}</CardTitle>
@@ -97,7 +123,11 @@ export function ProductCard({ product }: ProductCardProps) {
             className="flex items-center justify-center gap-2"
           >
             View on{" "}
-            {product.affiliatePartner === "amazon" ? "Amazon" : "Partner Site"}
+            {product.affiliatePartner === "amazon"
+              ? "Amazon"
+              : product.affiliatePartner === "laroche-posay"
+              ? "La Roche-Posay"
+              : "Partner Site"}
             <svg
               className="w-4 h-4"
               fill="none"
@@ -115,7 +145,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </Button>
 
         <p className="text-xs text-muted-foreground text-center">
-          As an Amazon Associate, WoundWise earns from qualifying purchases.
+          {product.affiliatePartner === "amazon"
+            ? "As an Amazon Associate, WoundWise earns from qualifying purchases."
+            : "WoundWise may earn a commission from qualifying purchases through our partner links."}
         </p>
       </CardFooter>
     </Card>

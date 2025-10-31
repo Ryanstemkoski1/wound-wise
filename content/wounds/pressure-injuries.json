@@ -4,6 +4,34 @@
   "title": "Pressure Injuries (Bedsores)",
   "subtitle": "Understanding, Preventing, and Treating Pressure Wounds",
   "description": "Pressure injuries, also known as bedsores or pressure ulcers, develop when sustained pressure restricts blood flow to specific areas of the body. Learn about risk factors, stages, and evidence-based prevention strategies from Dr. Alvin May's clinical experience.",
+  "quickInfo": {
+    "riskFactors": [
+      "Limited mobility or complete immobility",
+      "Prolonged pressure on small, bony areas (heels, hips, tailbone)",
+      "Poor nutrition and hydration status",
+      "Age-related changes in skin elasticity",
+      "Chronic illnesses affecting blood flow",
+      "Moisture exposure (incontinence)",
+      "Reduced sensation or inability to feel pain"
+    ],
+    "warningSigns": [
+      "Redness or discoloration that doesn't fade when pressed",
+      "Warmth or tenderness in affected area",
+      "Skin breakdown or open sores",
+      "Pain or discomfort at pressure points",
+      "Changes in skin texture or firmness",
+      "Purple or maroon discoloration (deep tissue injury)"
+    ],
+    "prevention": [
+      "Frequent repositioning every 2 hours for immobile patients",
+      "Use of specialized pressure-relief cushions or mattresses",
+      "Maintaining optimal nutrition and hydration",
+      "Regular skin inspection of high-risk areas",
+      "Proper hygiene and moisturization",
+      "Keep skin clean and dry, especially if incontinent",
+      "Heel protection devices and body positioning wedges"
+    ]
+  },
   "riskFactors": [
     "Limited mobility or complete immobility",
     "Prolonged pressure on small, bony areas (heels, hips, tailbone)",
@@ -42,11 +70,36 @@
   "sections": [
     {
       "heading": "What Are Pressure Injuries?",
-      "content": "Pressure injuries occur when excessive pressure is applied to a specific area for too long, cutting off blood flow to the skin and underlying tissues. Without adequate blood supply, the tissue becomes starved of oxygen and nutrients, leading to damage and potentially an open wound.",
+      "content": "Pressure injuries occur when excessive pressure is applied to a specific area for too long, cutting off blood flow to the skin and underlying tissues. Without adequate blood supply, the tissue becomes starved of oxygen and nutrients, leading to damage and potentially an open wound.\n\nLet's imagine you are sitting on a hard bench, engrossed in a sporting event or captivating movie. What you are watching is so good that you lose track of time and hardly take notice of anything else going on. As things come to an end, you get up and notice soreness in a couple of areas on your rear end, maybe even with an associated red mark or two. Well, that soreness and redness is a pressure injury in its mildest form. This is the effect of all your body weight resting on one or two of your gluteal bones for too long. The skin and subcutaneous tissue of your buttocks, unfortunately, get caught between the weight of your body and the hard bench below. Blood vessels leading to the area get crushed, cutting off blood flow to the skin and subcutaneous tissue.",
       "callout": {
-        "type": "example",
-        "title": "Dr. May's Analogy",
-        "content": "Think of sitting on a hard bench during a long sporting event. The soreness you feel afterward is a mild form of pressure injury. Your body was telling you to shift positions, but imagine if you couldn't move for hours or days - that's when serious damage occurs."
+        "type": "story",
+        "title": "Real Patient Examples",
+        "content": "Mr. Johnson, age 87, spent most of his day confined to a wheelchair. General body weakness severely limited his mobility - he could not stand for more than a few seconds and had difficulty shifting his weight. Mrs. Oliver had been bedridden for several weeks due to illness. Because she didn't understand the consequences of not regularly moving, she found her most comfortable position and stayed there for extended periods. Both patients developed pressure injuries that could have been prevented with proper repositioning and care."
+      }
+    },
+    {
+      "heading": "The Physics of Pressure",
+      "content": "Pressure is greatest when distributed over small areas. Remember that equation from school: P = F/A (Pressure equals Force divided by Area).\n\nTo bring that equation to life, imagine you're pushing your open hand down on the surface of a table. Go ahead, push hard. No problem, right? You might even be able to support much of your body weight on that hand. That is because the force is spread over a large surface area between the palm of your hand and the table, reducing the pressure.\n\nBut press your index finger against a corner of that same table. Well, now, that's a different story, isn't it? The pressure suddenly becomes very intense. It's because all that force is now focused on a very small area, causing the pressure (and pain) to shoot up intensely.\n\nThis focused, intense pressure is precisely why pressure ulcers tend to occur in areas where the body weight is concentrated on small, bony prominences. When body weight is focused on small bony areas like the heel or the tailbone, the skin, fat, and muscle in the area are caught between the bone and the surface the body is on. The tissues are deformed and the blood vessels leading to these areas are pressed closed.",
+      "callout": {
+        "type": "info",
+        "content": "In able-bodied folks, feedback loops in the brain subconsciously tell us when it's time to shift our weight to relieve pressure. Those little shifts we barely acknowledge are our bodies protecting themselves from pressure injuries. With weakness or impaired mobility, these feedback loops get ignored, leading to sustained pressure and tissue damage."
+      }
+    },
+    {
+      "heading": "Understanding Shear Forces",
+      "content": "Another important concept in the development of pressure injuries is 'shear.' Shear occurs when there is a combination of pressure and friction, or when the skin moves in one direction while the underlying tissues move in the opposite direction.\n\nIt is like when you drag a heavy object across the floor, and it causes a rug burn. Imagine sliding down in bed or in a chair - your skin stays relatively in place against the sheets or seat, but your bones and deeper tissues shift downward. This creates a shearing force that stretches and tears blood vessels and tissues.\n\nShear forces can further damage already vulnerable skin and contribute to the development of pressure injuries. This is why proper lifting and transferring techniques are so important for physically limited individuals.",
+      "callout": {
+        "type": "tip",
+        "content": "Avoid raising the head of the bed higher than 30 degrees for extended periods, as this can create shear forces that damage tissue. Use positioning aids to prevent sliding down in bed."
+      }
+    },
+    {
+      "heading": "Skin Aging and Pressure Injury Risk",
+      "content": "Age-related skin changes significantly increase the risk of pressure injuries. As the skin's collagen and elastin fibers diminish with age, there is a loss of elasticity and firmness. The skin becomes thinner and more fragile, making it prone to bruising and damage.\n\nProfound changes occur to skin with aging beyond just wrinkles and age spots:\n\n• Reduced melanocytes (pigment cells)\n• Fewer sweat glands\n• Subcutaneous fat layer becomes thinner\n• Decreased blood vessel density\n• Slower cell turnover and healing\n\nAs skin ages, it requires increased care and attention to maintain its health and integrity. Understanding the structure and function of the skin is important in preventing chronic wounds. A cornerstone of wound care and prevention is diligent skin care.",
+      "callout": {
+        "type": "tip",
+        "title": "Daily Skincare Routine",
+        "content": "Regular bathing clears the skin of dead cells, dirt, and debris. Drinking water to stay well hydrated gives the skin volume, strength, and suppleness. Use your favorite moisturizer at least once daily, particularly after bathing, to trap moisture against the skin. Even small cracks caused by dryness can set the stage for cellulitis, infection, and wound formation."
       }
     },
     {
@@ -59,7 +112,12 @@
     },
     {
       "heading": "Stages of Pressure Injuries",
-      "content": "Pressure injuries are classified into stages based on the depth of tissue damage. Understanding these stages helps with proper treatment planning.",
+      "content": "Pressure injuries are classified into stages based on the depth of tissue damage. Understanding these stages helps with proper treatment planning. Note: The descriptions below may be more noticeable in fair-skinned individuals, and the detection of early stage pressure injury may be more subtle in people with darker skin.",
+      "callout": {
+        "type": "example",
+        "title": "The Apple Analogy",
+        "content": "Think of an apple to understand pressure injury stages:\n\n• Stage 1: The apple peel is discolored but intact\n• Stage 2: There's a small break in the peel, like a scrape\n• Stage 3: Take a bite out of the apple, but not all the way to the core - the wound goes through the peel (skin) and into the flesh (fatty tissue)\n• Stage 4: Bite deeper, reaching the core (muscle or bone) - the wound is severe, exposing deeper tissues\n• Deep Tissue: A bruised apple - damage to the inner flesh without visible breaks in the peel\n• Unstageable: An apple that has sat out too long, brown and mushy in spots - the dead tissue on the surface makes it impossible to assess the damage below"
+      },
       "subsections": [
         {
           "heading": "Stage 1: Non-Blanchable Erythema",

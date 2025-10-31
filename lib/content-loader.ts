@@ -13,8 +13,6 @@ import type {
   Product,
   GlossaryTerm,
   SiteMetadata,
-  WoundTypeCollection,
-  TreatmentCollection,
   ProductCollection,
   GlossaryCollection,
 } from "@/types/content";

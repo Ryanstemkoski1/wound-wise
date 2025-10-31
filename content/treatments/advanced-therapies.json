@@ -1,0 +1,195 @@
+{
+  "slug": "advanced-therapies",
+  "title": "Advanced Wound Therapies: When Standard Care Isn't Enough",
+  "description": "Comprehensive guide to advanced wound healing technologies including negative pressure therapy, hyperbaric oxygen, bioengineered tissues, and other specialized treatments for complex chronic wounds.",
+  "icon": "zap",
+  "sections": [
+    {
+      "heading": "Beyond Standard Wound Care",
+      "content": "For some chronic wounds, standard wound care—cleaning, dressings, offloading, and nutrition optimization—isn't enough to achieve healing. When wounds plateau despite optimal basic care, or when wounds are particularly complex, advanced wound therapies may be the key to unlocking healing potential.\n\nThese cutting-edge treatments harness modern medical technology, biological principles, and innovative approaches to address wounds that have resisted conventional treatment. While they're not first-line treatments for all wounds, they can be game-changers for the right patients at the right time.",
+      "callout": {
+        "type": "info",
+        "title": "When to Consider Advanced Therapies",
+        "content": "Advanced therapies are typically considered when: standard care has failed to show progress after 4-6 weeks, wound has significant tissue loss requiring reconstruction, infection is resistant to conventional treatment, patient has urgent healing needs (like returning to work), or wound threatens limb viability (risk of amputation)."
+      }
+    },
+    {
+      "heading": "Negative Pressure Wound Therapy (NPWT)",
+      "content": "Also known as vacuum-assisted closure (VAC therapy), NPWT is one of the most widely used advanced wound therapies.",
+      "subsections": [
+        {
+          "subheading": "What Is NPWT?",
+          "content": "Negative pressure wound therapy uses a specialized device to apply controlled suction (negative pressure) to the wound bed. The system consists of:\n\n**Components:**\n• **Foam or gauze dressing:** Placed directly in wound bed\n• **Adhesive film:** Seals wound completely, creating airtight environment\n• **Tubing:** Connects dressing to vacuum pump\n• **Collection canister:** Collects wound drainage\n• **Vacuum pump:** Creates and maintains negative pressure\n\n**How it works:**\nThe pump creates suction that:\n• Draws wound edges together\n• Removes excess fluid and edema\n• Increases blood flow to wound bed\n• Promotes formation of granulation tissue\n• Reduces bacterial load\n• Creates optimal moist wound environment"
+        },
+        {
+          "subheading": "How NPWT Promotes Healing",
+          "content": "NPWT accelerates healing through multiple mechanisms:\n\n**1. Mechanical forces:**\n• Suction physically pulls wound edges toward center (contracts wound)\n• Stretches cells, triggering division and growth\n• Removes excess fluid that impedes healing\n\n**2. Microcirculation enhancement:**\n• Increases blood flow to wound bed by up to 400%\n• Stimulates formation of new blood vessels (angiogenesis)\n• Improves oxygen and nutrient delivery\n\n**3. Bacterial control:**\n• Removes bacteria-laden fluid continuously\n• Reduces bacterial counts in wound bed\n• Helps clear infection\n\n**4. Granulation tissue stimulation:**\n• Pressure triggers cells to produce growth factors\n• Accelerates formation of healthy granulation tissue\n• Creates wound bed ready for closure or grafting\n\n**5. Edema reduction:**\n• Continuously removes excess fluid\n• Decreases swelling around wound\n• Improves tissue perfusion"
+        },
+        {
+          "subheading": "Types of NPWT Systems",
+          "content": "**Traditional/Hospital NPWT:**\n• Large pump unit (size of small briefcase)\n• Typically used for large, complex wounds\n• Requires electricity\n• Provides continuous therapy\n• Examples: KCI VAC, Smith & Nephew PICO\n\n**Portable/Disposable NPWT:**\n• Small, lightweight pumps (can fit in pocket)\n• Battery-operated\n• Allows mobility and normal activities\n• Good for smaller wounds or step-down from traditional NPWT\n• Examples: PICO, Prevena, SNaP\n\n**Instillation NPWT:**\n• Combines negative pressure with intermittent installation of solutions\n• Can deliver antiseptic or antibiotic solutions directly to wound bed\n• Particularly useful for infected wounds\n• Alternates between instillation and suction"
+        },
+        {
+          "subheading": "Wounds That Benefit from NPWT",
+          "content": "**Ideal candidates:**\n• Diabetic foot ulcers (after infection controlled)\n• Pressure injuries (stages 3-4)\n• Venous leg ulcers (resistant to compression therapy)\n• Surgical wounds with dehiscence (opened after surgery)\n• Traumatic wounds with tissue loss\n• Burns\n• Skin grafts and flaps (helps them take)\n• Infected wounds after debridement\n• Sternal wounds (after heart surgery)\n\n**Contraindications (should NOT use NPWT):**\n• Wounds with exposed blood vessels or organs\n• Malignant tissue in wound\n• Untreated osteomyelitis (bone infection)\n• Necrotic tissue with eschar (needs debridement first)\n• Active bleeding in wound\n• Wounds with fistulas to organs or body cavities"
+        },
+        {
+          "subheading": "What to Expect with NPWT",
+          "content": "**Application process:**\n1. Wound is thoroughly cleaned and debrided\n2. Foam or gauze cut to fit wound precisely\n3. Dressing placed in wound bed\n4. Adhesive film applied to create seal\n5. Tubing connected and pump turned on\n6. Dressing wrinkles/collapses as suction engaged (this is normal)\n\n**Living with NPWT:**\n• Pump runs continuously (quiet humming sound)\n• Alarms if seal breaks (must maintain continuous suction)\n• Dressing changes typically every 2-3 days\n• Portable units allow showering (with waterproof covers)\n• Can carry pump in shoulder bag or clip to clothing\n• Most patients adapt quickly\n\n**Duration of therapy:**\n• Typically 2-6 weeks\n• Until wound bed is ready for closure or grafting\n• Or until wound is small enough for standard dressings\n\n**Sensations:**\n• Pulling or tugging feeling (usually mild)\n• Some patients report pain initially (usually subsides)\n• Pain medication can be adjusted if needed\n• Most patients tolerate well after adjustment period"
+        },
+        {
+          "subheading": "Results and Success Rates",
+          "content": "Research shows NPWT:\n• Reduces time to healing by 30-50% compared to standard care\n• Increases healing rates in diabetic foot ulcers\n• Reduces infection rates\n• Decreases need for amputation\n• Improves skin graft take rates\n• Reduces hospital stays for surgical wound complications\n\nHowever, success requires:\n• Adequate blood supply to wound\n• Addressing underlying causes (pressure, infection, etc.)\n• Good nutrition\n• Patient compliance with therapy"
+        }
+      ]
+    },
+    {
+      "heading": "Hyperbaric Oxygen Therapy (HBOT)",
+      "content": "Hyperbaric oxygen therapy involves breathing pure oxygen in a pressurized chamber to dramatically increase oxygen delivery to wounds.",
+      "subsections": [
+        {
+          "subheading": "What Is HBOT?",
+          "content": "**The treatment:**\nPatients enter a clear acrylic chamber (looks like large clear tube) and breathe 100% oxygen while chamber pressure is increased to 2-3 times normal atmospheric pressure.\n\n**Physics principle:**\nAt normal pressure, oxygen is carried almost entirely by red blood cells. At high pressure, oxygen dissolves directly into blood plasma and other body fluids, allowing it to reach areas with poor blood flow.\n\n**Typical protocol:**\n• Sessions last 90-120 minutes\n• Treatments given 5 days per week\n• Total course: 20-40 treatments\n• Outpatient procedure"
+        },
+        {
+          "subheading": "How HBOT Promotes Healing",
+          "content": "**1. Hyperoxygen delivery:**\n• Increases oxygen in blood plasma by 1000-2000%\n• Oxygen reaches areas with impaired circulation\n• Supports high metabolic demands of healing tissue\n\n**2. Angiogenesis (new blood vessel formation):**\n• High oxygen levels trigger growth of new capillaries\n• Improves long-term blood supply to wound\n• Critical for diabetic wounds with microvascular damage\n\n**3. Enhanced white blood cell function:**\n• Oxygen-dependent bacteria-killing improves\n• White blood cells work more effectively\n• Better infection control\n\n**4. Fibroblast stimulation:**\n• Fibroblasts (cells that make collagen) proliferate faster\n• Increased collagen production\n• Stronger tissue repair\n\n**5. Reduces swelling:**\n• Vasoconstriction reduces edema\n• Paradoxically improves tissue oxygen despite narrowed vessels (because oxygen is dissolved in plasma)\n\n**6. Stem cell mobilization:**\n• Stimulates release of stem cells from bone marrow\n• These cells contribute to tissue regeneration"
+        },
+        {
+          "subheading": "Approved Indications for HBOT",
+          "content": "Medicare and insurance typically cover HBOT for:\n\n**Diabetic foot wounds:**\n• Lower extremity wounds in diabetics\n• Wagner grade 3 or higher\n• Failed to improve with standard care for 30 days\n\n**Other approved indications:**\n• Chronic refractory osteomyelitis (bone infection)\n• Delayed radiation injury (soft tissue and bony necrosis)\n• Compromised skin grafts and flaps\n• Acute traumatic ischemia (crush injuries)\n• Gas gangrene\n• Necrotizing soft tissue infections\n\n**Requirements for coverage:**\n• Adequate arterial blood flow (ABI > 0.6)\n• Optimal wound care already in place\n• Nutrition optimized\n• Offloading adequate\n• Blood sugar controlled (for diabetics)\n• No untreated osteomyelitis"
+        },
+        {
+          "subheading": "What to Expect During HBOT",
+          "content": "**Before treatment:**\n• Complete medical evaluation\n• Chest X-ray and sometimes ear exam\n• Stop smoking (mandatory—smoking during HBOT extremely dangerous)\n• Remove all petroleum-based products, perfumes, lotions\n• Wear provided cotton clothing\n\n**During treatment:**\n• Enter clear acrylic chamber (monoplace) or large room chamber (multiplace)\n• Feel pressure changes like airplane descent\n• Must equalize ears (like when flying)\n• Can watch TV, listen to music, or sleep\n• No pain, though ears may feel full\n\n**After treatment:**\n• May feel tired initially\n• Can resume normal activities immediately\n• Continue regular wound care\n\n**Side effects:**\n• Ear barotrauma (ear pain from pressure changes)—most common\n• Temporary vision changes (usually resolve after treatment course)\n• Rare: oxygen toxicity, claustrophobia\n• Very rare: lung barotrauma"
+        },
+        {
+          "subheading": "HBOT Results",
+          "content": "Studies show HBOT:\n• Reduces amputation rates in diabetic foot ulcers by 30-50%\n• Improves healing rates in selected chronic wounds\n• Enhances skin graft survival\n• Treats radiation-damaged tissue effectively\n\n**Important reality:**\nHBOT is not magic. It works best when:\n• Adequate blood flow is present (not for severe arterial disease)\n• Used as adjunct to excellent standard wound care\n• Patient is motivated and compliant\n• Wound is appropriate indication\n\nIt does NOT work well for:\n• Venous ulcers (not approved indication)\n• Wounds with very poor blood supply (HBOT needs some blood flow)\n• Patients who can't commit to intensive treatment schedule"
+        }
+      ]
+    },
+    {
+      "heading": "Bioengineered Skin Substitutes and Cellular Therapies",
+      "content": "These advanced products provide biological components to jump-start healing in chronic wounds.",
+      "subsections": [
+        {
+          "subheading": "Living Cellular Therapies",
+          "content": "**Apligraf (bilayered living skin equivalent):**\n• Contains both dermal and epidermal layers\n• Living human fibroblasts and keratinocytes\n• Produces growth factors and proteins\n• Applied like a graft to wound bed\n• FDA-approved for venous and diabetic ulcers\n\n**Dermagraft (dermal substitute):**\n• Living human fibroblasts in bioabsorbable scaffold\n• Cells produce collagen, growth factors\n• Applied to wound bed, secured with dressing\n• FDA-approved for diabetic foot ulcers\n\n**How they work:**\n• Don't become permanent skin (eventually absorbed)\n• But they 'wake up' chronic wound\n• Provide growth factors and matrix proteins\n• Stimulate patient's own healing response\n• Essentially 'remind' wound how to heal"
+        },
+        {
+          "subheading": "Acellular Matrices",
+          "content": "**Human acellular dermal matrix (AlloDerm, GraftJacket):**\n• Derived from donated human skin (cells removed)\n• Provides collagen scaffold\n• Patient's cells migrate into matrix\n• Becomes vascularized and incorporated\n\n**Xenograft matrices (from animals):**\n• Porcine (pig) intestinal submucosa\n• Bovine (cow) collagen\n• Processed to remove cells, leave matrix\n\n**Amniotic membrane products:**\n• Derived from placental tissue\n• Contains growth factors and anti-inflammatory proteins\n• Available as sheets or particulate forms\n• EpiFix, Grafix, others\n\n**When used:**\n• Chronic wounds unresponsive to standard care\n• Need to fill deep tissue defects\n• Provide scaffold for tissue growth\n• Bridge to surgical closure"
+        },
+        {
+          "subheading": "Platelet-Rich Plasma (PRP)",
+          "content": "**What it is:**\n• Patient's own blood is drawn\n• Centrifuged to concentrate platelets\n• Platelet-rich portion re-injected into wound edges or applied as gel\n\n**How it works:**\n• Platelets release growth factors when activated\n• High concentration of growth factors stimulates healing\n• Uses body's own healing signals\n\n**Evidence:**\n• Mixed results in studies\n• Some patients show dramatic improvement\n• Others show no benefit\n• Not typically covered by insurance\n• Considered experimental for most wounds"
+        },
+        {
+          "subheading": "Stem Cell Therapies",
+          "content": "**Emerging field:**\n• Stem cells have potential to become many tissue types\n• Can be derived from bone marrow, fat, umbilical cord\n• Applied to or injected into wounds\n\n**Theoretical benefits:**\n• Differentiate into needed tissue types\n• Secrete growth factors\n• Modulate inflammation\n• Stimulate angiogenesis\n\n**Current status:**\n• Mostly experimental\n• Some products available but expensive\n• Long-term outcomes being studied\n• Regulatory issues still being resolved\n• NOT covered by insurance for most wounds"
+        }
+      ]
+    },
+    {
+      "heading": "Surgical Options",
+      "content": "When wounds won't heal with medical management, surgical intervention may be necessary.",
+      "subsections": [
+        {
+          "subheading": "Skin Grafts",
+          "content": "**What they are:**\nHealthy skin removed from one body area (donor site) and transplanted to cover wound\n\n**Types:**\n\n**Split-thickness skin grafts (STSG):**\n• Thin layer (epidermis + part of dermis)\n• Donor site heals on its own\n• Most common type for wound coverage\n• Can be meshed (expanded to cover larger area)\n• May be less cosmetically appealing\n\n**Full-thickness skin grafts (FTSG):**\n• Epidermis + entire dermis\n• Better cosmetic result\n• Donor site must be closed surgically\n• Limited by donor site availability\n• Used for smaller wounds in visible areas\n\n**Process:**\n1. Wound bed prepared (granulation tissue, no infection)\n2. Graft harvested from donor site (often thigh)\n3. Graft placed on wound and secured\n4. Dressing applied (often NPWT to help graft \"take\")\n5. Graft must develop blood supply (takes 3-5 days)\n6. Monitored closely for graft survival\n\n**Success factors:**\n• Adequate blood supply to wound bed\n• No infection\n• Immobilization of graft\n• Patient factors (nutrition, no smoking)"
+        },
+        {
+          "subheading": "Flap Reconstruction",
+          "content": "**What they are:**\nTissue (skin, fat, sometimes muscle) moved from nearby area to cover wound, but blood supply maintained through attached pedicle\n\n**When used:**\n• Wounds with poor blood supply (can't support graft)\n• Need to fill deep defects\n• Cover exposed bone, tendon, hardware\n• Provide durable coverage (like over pressure points)\n\n**Types:**\n• Local flaps (tissue moved from adjacent area)\n• Regional flaps (from nearby but not adjacent)\n• Free flaps (tissue completely detached, blood vessels reconnected with microscopy)\n\n**Complex surgery:**\n• Requires plastic surgeon expertise\n• Often lengthy procedures\n• Recovery and healing time significant\n• Reserved for wounds that can't heal otherwise"
+        },
+        {
+          "subheading": "Amputation",
+          "content": "**The last resort:**\nWhen tissue is not viable and cannot be saved, amputation may be necessary to:\n• Remove source of infection\n• Remove painful non-functional limb\n• Preserve patient's life\n• Allow patient to move forward with prosthesis\n\n**Not failure:**\nWhile amputation may feel like defeat, sometimes it's the right choice to:\n• End months or years of suffering\n• Allow return to more normal life\n• Prevent life-threatening infection\n• Enable mobility with prosthesis (versus being bedbound with non-healing wound)\n\n**Levels:**\n• Toe or partial foot (least impactful)\n• Below-knee (can walk with prosthesis)\n• Above-knee (requires more advanced prosthesis)\n• Level depends on where viable tissue begins\n\n**After amputation:**\n• Rehabilitation and physical therapy\n• Prosthesis fitting\n• Psychological support\n• Many patients resume active lives"
+        }
+      ]
+    },
+    {
+      "heading": "Electrical Stimulation",
+      "content": "Using controlled electrical current to stimulate wound healing.",
+      "subsections": [
+        {
+          "subheading": "How It Works",
+          "content": "**Mechanism:**\n• Electrical current applied through electrodes near wound\n• Mimics body's natural electrical signals during healing\n• Attracts cells involved in repair\n• Increases blood flow\n• Has antimicrobial effects\n\n**Types:**\n• Direct current (DC)\n• Alternating current (AC)\n• Pulsed current\n• High-voltage pulsed current (HVPC)\n\nDifferent types have different proposed mechanisms."
+        },
+        {
+          "subheading": "Evidence and Use",
+          "content": "**Evidence:**\n• Some studies show benefit for pressure ulcers\n• Mixed results for diabetic ulcers\n• May help when other treatments have failed\n\n**Practical use:**\n• Usually administered by physical therapist\n• Treatments several times per week\n• Painless (mild tingling sensation)\n• Used in combination with standard wound care\n\n**Limitations:**\n• Time-intensive (requires clinic visits)\n• Not widely available\n• Not all insurance covers\n• Needs more research to establish protocols"
+        }
+      ]
+    },
+    {
+      "heading": "Growth Factor Therapies",
+      "content": "**Becaplermin gel (Regranex):**\n• Contains recombinant human platelet-derived growth factor (PDGF)\n• FDA-approved for diabetic foot ulcers\n• Applied daily to wound bed\n• Stimulates granulation tissue formation\n\n**How to use:**\n• Precise dosing based on wound size\n• Applied as thin layer\n• Covered with saline-moistened gauze\n• Wound cleansed before each application\n\n**Results:**\n• Modest improvement in healing rates\n• Works best for wounds with adequate blood supply\n• Requires consistent daily application\n• Relatively expensive\n\n**Black box warning:**\n• Increased cancer risk with large amounts (more than 3 tubes)\n• Used cautiously, typically for limited duration\n• Benefits must outweigh risks"
+    },
+    {
+      "heading": "Ultrasound Therapy",
+      "content": "**Low-frequency ultrasound:**\n• Sound waves applied to wound bed\n• Proposed mechanisms: debridement, increased circulation, cellular stimulation\n\n**Types:**\n• Non-contact ultrasound (MIST therapy)\n• Contact ultrasound\n\n**Evidence:**\n• Some studies show benefit\n• Other studies show no significant effect\n• Considered adjunct therapy\n\n**Use:**\n• Typically in wound clinic setting\n• Treatments 1-3 times per week\n• Non-invasive, painless\n• May help with biofilm disruption"
+    },
+    {
+      "heading": "Deciding on Advanced Therapies",
+      "content": "**Questions to ask:**\n\n**1. Is my wound appropriate?**\n• Does my wound type/location match approved indications?\n• Have I tried adequate standard care?\n• Are underlying issues addressed?\n\n**2. What's the evidence?**\n• What does research show for this therapy for my wound type?\n• What are realistic success rates?\n• What are alternatives?\n\n**3. Practical considerations:**\n• Will insurance cover it?\n• Can I commit to treatment schedule?\n• Are there risks or side effects?\n• How long is treatment course?\n\n**4. Provider expertise:**\n• Is my provider experienced with this therapy?\n• Is specialized equipment/facility available?\n• Will I be monitored appropriately?\n\n**The integrated approach:**\nAdvanced therapies work best when combined with:\n• Excellent basic wound care\n• Addressing underlying causes\n• Optimizing nutrition\n• Patient engagement and compliance\n• Realistic expectations",
+      "callout": {
+        "type": "tip",
+        "title": "Advanced Therapies Are Not Magic",
+        "content": "Even the most sophisticated advanced therapy cannot overcome poor blood supply, uncontrolled infection, continued pressure on the wound, or severe malnutrition. These therapies are powerful adjuncts to comprehensive wound care, not replacements for addressing fundamental healing requirements."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I know if I need advanced wound therapy?",
+      "answer": "Consider advanced therapies when: your wound hasn't improved after 4-6 weeks of optimal standard care, wound is getting worse despite treatment, you have urgent healing needs (returning to work, preventing amputation), standard care hasn't addressed specific problem (like poor blood flow), or your wound care specialist recommends it. Most wounds should try standard care first—good cleaning, appropriate dressings, addressing underlying causes, optimizing nutrition. Advanced therapies are typically reserved for wounds that plateau or worsen despite these basics being done well."
+    },
+    {
+      "question": "Will insurance cover advanced wound therapies?",
+      "answer": "Coverage varies. Medicare and most insurance cover NPWT and HBOT for approved indications when medical necessity criteria are met (wound hasn't healed with standard care, specific wound types, etc.). Bioengineered skin products may be covered for approved indications but often require prior authorization. Growth factors like Regranex typically covered for diabetic foot ulcers. Stem cell therapy, PRP, and some newer treatments often NOT covered and considered experimental. Always check with your insurance before starting expensive therapies. Your wound care specialist's office can help navigate coverage issues."
+    },
+    {
+      "question": "Is NPWT painful?",
+      "answer": "Most patients tolerate NPWT well. You'll feel pulling/tugging sensation when pump is running, which can feel strange initially but most people adapt quickly. Some patients report pain during first few dressing changes or when therapy first starts, but this usually improves. Pain medication can be adjusted if needed. The therapy should NOT cause severe pain. If you experience significant pain, notify your provider—settings may need adjustment, or pain medication may need modification. Many patients report the benefits (faster healing, less frequent dressing changes) outweigh the mild discomfort."
+    },
+    {
+      "question": "Can I shower with NPWT?",
+      "answer": "This depends on your specific NPWT system. Traditional large units: typically NO—cannot get wet. Must disconnect for showering, which interrupts therapy. Portable units: some are water-resistant with special shower covers. Your provider will give specific instructions. Generally: brief interruption for hygiene okay, but therapy works best when continuous. If allowed to shower: use waterproof barrier over dressing, keep shower brief, ensure seal intact after showering, reconnect immediately. Alternative: sponge bath keeping NPWT dry. Always follow your provider's specific guidelines for your system."
+    },
+    {
+      "question": "What happens if my wound doesn't heal even with advanced therapies?",
+      "answer": "First, providers reassess: Is blood supply adequate? Is infection fully controlled? Are underlying causes addressed? Is nutrition optimized? Sometimes, different advanced therapy needed, or combination approach. If wound truly won't heal despite everything: goals may shift to wound management rather than closure (controlling symptoms, preventing worsening, maintaining quality of life). For some wounds: surgical closure (grafting, flap) may be only option. Rarely: amputation considered if limb not viable. Remember: even if wound doesn't fully close, significant improvement (smaller, less painful, less drainage) is valuable progress."
+    },
+    {
+      "question": "Are bioengineered skin products permanent?",
+      "answer": "No. Products like Apligraf and Dermagraft are NOT permanent grafts. They don't become your skin. Instead, they're biological 'jump-starters'—they provide growth factors, proteins, and cells that wake up chronic wounds and stimulate YOUR body to heal. The product is eventually absorbed and replaced by your own tissue. Think of them as sophisticated wound dressings that actively participate in healing rather than just passively covering. Multiple applications over weeks may be needed. If healing stalls, additional applications or different approach may be tried."
+    }
+  ],
+  "relatedProducts": [
+    "npwt-system-portable",
+    "bioengineered-skin-substitute",
+    "growth-factor-gel",
+    "advanced-wound-dressing"
+  ],
+  "relatedContent": {
+    "wounds": [
+      "diabetic-ulcers",
+      "pressure-injuries",
+      "venous-ulcers",
+      "non-healing-wounds"
+    ],
+    "treatments": ["wound-dressings", "wound-debridement", "infection-control"]
+  },
+  "metadata": {
+    "author": "Dr. Alvin May",
+    "datePublished": "2024-01-15",
+    "dateModified": "2024-01-15",
+    "readingTime": "22 min",
+    "sources": [
+      "Heal Your Wound by Dr. Alvin May",
+      "Advanced wound therapy clinical guidelines"
+    ]
+  }
+}

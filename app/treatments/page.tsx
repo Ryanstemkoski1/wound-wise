@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
+import { getAllTreatments } from "@/lib/content-loader";
 import { TreatmentCard } from "@/components/cards/treatment-card";
 import {
   Card,
@@ -37,65 +38,12 @@ export const metadata: Metadata = {
   ],
 };
 
-// Placeholder treatments - will be replaced with actual content
-const treatments = [
-  {
-    slug: "infection-control",
-    title: "Infection Control",
-    subtitle: "Preventing and Managing Wound Infections",
-    description:
-      "Learn to recognize signs of infection, implement proper wound cleansing techniques, and follow infection prevention measures essential for successful wound healing.",
-    keyBenefits: [
-      "Early detection of infection signs",
-      "Proper wound cleansing protocols",
-      "Evidence-based prevention strategies",
-    ],
-    featured: true,
-  },
-  {
-    slug: "wound-dressings",
-    title: "Wound Dressings Guide",
-    subtitle: "Choosing the Right Dressing for Your Wound",
-    description:
-      "Comprehensive guide to wound dressing types, selection criteria, and application techniques for optimal moisture balance and healing environment.",
-    keyBenefits: [
-      "Understand different dressing types",
-      "Match dressings to wound characteristics",
-      "Learn proper application techniques",
-    ],
-    featured: true,
-  },
-  {
-    slug: "offloading-positioning",
-    title: "Offloading & Positioning",
-    subtitle: "Reducing Pressure to Promote Healing",
-    description:
-      "Master repositioning techniques and offloading strategies to redistribute pressure, improve circulation, and create an optimal healing environment.",
-    keyBenefits: [
-      "Proper repositioning schedules",
-      "Effective use of positioning devices",
-      "Pressure relief techniques",
-    ],
-    featured: true,
-  },
-  {
-    slug: "nutrition-healing",
-    title: "Nutrition for Wound Healing",
-    subtitle: "Fueling Your Body's Repair Process",
-    description:
-      "Discover the critical role of nutrition and hydration in wound healing, including protein requirements, essential vitamins, and practical dietary strategies.",
-    keyBenefits: [
-      "Protein and calorie requirements",
-      "Essential vitamins and minerals",
-      "Practical meal planning tips",
-    ],
-    featured: true,
-  },
-];
+export default async function TreatmentsPage() {
+  const treatments = await getAllTreatments();
 
-export default function TreatmentsPage() {
-  const featuredTreatments = treatments.filter((t) => t.featured);
-  const otherTreatments = treatments.filter((t) => !t.featured);
+  // Separate featured and regular treatments
+  const featuredTreatments = treatments.filter((t) => t.metadata?.featured);
+  const otherTreatments = treatments.filter((t) => !t.metadata?.featured);
 
   return (
     <div className="min-h-screen bg-background">
@@ -154,9 +102,9 @@ export default function TreatmentsPage() {
             <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
               <Activity className="h-6 w-6 text-primary" />
             </div>
-            <div className="text-2xl font-bold mb-1">4</div>
+            <div className="text-2xl font-bold mb-1">10</div>
             <div className="text-sm text-muted-foreground">
-              Core Treatment Strategies
+              Treatment Strategies
             </div>
           </div>
           <div className="text-center animate-in fade-in delay-300">

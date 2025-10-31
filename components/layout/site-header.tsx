@@ -46,6 +46,46 @@ const woundTypes = [
     href: "/wounds/arterial-wounds",
     description: "Wounds caused by poor arterial blood flow",
   },
+  {
+    title: "Surgical Wounds",
+    href: "/wounds/surgical-wounds",
+    description: "Post-operative wound healing and complications",
+  },
+  {
+    title: "Non-Healing Wounds",
+    href: "/wounds/non-healing-wounds",
+    description: "Chronic wounds that resist standard treatment",
+  },
+  {
+    title: "Burns",
+    href: "/wounds/burns",
+    description: "Thermal injuries and burn wound management",
+  },
+  {
+    title: "Skin Tears",
+    href: "/wounds/skin-tears",
+    description: "Fragile skin injuries in elderly patients",
+  },
+  {
+    title: "Traumatic Wounds",
+    href: "/wounds/traumatic-wounds",
+    description: "Cuts, scrapes, and acute injury management",
+  },
+  {
+    title: "Radiation Wounds",
+    href: "/wounds/radiation-wounds",
+    description: "Delayed radiation tissue injury and damage",
+  },
+  {
+    title: "Cancer Lesions",
+    href: "/wounds/cancer-lesions",
+    description: "Malignant fungating wounds and palliative care",
+  },
+  {
+    title: "End-of-Life Wounds",
+    href: "/wounds/end-of-life-wounds",
+    description: "Comfort-focused wound care in terminal illness",
+  },
 ];
 
 const treatments = [
@@ -65,9 +105,39 @@ const treatments = [
     description: "Reducing pressure to promote healing",
   },
   {
-    title: "Nutrition for Wound Healing",
+    title: "Nutrition for Healing",
     href: "/treatments/nutrition-healing",
     description: "Fueling your body's repair process",
+  },
+  {
+    title: "Pain Management",
+    href: "/treatments/pain-management",
+    description: "Controlling wound-related pain effectively",
+  },
+  {
+    title: "Wound Debridement",
+    href: "/treatments/wound-debridement",
+    description: "Removing dead tissue to promote healing",
+  },
+  {
+    title: "Wound Cleansing",
+    href: "/treatments/wound-cleansing",
+    description: "Proper cleaning techniques and products",
+  },
+  {
+    title: "Moisture Management",
+    href: "/treatments/moisture-management",
+    description: "Controlling wound drainage and exudate",
+  },
+  {
+    title: "Mobility & Exercise",
+    href: "/treatments/mobility-exercise",
+    description: "Movement strategies for better healing",
+  },
+  {
+    title: "Advanced Therapies",
+    href: "/treatments/advanced-therapies",
+    description: "NPWT, HBOT, and specialized treatments",
   },
 ];
 
@@ -121,7 +191,7 @@ export function SiteHeader() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Wound Types</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  <ul className="grid w-[500px] gap-3 p-4 md:w-[600px] md:grid-cols-2 lg:w-[700px] lg:grid-cols-3">
                     {woundTypes.map((item) => (
                       <ListItem
                         key={item.title}
@@ -131,7 +201,7 @@ export function SiteHeader() {
                         {item.description}
                       </ListItem>
                     ))}
-                    <li className="row-span-1 col-span-2">
+                    <li className="row-span-1 col-span-2 lg:col-span-3">
                       <NavigationMenuLink asChild>
                         <Link
                           href="/wounds"
@@ -154,7 +224,7 @@ export function SiteHeader() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Treatment & Care</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                  <ul className="grid w-[500px] gap-3 p-4 md:w-[600px] md:grid-cols-2 lg:w-[700px]">
                     {treatments.map((item) => (
                       <ListItem
                         key={item.title}

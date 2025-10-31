@@ -1,0 +1,193 @@
+{
+  "slug": "traumatic-wounds",
+  "title": "Traumatic Wounds: Managing Acute Injuries",
+  "subtitle": "From Cuts and Scrapes to Complex Acute Injuries",
+  "description": "Understanding and treating traumatic wounds including lacerations, abrasions, punctures, and contusions—when they're simple injuries versus when they become chronic wound concerns.",
+  "quickInfo": {
+    "riskFactors": [
+      "High-risk activities (sports, manual labor, machinery work)",
+      "Poor safety practices or lack of protective equipment",
+      "Diabetes or vascular disease (impairs healing)",
+      "Immunosuppression or chronic steroid use",
+      "Advanced age (fragile skin, slower healing)",
+      "Blood thinning medications (bleeding risk)",
+      "Environmental hazards (cluttered spaces, poor lighting)"
+    ],
+    "warningSigns": [
+      "Uncontrolled or arterial bleeding",
+      "Deep wounds exposing muscle, tendon, or bone",
+      "Signs of infection (redness, warmth, pus, fever)",
+      "Numbness or inability to move affected area",
+      "Foreign object embedded in wound",
+      "Wounds from bites (animal or human)",
+      "Wounds not healing within expected timeframe"
+    ],
+    "prevention": [
+      "Use appropriate safety equipment (gloves, goggles, protective clothing)",
+      "Keep work and living spaces clear of hazards",
+      "Install adequate lighting to prevent falls and accidents",
+      "Use proper technique when handling sharp objects or machinery",
+      "Keep tetanus vaccination up to date",
+      "Supervise children during high-risk activities",
+      "Seek immediate care for significant injuries"
+    ]
+  },
+  "icon": "shield-alert",
+  "heroImage": "/images/wounds/traumatic-wounds-hero.jpg",
+  "relatedTreatments": [
+    "wound-cleansing",
+    "infection-control",
+    "wound-dressings",
+    "pain-management"
+  ],
+  "sections": [
+    {
+      "heading": "What Are Traumatic Wounds?",
+      "content": "Traumatic wounds are injuries caused by external physical force or violence to the body. These include cuts, scrapes, punctures, and crush injuries that happen during accidents, falls, sports activities, or other unexpected events.\n\nMost traumatic wounds are acute injuries that heal normally within a predictable timeframe (days to weeks). However, some traumatic wounds can become chronic non-healing wounds due to complications like infection, poor blood supply, underlying health conditions, or improper initial treatment. Understanding the difference helps you know when simple home care is enough versus when professional medical attention is critical.",
+      "callout": {
+        "type": "warning",
+        "title": "When to Seek Emergency Care",
+        "content": "Go to the emergency room immediately for: uncontrolled bleeding, wounds with arterial spurting blood, deep wounds exposing muscle/bone/internal organs, wounds from animal or human bites, wounds with embedded foreign objects, wounds on the face requiring stitches (for best cosmetic outcome), signs of nerve damage (numbness, inability to move), or wounds in people with diabetes or immune compromise."
+      }
+    },
+    {
+      "heading": "Types of Traumatic Wounds",
+      "content": "Different mechanisms of injury create different wound types, each with specific care requirements:",
+      "subsections": [
+        {
+          "subheading": "Abrasions (Scrapes)",
+          "content": "**What it is:** Superficial wound caused by rubbing or scraping against a rough surface. Think of road rash from a bike fall or a skinned knee.\n\n**Characteristics:**\n• Affects only top layer of skin (epidermis) or slightly into dermis\n• Raw, oozing surface\n• Painful (nerve endings exposed)\n• Usually minimal bleeding\n• May contain dirt, gravel, or foreign material\n\n**Healing time:** Typically 7-14 days\n\n**Treatment:**\n• Thorough cleaning is CRITICAL—embedded dirt can cause infection or permanent tattooing of skin\n• Irrigate with clean water or saline to remove all debris\n• Apply antibiotic ointment\n• Cover with non-stick dressing\n• Watch for signs of infection\n\n**Risk factors for becoming chronic:**\n• Large surface area\n• Deep abrasion into dermis\n• Contamination with dirt, gravel, or road debris\n• Diabetes or circulation problems\n• Infection"
+        },
+        {
+          "subheading": "Lacerations (Cuts)",
+          "content": "**What it is:** Wound caused by a sharp object cutting or tearing through skin and underlying tissues.\n\n**Characteristics:**\n• Clean or ragged edges depending on the cause\n• Can be shallow or deep\n• May bleed heavily if blood vessels are cut\n• May expose underlying fat, muscle, or bone\n• Risk of nerve or tendon damage in deep lacerations\n\n**Healing time:** Varies—superficial cuts 5-10 days, deeper lacerations 2-3 weeks or longer\n\n**Treatment:**\n• Control bleeding with direct pressure\n• Clean thoroughly\n• Small, shallow cuts: adhesive strips or bandage\n• Deeper or gaping cuts: requires stitches, staples, or surgical glue (within 6-8 hours for best results)\n• Tetanus booster if not current\n\n**Types of lacerations:**\n• **Incised wound**: Clean cut from sharp object (knife, glass)—edges smooth, heals well\n• **Torn/jagged laceration**: Irregular edges from blunt force—may heal with more scarring\n\n**Stitches vs. letting heal open:**\nStitches (sutures) required when:\n• Wound edges gape open\n• Wound is deep\n• Located on face (for cosmetic reasons)\n• Over joint or area of movement\n• Bleeding doesn't stop with pressure\n\n**Risk factors for becoming chronic:**\n• Location in area with poor blood supply\n• Infection\n• Improper closure or closure under tension\n• Wound dehiscence (re-opening)\n• Diabetes or vascular disease"
+        },
+        {
+          "subheading": "Puncture Wounds",
+          "content": "**What it is:** Wound caused by a sharp, pointed object piercing the skin and creating a small, deep hole.\n\n**Characteristics:**\n• Small entrance wound\n• Can be deceptively deep\n• Minimal bleeding (sometimes)\n• High infection risk (bacteria driven deep into tissue)\n• May damage internal structures\n\n**Common causes:**\n• Nails (especially rusty nails stepping through shoes)\n• Needles\n• Animal bites\n• Stab wounds\n• Splinters\n\n**Healing time:** 1-2 weeks for shallow punctures; longer for deep wounds\n\n**Treatment:**\n• Allow small amount of bleeding to flush bacteria out\n• DO NOT close puncture wounds with tape—they need to heal from inside out\n• Clean thoroughly\n• Soak in warm water 3-4 times daily\n• Watch closely for signs of infection\n• Tetanus booster if not current\n• May require antibiotics, especially for foot punctures\n\n**High risk for complications:**\nPuncture wounds are notorious for developing infections because:\n• Bacteria gets pushed deep into tissue\n• Small opening doesn't allow drainage\n• Foreign material may be embedded\n• Difficult to clean thoroughly\n\n**Risk factors for becoming chronic:**\n• Infection (very common)\n• Foreign body remaining in wound\n• Damage to bone (osteomyelitis risk)\n• Puncture through shoe into foot (high bacteria load)\n• Delayed treatment"
+        },
+        {
+          "subheading": "Contusions (Bruises)",
+          "content": "**What it is:** Bleeding from broken blood vessels beneath the skin causing skin discoloration, usually from blunt force impact.\n\n**Characteristics:**\n• Skin remains intact (no break in skin surface)\n• Discoloration: red/purple initially, progressing to green/yellow/brown as healing\n• Tender to touch\n• Swelling\n• May have associated hematoma (larger collection of blood)\n\n**Healing time:** 1-3 weeks depending on severity\n\n**Treatment:**\n• RICE protocol: Rest, Ice, Compression, Elevation\n• Ice first 24-48 hours (20 minutes on, 20 minutes off)\n• After 48 hours: warm compresses to improve blood flow\n• Over-the-counter pain relievers\n• Elevation to reduce swelling\n\n**When contusions become concerns:**\n• Very large or expanding bruises (may indicate significant internal bleeding)\n• Bruising with no remembered injury (may indicate bleeding disorder)\n• Bruises that don't heal or worsen\n• Signs of compartment syndrome (severe pain, numbness, pale skin)\n\n**Risk factors for complications:**\n• Blood thinning medications (warfarin, aspirin, clopidogrel)\n• Bleeding disorders\n• Repeated trauma to same area"
+        },
+        {
+          "subheading": "Crush Injuries",
+          "content": "**What it is:** Tissue damage from compression or crushing force. Can range from minor (finger in door) to severe (limb trapped under heavy object).\n\n**Characteristics:**\n• Damaged or destroyed blood vessels\n• Tissue swelling\n• Bruising\n• May have associated fractures\n• Risk of compartment syndrome\n\n**Healing time:** Varies greatly by severity—minor crushes 2-3 weeks, severe injuries months\n\n**Treatment:**\n• Minor: ice, elevation, pain control, monitoring\n• Severe: immediate emergency care, possible surgery to relieve pressure, restore blood flow\n\n**Complications:**\n• Compartment syndrome (pressure build-up cutting off blood flow)\n• Infection\n• Tissue death requiring amputation (severe cases)\n• Long-term pain or disability"
+        }
+      ]
+    },
+    {
+      "heading": "When Traumatic Wounds Become Chronic",
+      "content": "Most traumatic wounds heal without incident. However, certain factors can transform an acute injury into a chronic, non-healing wound:\n\n**Infection:** The most common reason traumatic wounds don't heal. Bacteria overwhelm the body's defenses, preventing normal healing processes.\n\n**Foreign bodies:** Embedded material (glass, metal, wood splinters, gravel) prevents healing and serves as infection source.\n\n**Poor blood supply:** Traumatic wounds in areas with compromised circulation (diabetic feet, areas with vascular disease) struggle to heal.\n\n**Underlying health conditions:**\n• Diabetes impairs healing and infection fighting\n• Immune compromise (steroids, chemotherapy, HIV)\n• Malnutrition or protein deficiency\n• Smoking (constricts blood vessels)\n\n**Improper initial treatment:**\n• Inadequate cleaning\n• Failure to remove foreign material\n• Delayed closure or inappropriate closure\n• Missed deep tissue damage\n\n**Repeated trauma:** Re-injury to healing wound (common on feet, hands, or over joints)"
+    },
+    {
+      "heading": "Immediate First Aid for Traumatic Wounds",
+      "content": "Proper initial treatment significantly impacts healing outcomes:",
+      "subsections": [
+        {
+          "subheading": "Step 1: Safety First",
+          "content": "• Move to safe location\n• Use gloves if available (protect yourself from bloodborne pathogens)\n• Call for help if injury is severe"
+        },
+        {
+          "subheading": "Step 2: Control Bleeding",
+          "content": "• Apply direct pressure with clean cloth\n• Elevate injured area above heart if possible\n• Do NOT remove embedded objects (stabilize and seek emergency care)\n• If bleeding soaks through cloth, add more layers (don't remove original)\n• Apply pressure for 10-15 minutes continuously\n• For severe arterial bleeding (spurting): apply pressure and call 911"
+        },
+        {
+          "subheading": "Step 3: Clean the Wound",
+          "content": "• Wash hands thoroughly first\n• Rinse wound under clean running water for 5-10 minutes\n• Remove visible dirt and debris gently\n• For embedded gravel/road rash: may need professional cleaning\n• Avoid hydrogen peroxide or alcohol (damages tissue)\n• Pat dry with clean cloth"
+        },
+        {
+          "subheading": "Step 4: Protect the Wound",
+          "content": "• Apply thin layer of antibiotic ointment\n• Cover with sterile bandage or gauze\n• Secure with tape or wrap\n• Change dressing daily or when wet/dirty"
+        },
+        {
+          "subheading": "Step 5: Monitor for Complications",
+          "content": "• Watch for signs of infection (redness, warmth, swelling, pus, fever)\n• Check for proper healing progress\n• Ensure tetanus vaccination is current"
+        }
+      ]
+    },
+    {
+      "heading": "Preventing Infection in Traumatic Wounds",
+      "content": "Infection prevention is paramount:\n\n✓ **Clean thoroughly initially** - Most important step\n✓ **Remove all foreign material** - Glass, dirt, gravel, wood\n✓ **Daily dressing changes** - Keep wound clean and inspect regularly\n✓ **Keep covered** - Protects from further contamination\n✓ **Watch for warning signs:**\n  • Increasing pain\n  • Redness spreading beyond wound\n  • Warmth around wound\n  • Pus or cloudy drainage\n  • Foul odor\n  • Red streaks moving up limb\n  • Fever\n\nIf ANY of these develop, seek medical care promptly. Early antibiotic treatment can prevent a simple infection from becoming a serious problem.",
+      "callout": {
+        "type": "tip",
+        "title": "The 24-Hour Rule",
+        "content": "Most wound infections start to show signs within 24-48 hours of injury. Check your wound frequently during this critical window. Early detection and treatment of infection dramatically improves outcomes and prevents chronic wound development."
+      }
+    },
+    {
+      "heading": "Tetanus Protection",
+      "content": "Tetanus (lockjaw) is a serious bacterial infection that enters through wounds. Prevention is essential:\n\n**When you need a tetanus shot:**\n• Clean, minor wounds: booster if last shot was >10 years ago\n• Dirty wounds, punctures, animal bites: booster if last shot was >5 years ago\n• Unknown vaccination status: get tetanus immunization\n\n**High-risk wounds for tetanus:**\n• Puncture wounds (especially from dirty objects)\n• Wounds contaminated with dirt, soil, or manure\n• Crush injuries\n• Wounds with dead tissue\n• Animal bites\n\n**Don't delay:** Get tetanus booster within 48 hours of injury for best protection."
+    },
+    {
+      "heading": "Special Considerations",
+      "content": "Certain traumatic wounds require special attention:",
+      "subsections": [
+        {
+          "subheading": "Animal Bites",
+          "content": "• HIGH infection risk (bacteria from animal's mouth)\n• Require thorough cleaning and often antibiotics\n• Rabies concern for wild animal bites\n• Often left open to heal rather than stitched (to allow drainage)\n• Need medical evaluation within 24 hours"
+        },
+        {
+          "subheading": "Human Bites",
+          "content": "• HIGHEST infection risk of all bites\n• Human mouth contains many bacteria\n• Always require medical care and antibiotics\n• Never ignore—infections can be devastating"
+        },
+        {
+          "subheading": "Face/Head Wounds",
+          "content": "• Seek professional care for best cosmetic outcome\n• Head wounds bleed heavily (rich blood supply)\n• May need smaller, more precise stitches\n• Risk of concussion if associated with trauma"
+        },
+        {
+          "subheading": "Hand Wounds",
+          "content": "• High risk of functional impairment\n• May damage tendons, nerves, blood vessels\n• Require careful evaluation\n• Even small wounds can cause big problems if tendons are injured"
+        },
+        {
+          "subheading": "Foot Wounds (Especially in People with Diabetes)",
+          "content": "• Extra high infection risk\n• May not feel pain due to neuropathy\n• Can rapidly become serious\n• Require immediate medical attention\n• Never ignore \"just a little cut\" on diabetic foot"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I know if my wound needs stitches?",
+      "answer": "Seek stitches if: wound edges gape open and don't stay together, wound is deeper than ¼ inch, you can see fat/muscle/bone, wound is on the face (for best cosmetic result), bleeding doesn't stop after 10 minutes of pressure, wound is over a joint, or it's longer than ½ inch. The golden window for stitching is within 6-8 hours of injury for best results and lowest infection risk."
+    },
+    {
+      "question": "Can I remove a small embedded object myself, like a splinter or glass?",
+      "answer": "Small, superficial splinters close to the surface can usually be removed at home with clean tweezers. However, seek medical care for: deep embedded objects, glass shards (can break into smaller pieces), objects embedded in eye or face, metal fragments, anything near blood vessels or tendons, objects you can't fully remove, or if the area shows signs of infection. Never try to remove large or deeply embedded objects—this can cause severe bleeding or further damage."
+    },
+    {
+      "question": "My cut is healing but has a hard, crusty scab. Should I remove it?",
+      "answer": "No. Leave scabs alone—they're nature's bandage. Scabs protect the healing tissue underneath and prevent infection. Picking at scabs can: introduce bacteria, damage new tissue forming underneath, cause bleeding, delay healing, and increase scarring. Keep the area clean and covered. The scab will fall off naturally when the skin underneath has healed. If the scab becomes very thick, foul-smelling, or has increasing redness around it, see your provider—this may indicate infection."
+    },
+    {
+      "question": "How long is too long for a wound to still be healing?",
+      "answer": "General timeline: small cuts/scrapes should show significant improvement in 7-10 days and be healed in 2-3 weeks. Larger or deeper wounds may take 3-6 weeks. If your wound shows NO improvement after 2 weeks of proper care, is getting worse, or isn't completely healed after 4-6 weeks, seek medical evaluation. People with diabetes, circulation problems, or immune compromise should see a provider sooner—don't wait to get evaluation."
+    },
+    {
+      "question": "What's the difference between normal healing and infection?",
+      "answer": "Normal healing: mild redness right around wound edges, decreasing pain, clear or slightly bloody drainage, wound getting smaller. Infection warning signs: redness spreading beyond wound, increasing pain (especially throbbing), warmth, swelling, pus (thick, cloudy, yellow/green drainage), foul odor, red streaks moving up limb, fever. If you see infection signs, don't wait—seek medical care promptly. Early treatment prevents serious complications."
+    }
+  ],
+  "relatedProducts": [],
+  "metadata": {
+    "title": "Traumatic Wounds: Complete Injury Care Guide | WoundWise",
+    "description": "Expert guide to traumatic wound care including lacerations, abrasions, punctures, and contusions. Learn proper first aid and when to seek emergency care from Dr. Alvin May.",
+    "keywords": [
+      "traumatic wounds",
+      "lacerations",
+      "abrasions",
+      "puncture wounds",
+      "cuts and scrapes",
+      "wound first aid",
+      "acute injury care",
+      "emergency wound care",
+      "traumatic injury treatment",
+      "wound infection prevention"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2025-01-15",
+    "lastUpdated": "2025-01-15",
+    "readingTime": 14,
+    "featured": false
+  }
+}

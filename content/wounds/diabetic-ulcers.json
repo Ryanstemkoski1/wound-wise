@@ -3,24 +3,6 @@
   "title": "Diabetic Ulcers",
   "subtitle": "Understanding and Managing Diabetic Foot Ulcers",
   "description": "Diabetic foot ulcers (DFUs) are complex wounds that result from the combination of nerve damage (neuropathy) and poor circulation caused by elevated blood sugar levels. Learn about the silent progression of diabetic ulcers, prevention strategies, and evidence-based treatment approaches.",
-  "featured": true,
-  "metadata": {
-    "title": "Diabetic Ulcers: Causes, Prevention & Treatment | WoundWise",
-    "description": "Expert guidance on diabetic foot ulcers from Dr. Alvin May. Learn about neuropathy, vascular disease, prevention strategies, and evidence-based treatments for diabetic wounds.",
-    "keywords": [
-      "diabetic ulcers",
-      "diabetic foot ulcers",
-      "DFU",
-      "diabetic neuropathy",
-      "foot care",
-      "blood sugar control",
-      "diabetes complications",
-      "wound healing",
-      "Dr. Alvin May"
-    ],
-    "lastUpdated": "2024-01-15",
-    "readingTime": 14
-  },
   "quickInfo": {
     "riskFactors": [
       "Long-standing or poorly controlled diabetes",
@@ -169,16 +151,29 @@
       "answer": "Diabetic ulcers are highly prone to infection for several reasons: (1) High blood sugar impairs white blood cell function, reducing your body's ability to fight bacteria. (2) Poor circulation limits the delivery of immune cells and antibiotics to the wound. (3) Neuropathy prevents you from feeling early warning signs of infection. (4) The wound environment often contains devitalized tissue that provides a breeding ground for bacteria. This is why infection control and early detection are critical components of diabetic ulcer management."
     }
   ],
-  "relatedProducts": [
-    "heel-protector-boots",
-    "compression-socks",
-    "hydrocolloid-dressing",
-    "foam-dressing",
-    "protein-supplement"
-  ],
+  "relatedProducts": [],
   "relatedTreatments": [
     "offloading-positioning",
     "infection-control",
     "nutrition-healing"
-  ]
+  ],
+  "metadata": {
+    "title": "Diabetic Ulcers: Causes, Prevention & Treatment | WoundWise",
+    "description": "Expert guidance on diabetic foot ulcers from Dr. Alvin May. Learn about neuropathy, vascular disease, prevention strategies, and evidence-based treatments for diabetic wounds.",
+    "keywords": [
+      "diabetic ulcers",
+      "diabetic foot ulcers",
+      "DFU",
+      "diabetic neuropathy",
+      "foot care",
+      "blood sugar control",
+      "diabetes complications",
+      "wound healing"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2024-01-15",
+    "lastUpdated": "2024-01-15",
+    "readingTime": 14,
+    "featured": true
+  }
 }

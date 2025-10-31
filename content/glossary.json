@@ -1,17 +1,242 @@
 {
   "terms": [
     {
-      "term": "Pressure Injury",
-      "slug": "pressure-injury",
-      "definition": "A localized injury to the skin and underlying tissue caused by prolonged pressure, shear, or friction. Often seen in bedridden or otherwise mobility-limited patients.",
-      "relatedTerms": ["bedsore", "pressure-ulcer", "decubitus-ulcer"],
+      "term": "Abrasion",
+      "slug": "abrasion",
+      "definition": "A superficial wound caused by rubbing or scraping against a rough surface.",
+      "relatedTerms": ["skin-tear", "trauma"],
       "category": "medical"
+    },
+    {
+      "term": "Abscess",
+      "slug": "abscess",
+      "definition": "A localized collection of pus within tissues.",
+      "relatedTerms": ["infection", "drainage"],
+      "category": "medical"
+    },
+    {
+      "term": "Acute Wound",
+      "slug": "acute-wound",
+      "definition": "A wound that heals in the expected timeframe, typically within weeks.",
+      "relatedTerms": ["chronic-wound", "wound-healing"],
+      "category": "medical"
+    },
+    {
+      "term": "Adhesion",
+      "slug": "adhesion",
+      "definition": "The abnormal attachment of two internal surfaces in the body.",
+      "relatedTerms": ["scar-tissue", "surgical-complications"],
+      "category": "medical"
+    },
+    {
+      "term": "Alginate Dressing",
+      "slug": "alginate-dressing",
+      "definition": "Absorbent dressing made from seaweed-derived fibers that absorb exudate and promote healing in heavily draining wounds.",
+      "relatedTerms": ["wound-dressing", "foam-dressing", "exudate"],
+      "category": "treatment"
+    },
+    {
+      "term": "Amino Acids",
+      "slug": "amino-acids",
+      "definition": "Building blocks of protein that are necessary for tissue repair.",
+      "relatedTerms": ["protein", "nutrition", "arginine"],
+      "category": "general"
+    },
+    {
+      "term": "Antimicrobial",
+      "slug": "antimicrobial",
+      "definition": "An agent that inhibits or destroys the growth of microorganisms.",
+      "relatedTerms": ["infection-control", "antibiotics", "silver-dressing"],
+      "category": "treatment"
+    },
+    {
+      "term": "Antioxidants",
+      "slug": "antioxidants",
+      "definition": "Compounds that help protect cells from damage caused by free radicals, which can hinder wound healing.",
+      "relatedTerms": ["nutrition", "vitamins", "wound-healing"],
+      "category": "general"
+    },
+    {
+      "term": "Arginine",
+      "slug": "arginine",
+      "definition": "An amino acid that enhances collagen production, supports immune function, and promotes tissue repair.",
+      "relatedTerms": ["amino-acids", "protein", "nutrition"],
+      "category": "general"
+    },
+    {
+      "term": "Arterial Ulcer",
+      "slug": "arterial-ulcer",
+      "definition": "A wound related to poor blood circulation in the arteries, typically in the legs or feet.",
+      "relatedTerms": [
+        "peripheral-arterial-disease",
+        "ischemia",
+        "poor-circulation"
+      ],
+      "category": "medical"
+    },
+    {
+      "term": "Atrophic",
+      "slug": "atrophic",
+      "definition": "Wounds with thin or fragile tissue, often seen in elderly patients.",
+      "relatedTerms": ["skin-tear", "aging", "fragile-skin"],
+      "category": "medical"
+    },
+    {
+      "term": "Autolysis",
+      "slug": "autolysis",
+      "definition": "The body's natural ability to remove necrotic tissue using its own enzymes to break down devitalized tissue.",
+      "relatedTerms": ["autolytic-debridement", "wound-healing"],
+      "category": "medical"
+    },
+    {
+      "term": "Autolytic Debridement",
+      "slug": "autolytic-debridement",
+      "definition": "The body's natural process of breaking down and removing dead tissue.",
+      "relatedTerms": ["debridement", "autolysis", "necrotic-tissue"],
+      "category": "treatment"
+    },
+    {
+      "term": "Balanced Diet",
+      "slug": "balanced-diet",
+      "definition": "A diet that includes a variety of foods from different food groups to provide all necessary nutrients.",
+      "relatedTerms": ["nutrition", "wound-healing", "protein"],
+      "category": "general"
     },
     {
       "term": "Bedsore",
       "slug": "bedsore",
       "definition": "Also known as a pressure ulcer, is a skin injury that occurs due to prolonged pressure on the skin.",
       "relatedTerms": ["pressure-injury", "pressure-ulcer"],
+      "category": "medical"
+    },
+    {
+      "term": "Biofilm",
+      "slug": "biofilm",
+      "definition": "A protective layer formed by a community of bacteria in the wound, which can hinder healing.",
+      "relatedTerms": ["infection", "chronic-infection", "bacteria"],
+      "category": "medical"
+    },
+    {
+      "term": "Biohazard",
+      "slug": "biohazard",
+      "definition": "Materials or substances that pose a risk to human health due to their biological nature, often associated with contaminated wound dressings.",
+      "relatedTerms": ["infection", "disposal"],
+      "category": "general"
+    },
+    {
+      "term": "Biopsy",
+      "slug": "biopsy",
+      "definition": "A small piece of tissue that is removed from any part of the body for diagnostic purposes.",
+      "relatedTerms": ["diagnosis", "testing"],
+      "category": "medical"
+    },
+    {
+      "term": "Blister",
+      "slug": "blister",
+      "definition": "A raised, fluid-filled pocket that forms on the skin, typically in response to friction, heat, or irritation.",
+      "relatedTerms": ["burn", "friction", "skin-damage"],
+      "category": "medical"
+    },
+    {
+      "term": "Bruise",
+      "slug": "bruise",
+      "definition": "Bleeding from broken blood vessels beneath the skin causing skin discoloration.",
+      "relatedTerms": ["contusion", "hematoma", "trauma"],
+      "category": "medical"
+    },
+    {
+      "term": "Callus",
+      "slug": "callus",
+      "definition": "A hard, thickened, toughened area of skin that forms in response to repeated friction or pressure, often on the hands or feet.",
+      "relatedTerms": ["pressure", "friction", "diabetic-foot"],
+      "category": "medical"
+    },
+    {
+      "term": "Calories",
+      "slug": "calories",
+      "definition": "Units of energy derived from food that the body needs for various functions, including wound healing.",
+      "relatedTerms": ["nutrition", "energy", "metabolism"],
+      "category": "general"
+    },
+    {
+      "term": "Cancer Lesion",
+      "slug": "cancer-lesion",
+      "definition": "An abnormal growth of cells or tissue that may be cancerous, potentially posing a threat to overall health.",
+      "relatedTerms": ["malignant", "fungating-wound", "tumor"],
+      "category": "medical"
+    },
+    {
+      "term": "Carbohydrates",
+      "slug": "carbohydrates",
+      "definition": "Macronutrients that provide energy for the body and aid in the healing process.",
+      "relatedTerms": ["nutrition", "calories", "energy"],
+      "category": "general"
+    },
+    {
+      "term": "Chemical Debridement",
+      "slug": "chemical-debridement",
+      "definition": "Using topical agents or enzymes to break down and remove dead or necrotic tissue to promote wound healing.",
+      "relatedTerms": [
+        "debridement",
+        "enzymatic-debridement",
+        "necrotic-tissue"
+      ],
+      "category": "treatment"
+    },
+    {
+      "term": "Chronic Wound",
+      "slug": "chronic-wound",
+      "definition": "A wound that does not heal in an expected timeframe, often due to underlying health issues or complications.",
+      "relatedTerms": ["non-healing-wound", "acute-wound", "wound-healing"],
+      "category": "medical"
+    },
+    {
+      "term": "Clean",
+      "slug": "clean",
+      "definition": "Wounds free from contamination or infection.",
+      "relatedTerms": ["sterile", "wound-cleansing"],
+      "category": "medical"
+    },
+    {
+      "term": "Collagen",
+      "slug": "collagen",
+      "definition": "A protein that provides strength and structure to tissue, important for wound healing.",
+      "relatedTerms": ["protein", "tissue-repair", "scar-tissue"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Colonization",
+      "slug": "colonization",
+      "definition": "The presence of bacteria on the wound's surface without causing infection or harmful effects.",
+      "relatedTerms": ["bacteria", "infection", "biofilm"],
+      "category": "medical"
+    },
+    {
+      "term": "Compression",
+      "slug": "compression",
+      "definition": "The use of bandages or garments to apply pressure to reduce swelling and aid circulation.",
+      "relatedTerms": ["venous-ulcer", "edema", "compression-therapy"],
+      "category": "treatment"
+    },
+    {
+      "term": "Contaminated",
+      "slug": "contaminated",
+      "definition": "Wounds exposed to foreign materials or contaminants.",
+      "relatedTerms": ["infection", "clean", "sterile"],
+      "category": "medical"
+    },
+    {
+      "term": "Contracture",
+      "slug": "contracture",
+      "definition": "Restricted range of motion of a joint, often limiting mobility.",
+      "relatedTerms": ["scar-tissue", "mobility", "burn"],
+      "category": "medical"
+    },
+    {
+      "term": "Contusion",
+      "slug": "contusion",
+      "definition": "Commonly known as a bruise.",
+      "relatedTerms": ["bruise", "hematoma", "trauma"],
       "category": "medical"
     },
     {
@@ -26,53 +251,249 @@
       "category": "treatment"
     },
     {
+      "term": "Deep",
+      "slug": "deep",
+      "definition": "Wounds that extend into deeper layers of tissue.",
+      "relatedTerms": ["superficial", "wound-depth", "undermining"],
+      "category": "medical"
+    },
+    {
+      "term": "Dehiscence",
+      "slug": "dehiscence",
+      "definition": "The partial or complete separation of the edges of a surgical wound.",
+      "relatedTerms": ["surgical-wound", "wound-separation", "sutures"],
+      "category": "medical"
+    },
+    {
+      "term": "Dermis",
+      "slug": "dermis",
+      "definition": "The thick layer of skin beneath the epidermis, containing blood vessels, nerves, and hair follicles.",
+      "relatedTerms": ["epidermis", "subcutaneous-tissue", "skin-anatomy"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Desiccation",
+      "slug": "desiccation",
+      "definition": "Drying out of the wound, which can hinder healing.",
+      "relatedTerms": ["moisture-balance", "wound-environment"],
+      "category": "medical"
+    },
+    {
+      "term": "Diabetic Foot Ulcer",
+      "slug": "diabetic-foot-ulcer",
+      "definition": "A chronic wound commonly seen in individuals with diabetes.",
+      "relatedTerms": ["diabetes", "neuropathy", "diabetic-ulcer"],
+      "pronunciation": "dye-ah-BET-ik",
+      "category": "medical"
+    },
+    {
+      "term": "Dietary Supplements",
+      "slug": "dietary-supplements",
+      "definition": "Additional nutrients or vitamins taken in the form of pills, capsules, or liquids to support nutrition.",
+      "relatedTerms": ["vitamins", "nutrition", "protein"],
+      "category": "general"
+    },
+    {
+      "term": "Dietitian",
+      "slug": "dietitian",
+      "definition": "A healthcare professional who specializes in nutrition and can provide guidance on dietary choices for wound healing.",
+      "relatedTerms": ["nutrition", "healthcare-provider"],
+      "category": "general"
+    },
+    {
+      "term": "Dressing",
+      "slug": "dressing",
+      "definition": "Material placed on a wound to protect it, absorb exudate, and promote healing.",
+      "relatedTerms": ["wound-dressing", "bandage", "dressing-change"],
+      "category": "treatment"
+    },
+    {
+      "term": "Dressing Change",
+      "slug": "dressing-change",
+      "definition": "The process of removing and replacing wound dressings to assess and manage the wound.",
+      "relatedTerms": ["wound-care", "dressing"],
+      "category": "treatment"
+    },
+    {
+      "term": "Edema",
+      "slug": "edema",
+      "definition": "Swelling caused by an accumulation of fluid in the tissues.",
+      "relatedTerms": ["swelling", "venous-insufficiency", "elevation"],
+      "pronunciation": "ih-DEE-muh",
+      "category": "medical"
+    },
+    {
+      "term": "Edema Management",
+      "slug": "edema-management",
+      "definition": "Techniques to reduce swelling or fluid buildup in the tissues around the wound.",
+      "relatedTerms": ["compression", "elevation", "edema"],
+      "category": "treatment"
+    },
+    {
+      "term": "Edematous",
+      "slug": "edematous",
+      "definition": "Wounds surrounded by swollen or fluid-filled tissue.",
+      "relatedTerms": ["edema", "swelling"],
+      "category": "medical"
+    },
+    {
+      "term": "Elevation",
+      "slug": "elevation",
+      "definition": "Raising the wounded area above heart level to reduce swelling.",
+      "relatedTerms": ["edema-management", "venous-ulcer", "swelling"],
+      "category": "treatment"
+    },
+    {
+      "term": "Enteral Nutrition",
+      "slug": "enteral-nutrition",
+      "definition": "The delivery of nutrients directly into the digestive tract through methods such as tube feeding.",
+      "relatedTerms": ["g-tube", "peg-tube", "nutrition"],
+      "category": "treatment"
+    },
+    {
+      "term": "Epibole",
+      "slug": "epibole",
+      "definition": "When wound edges roll or fold over themselves, impeding wound healing.",
+      "relatedTerms": ["wound-edge", "wound-healing"],
+      "pronunciation": "eh-PIB-oh-lee",
+      "category": "medical"
+    },
+    {
+      "term": "Epidermis",
+      "slug": "epidermis",
+      "definition": "The outermost layer of skin situated above the dermis that forms the protective barrier to the body from invading organisms.",
+      "relatedTerms": ["dermis", "subcutaneous-tissue", "skin-anatomy"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Epithelialization",
+      "slug": "epithelialization",
+      "definition": "The formation of new skin cells at the wound edges to cover the wound.",
+      "relatedTerms": [
+        "wound-healing",
+        "skin-regeneration",
+        "granulation-tissue"
+      ],
+      "pronunciation": "ep-ih-THEE-lee-al-ih-ZAY-shun",
+      "category": "medical"
+    },
+    {
+      "term": "Epithelial Tissue",
+      "slug": "epithelial-tissue",
+      "definition": "The cellular lining of the surface of the body.",
+      "relatedTerms": ["epidermis", "epithelialization"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Erythema",
+      "slug": "erythema",
+      "definition": "Redness of the skin often associated with inflammation.",
+      "relatedTerms": ["inflammation", "infection", "redness"],
+      "pronunciation": "air-ih-THEE-muh",
+      "category": "medical"
+    },
+    {
+      "term": "Eschar",
+      "slug": "eschar",
+      "definition": "A thick, dry, hard, black or brown necrotic tissue that forms a scab on a wound.",
+      "relatedTerms": ["necrotic-tissue", "slough", "debridement"],
+      "pronunciation": "ES-kar",
+      "category": "medical"
+    },
+    {
       "term": "Exudate",
       "slug": "exudate",
       "definition": "Fluid that oozes out of a wound, containing proteins, cells, and debris. Exudate can be clear, yellow, green, or bloody.",
-      "relatedTerms": ["drainage", "wound-fluid"],
+      "relatedTerms": ["drainage", "wound-fluid", "serous", "purulent"],
+      "pronunciation": "EKS-yoo-date",
+      "category": "medical"
+    },
+    {
+      "term": "Exudative",
+      "slug": "exudative",
+      "definition": "Wounds that produce excessive drainage or exudate.",
+      "relatedTerms": ["exudate", "drainage", "moisture-management"],
+      "category": "medical"
+    },
+    {
+      "term": "Fibrin",
+      "slug": "fibrin",
+      "definition": "A protein involved in the blood clotting process.",
+      "relatedTerms": ["hemostasis", "clotting", "wound-healing"],
+      "category": "medical"
+    },
+    {
+      "term": "Fistula",
+      "slug": "fistula",
+      "definition": "An abnormal connection or passageway between two organs or vessels, sometimes associated with wound complications.",
+      "relatedTerms": ["sinus-tract", "wound-complication"],
+      "pronunciation": "FIS-choo-luh",
+      "category": "medical"
+    },
+    {
+      "term": "Foam Dressing",
+      "slug": "foam-dressing",
+      "definition": "A dressing with a foam-like texture that absorbs exudate, maintains a moist environment, and cushions the wound.",
+      "relatedTerms": ["wound-dressing", "alginate-dressing", "exudate"],
+      "category": "treatment"
+    },
+    {
+      "term": "Gangrene",
+      "slug": "gangrene",
+      "definition": "Dead or dying tissue resulting from a lack of blood flow or infection.",
+      "relatedTerms": ["necrosis", "ischemia", "tissue-death"],
       "category": "medical"
     },
     {
       "term": "Granulation Tissue",
       "slug": "granulation-tissue",
       "definition": "New connective tissue formed during wound healing, characterized by a pink or beefy red appearance. Facilitates wound closure in the healing process of secondary intention.",
-      "relatedTerms": ["wound-healing", "tissue-repair"],
+      "relatedTerms": ["wound-healing", "tissue-repair", "epithelialization"],
       "category": "anatomy"
     },
     {
-      "term": "Offloading",
-      "slug": "offloading",
-      "definition": "Reducing pressure on affected areas to facilitate healing, often using a specialized device or technique.",
-      "relatedTerms": ["pressure-relief", "repositioning"],
+      "term": "G-Tube",
+      "slug": "g-tube",
+      "definition": "A medical device inserted through the abdominal wall into the stomach and held in place by an inflatable balloon within the stomach, allowing for feeding or medication delivery in individuals who cannot eat or drink orally.",
+      "relatedTerms": ["enteral-nutrition", "peg-tube", "feeding-tube"],
+      "category": "medical"
+    },
+    {
+      "term": "Heel Float",
+      "slug": "heel-float",
+      "definition": "A technique that keeps a patient's heel elevated and suspended, preventing it from coming into contact with a surface to alleviate pressure.",
+      "relatedTerms": ["offloading", "pressure-injury", "heel-protector"],
       "category": "treatment"
     },
     {
-      "term": "Eschar",
-      "slug": "eschar",
-      "definition": "A thick, dry, hard, black or brown necrotic tissue that forms a scab on a wound.",
-      "relatedTerms": ["necrotic-tissue", "slough", "dead-tissue"],
+      "term": "Heel Protector",
+      "slug": "heel-protector",
+      "definition": "A specialized cushioning or support device designed to protect and offload pressure from the heels.",
+      "relatedTerms": ["heel-float", "offloading", "pressure-relief"],
+      "category": "treatment"
+    },
+    {
+      "term": "Hematoma",
+      "slug": "hematoma",
+      "definition": "A collection of blood under the skin due to broken blood vessels often seen as a bruise or lump.",
+      "relatedTerms": ["bruise", "contusion", "bleeding"],
+      "pronunciation": "hee-muh-TOH-muh",
       "category": "medical"
     },
     {
-      "term": "Slough",
-      "slug": "slough",
-      "definition": "Soft, yellowish or whitish necrotic (dead) tissue that may be present in a wound bed.",
-      "relatedTerms": ["necrotic-tissue", "eschar", "debridement"],
+      "term": "Hemostasis",
+      "slug": "hemostasis",
+      "definition": "The process of stopping bleeding. The first stage of wound healing where the body works to stop bleeding by constricting blood vessels and forming clots.",
+      "relatedTerms": ["wound-healing-stages", "clotting", "bleeding"],
+      "pronunciation": "hee-moh-STAY-sis",
       "category": "medical"
     },
     {
-      "term": "Undermining",
-      "slug": "undermining",
-      "definition": "The formation of a pocket or ledge beneath the intact skin at the wound edge.",
-      "relatedTerms": ["tunneling", "wound-depth"],
-      "category": "medical"
-    },
-    {
-      "term": "Tunneling",
-      "slug": "tunneling",
-      "definition": "Narrow channels extending from the wound bed into surrounding tissue.",
-      "relatedTerms": ["undermining", "sinus-tract"],
-      "category": "medical"
+      "term": "Hydration",
+      "slug": "hydration",
+      "definition": "Maintaining adequate fluid intake, which is crucial for wound healing.",
+      "relatedTerms": ["water", "nutrition", "fluid-balance"],
+      "category": "general"
     },
     {
       "term": "Hydrocolloid Dressing",
@@ -82,30 +503,187 @@
       "category": "treatment"
     },
     {
-      "term": "Alginate Dressing",
-      "slug": "alginate-dressing",
-      "definition": "Absorbent dressing made from seaweed-derived fibers that absorb exudate and promote healing in heavily draining wounds.",
+      "term": "Hyperbaric Oxygen Therapy",
+      "slug": "hyperbaric-oxygen-therapy",
+      "definition": "A treatment that involves breathing pure oxygen in a pressurized chamber to promote wound healing.",
+      "relatedTerms": ["hbot", "advanced-therapy", "oxygen"],
+      "pronunciation": "hy-per-BAIR-ik",
+      "category": "treatment"
+    },
+    {
+      "term": "Hypergranulation",
+      "slug": "hypergranulation",
+      "definition": "Excessive growth of granulation tissue above the wound surface.",
+      "relatedTerms": ["granulation-tissue", "wound-healing"],
+      "category": "medical"
+    },
+    {
+      "term": "Hypoxic",
+      "slug": "hypoxic",
+      "definition": "Wounds with reduced oxygen supply, often due to poor circulation.",
+      "relatedTerms": ["ischemia", "poor-circulation", "oxygen"],
+      "pronunciation": "hy-POK-sik",
+      "category": "medical"
+    },
+    {
+      "term": "Immune System",
+      "slug": "immune-system",
+      "definition": "The body's defense mechanism against infections and other health threats, influenced by nutrition.",
+      "relatedTerms": ["infection", "nutrition", "white-blood-cells"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Incision",
+      "slug": "incision",
+      "definition": "A surgical cut or wound made intentionally, typically for medical procedures.",
+      "relatedTerms": ["surgical-wound", "laceration"],
+      "category": "medical"
+    },
+    {
+      "term": "Incontinence",
+      "slug": "incontinence",
+      "definition": "Medical condition involving the loss of control over bladder and/or bowel function.",
+      "relatedTerms": ["masd", "skin-damage", "moisture"],
+      "category": "medical"
+    },
+    {
+      "term": "Infected",
+      "slug": "infected",
+      "definition": "Wounds with signs of bacterial or microbial contamination.",
+      "relatedTerms": ["infection", "bacteria", "contaminated"],
+      "category": "medical"
+    },
+    {
+      "term": "Infection",
+      "slug": "infection",
+      "definition": "The invasion and multiplication of microorganisms in tissues, leading to tissue damage.",
+      "relatedTerms": ["bacteria", "inflammation", "infected"],
+      "category": "medical"
+    },
+    {
+      "term": "Inflammation",
+      "slug": "inflammation",
+      "definition": "The body's natural response to injury, including wounds. The second stage of wound healing characterized by redness, swelling, and the activation of immune cells to defend against infection.",
+      "relatedTerms": ["wound-healing-stages", "erythema", "immune-response"],
+      "category": "medical"
+    },
+    {
+      "term": "Iron",
+      "slug": "iron",
+      "definition": "A vital mineral necessary for transporting oxygen in the blood which is essential for tissue oxygenation and repair.",
+      "relatedTerms": ["nutrition", "minerals", "oxygen"],
+      "category": "general"
+    },
+    {
+      "term": "Ischemia",
+      "slug": "ischemia",
+      "definition": "Insufficient blood supply to a tissue or organ causing tissue damage and possibly wounds.",
+      "relatedTerms": ["arterial-ulcer", "poor-circulation", "hypoxic"],
+      "pronunciation": "is-KEE-mee-uh",
+      "category": "medical"
+    },
+    {
+      "term": "Keloid",
+      "slug": "keloid",
+      "definition": "An abnormal overgrowth of scar tissue that extends beyond the boundaries of the original wound, and tends to remain elevated and discolored.",
+      "relatedTerms": ["scar-tissue", "hypertrophic-scar"],
+      "pronunciation": "KEE-loyd",
+      "category": "medical"
+    },
+    {
+      "term": "Laceration",
+      "slug": "laceration",
+      "definition": "A wound caused by a sharp object cutting or tearing the skin.",
+      "relatedTerms": ["incision", "trauma", "sutures"],
+      "category": "medical"
+    },
+    {
+      "term": "Lymphedema",
+      "slug": "lymphedema",
+      "definition": "A swelling in the arms or legs due to a blockage or damage to the lymphatic system.",
+      "relatedTerms": ["edema", "swelling", "compression"],
+      "pronunciation": "lim-fuh-DEE-muh",
+      "category": "medical"
+    },
+    {
+      "term": "Maceration",
+      "slug": "maceration",
+      "definition": "Softening and breakdown of skin or wound tissue due to prolonged exposure to moisture.",
       "relatedTerms": [
-        "wound-dressing",
-        "hydrocolloid-dressing",
-        "foam-dressing"
+        "moisture-damage",
+        "periwound-damage",
+        "moisture-management"
+      ],
+      "category": "medical"
+    },
+    {
+      "term": "Macrophage",
+      "slug": "macrophage",
+      "definition": "A type of white blood cell that plays a key role in the inflammatory phase of wound healing.",
+      "relatedTerms": ["inflammation", "immune-system", "white-blood-cells"],
+      "pronunciation": "MAK-roh-fayj",
+      "category": "anatomy"
+    },
+    {
+      "term": "Maggot Therapy",
+      "slug": "maggot-therapy",
+      "definition": "Applying sterile fly larvae (maggots) to a wound bed to remove dead tissue and stimulate healing.",
+      "relatedTerms": [
+        "biological-debridement",
+        "debridement",
+        "necrotic-tissue"
       ],
       "category": "treatment"
     },
     {
-      "term": "Osteomyelitis",
-      "slug": "osteomyelitis",
-      "definition": "A severe bone infection characterized by inflammation and damage to bone tissue often caused by bacteria.",
-      "relatedTerms": ["bone-infection", "infection"],
-      "pronunciation": "os-tee-oh-my-eh-LY-tis",
+      "term": "Malnutrition",
+      "slug": "malnutrition",
+      "definition": "A condition characterized by a lack of essential nutrients in the diet, which can impair wound healing.",
+      "relatedTerms": ["nutrition", "protein", "wound-healing"],
+      "category": "general"
+    },
+    {
+      "term": "MASD",
+      "slug": "masd",
+      "definition": "Moisture-Associated Skin Damage. Refers to skin injuries caused by prolonged exposure to moisture, such as from urine or sweat.",
+      "relatedTerms": ["maceration", "incontinence", "skin-damage"],
       "category": "medical"
     },
     {
-      "term": "Venous Insufficiency",
-      "slug": "venous-insufficiency",
-      "definition": "A condition where veins have problems sending blood from the legs back to the heart, often leading to leg swelling and venous ulcers.",
-      "relatedTerms": ["venous-ulcer", "edema", "leg-swelling"],
+      "term": "Maturation",
+      "slug": "maturation",
+      "definition": "The fourth stage of wound healing focuses on strengthening and remodeling the healed tissue to regain its strength and flexibility over time.",
+      "relatedTerms": ["wound-healing-stages", "scar-tissue", "collagen"],
       "category": "medical"
+    },
+    {
+      "term": "Minerals",
+      "slug": "minerals",
+      "definition": "Essential micronutrients (e.g., zinc, iron) that play a role in wound healing and tissue repair.",
+      "relatedTerms": ["nutrition", "zinc", "iron"],
+      "category": "general"
+    },
+    {
+      "term": "Necrosis",
+      "slug": "necrosis",
+      "definition": "Death of cells or tissues, often seen as black or dark-colored areas in the wound.",
+      "relatedTerms": ["necrotic-tissue", "gangrene", "tissue-death"],
+      "pronunciation": "neh-KROH-sis",
+      "category": "medical"
+    },
+    {
+      "term": "Necrotic Tissue",
+      "slug": "necrotic-tissue",
+      "definition": "Dead tissue in a wound.",
+      "relatedTerms": ["eschar", "slough", "debridement", "necrosis"],
+      "category": "medical"
+    },
+    {
+      "term": "Negative Pressure Wound Therapy",
+      "slug": "negative-pressure-wound-therapy",
+      "definition": "A wound management technique that uses suction to promote healing.",
+      "relatedTerms": ["npwt", "wound-vac", "advanced-therapy"],
+      "category": "treatment"
     },
     {
       "term": "Neuropathy",
@@ -116,42 +694,296 @@
         "nerve-damage",
         "loss-of-sensation"
       ],
+      "pronunciation": "noor-AH-puh-thee",
+      "category": "medical"
+    },
+    {
+      "term": "Non-Adherent Dressing",
+      "slug": "non-adherent-dressing",
+      "definition": "A type of dressing that does not stick to the wound, reducing trauma during dressing changes.",
+      "relatedTerms": ["wound-dressing", "dressing-change"],
+      "category": "treatment"
+    },
+    {
+      "term": "Nutrition",
+      "slug": "nutrition",
+      "definition": "The process of providing the body with the necessary nutrients through food to support overall health and wound healing.",
+      "relatedTerms": ["protein", "calories", "wound-healing"],
+      "category": "general"
+    },
+    {
+      "term": "Offloading",
+      "slug": "offloading",
+      "definition": "Reducing pressure on affected areas to facilitate healing, often using a specialized device or technique.",
+      "relatedTerms": ["pressure-relief", "repositioning", "pressure-injury"],
+      "category": "treatment"
+    },
+    {
+      "term": "Osteomyelitis",
+      "slug": "osteomyelitis",
+      "definition": "A severe bone infection characterized by inflammation and damage to bone tissue often caused by bacteria.",
+      "relatedTerms": ["bone-infection", "infection", "diabetic-ulcer"],
+      "pronunciation": "os-tee-oh-my-eh-LY-tis",
+      "category": "medical"
+    },
+    {
+      "term": "PEG Tube",
+      "slug": "peg-tube",
+      "definition": "Percutaneous Endoscopic Gastrostomy Tube. A medical device inserted through the abdominal wall into the stomach via endoscopy, allowing for feeding or medication delivery in individuals who cannot eat or drink orally.",
+      "relatedTerms": ["g-tube", "enteral-nutrition", "feeding-tube"],
       "category": "medical"
     },
     {
       "term": "Peripheral Arterial Disease",
       "slug": "peripheral-arterial-disease",
       "definition": "A condition where narrowed arteries reduce blood flow to the limbs, often causing pain and slow wound healing.",
-      "relatedTerms": ["arterial-insufficiency", "poor-circulation", "pad"],
+      "relatedTerms": [
+        "arterial-insufficiency",
+        "poor-circulation",
+        "pad",
+        "ischemia"
+      ],
+      "pronunciation": "puh-RIF-er-ul ar-TEER-ee-ul",
       "category": "medical"
     },
     {
-      "term": "Epithelialization",
-      "slug": "epithelialization",
-      "definition": "The formation of new skin cells at the wound edges to cover the wound.",
-      "relatedTerms": ["wound-healing", "skin-regeneration"],
+      "term": "Periwound",
+      "slug": "periwound",
+      "definition": "The area of skin surrounding a wound.",
+      "relatedTerms": ["wound-edge", "maceration", "skin-protection"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Pressure Injury",
+      "slug": "pressure-injury",
+      "definition": "A localized injury to the skin and underlying tissue caused by prolonged pressure, shear, or friction. Often seen in bedridden or otherwise mobility-limited patients.",
+      "relatedTerms": ["bedsore", "pressure-ulcer", "decubitus-ulcer"],
       "category": "medical"
     },
     {
-      "term": "Maceration",
-      "slug": "maceration",
-      "definition": "Softening and breakdown of skin or wound tissue due to prolonged exposure to moisture.",
-      "relatedTerms": ["moisture-damage", "periwound-damage"],
+      "term": "Pressure Ulcer",
+      "slug": "pressure-ulcer",
+      "definition": "A localized injury to the skin and underlying tissue caused by prolonged pressure, shear, or friction. Often seen in bedridden or otherwise mobility-limited patients.",
+      "relatedTerms": ["pressure-injury", "bedsore"],
       "category": "medical"
     },
     {
-      "term": "Biofilm",
-      "slug": "biofilm",
-      "definition": "A protective layer formed by a community of bacteria in the wound, which can hinder healing.",
-      "relatedTerms": ["bacterial-infection", "chronic-infection"],
+      "term": "Primary Intention",
+      "slug": "primary-intention",
+      "definition": "The surgical closure of a wound with sutures or staples to promote rapid and organized healing with minimal scarring.",
+      "relatedTerms": ["secondary-intention", "sutures", "wound-closure"],
       "category": "medical"
     },
     {
-      "term": "Autolytic Debridement",
-      "slug": "autolytic-debridement",
-      "definition": "The body's natural process of breaking down and removing dead tissue.",
-      "relatedTerms": ["debridement", "natural-healing"],
+      "term": "Proliferation",
+      "slug": "proliferation",
+      "definition": "The third stage of wound healing involves the formation of new tissue and blood vessels to repair the wound.",
+      "relatedTerms": [
+        "wound-healing-stages",
+        "granulation-tissue",
+        "angiogenesis"
+      ],
+      "category": "medical"
+    },
+    {
+      "term": "Protein",
+      "slug": "protein",
+      "definition": "A macronutrient essential for tissue repair and the formation of new skin cells.",
+      "relatedTerms": ["nutrition", "amino-acids", "wound-healing"],
+      "category": "general"
+    },
+    {
+      "term": "Puncture Wound",
+      "slug": "puncture-wound",
+      "definition": "A wound caused by a sharp object piercing the skin.",
+      "relatedTerms": ["trauma", "tetanus", "laceration"],
+      "category": "medical"
+    },
+    {
+      "term": "Repositioning",
+      "slug": "repositioning",
+      "definition": "The practice of regularly changing a patient's body or limb position to relieve pressure on specific areas.",
+      "relatedTerms": ["offloading", "pressure-injury", "pressure-relief"],
       "category": "treatment"
+    },
+    {
+      "term": "Scar Tissue",
+      "slug": "scar-tissue",
+      "definition": "Fibrous tissue that forms as a wound heals, often leaving a mark.",
+      "relatedTerms": ["collagen", "keloid", "maturation"],
+      "category": "medical"
+    },
+    {
+      "term": "Secondary Intention",
+      "slug": "secondary-intention",
+      "definition": "A natural healing process where a wound is left open to granulate and heal from the bottom up, often used for deeper or infected wounds.",
+      "relatedTerms": [
+        "primary-intention",
+        "granulation-tissue",
+        "wound-healing"
+      ],
+      "category": "medical"
+    },
+    {
+      "term": "Sharp Debridement",
+      "slug": "sharp-debridement",
+      "definition": "When dead or infected tissue is removed using sharp instruments such as scalpels or scissors to promote healing.",
+      "relatedTerms": [
+        "debridement",
+        "surgical-debridement",
+        "necrotic-tissue"
+      ],
+      "category": "treatment"
+    },
+    {
+      "term": "Silver Dressing",
+      "slug": "silver-dressing",
+      "definition": "A dressing infused with silver to help prevent or manage wound infections.",
+      "relatedTerms": ["antimicrobial", "infection-control", "wound-dressing"],
+      "category": "treatment"
+    },
+    {
+      "term": "Sinus Tract",
+      "slug": "sinus-tract",
+      "definition": "A narrow, abnormal passageway leading from an abscess or cavity to the skin surface.",
+      "relatedTerms": ["tunneling", "fistula", "infection"],
+      "category": "medical"
+    },
+    {
+      "term": "Skin Graft",
+      "slug": "skin-graft",
+      "definition": "Surgical transplantation of healthy skin to cover a wound.",
+      "relatedTerms": ["surgical-wound", "skin-substitute", "tissue-repair"],
+      "category": "treatment"
+    },
+    {
+      "term": "Skin Tear",
+      "slug": "skin-tear",
+      "definition": "A traumatic injury to the skin characterized by the separation of the top layer of skin from the underlying tissue.",
+      "relatedTerms": ["fragile-skin", "elderly", "trauma"],
+      "category": "medical"
+    },
+    {
+      "term": "Slough",
+      "slug": "slough",
+      "definition": "Soft, yellowish or whitish necrotic (dead) tissue that may be present in a wound bed.",
+      "relatedTerms": ["necrotic-tissue", "eschar", "debridement"],
+      "pronunciation": "sluff",
+      "category": "medical"
+    },
+    {
+      "term": "Subcutaneous Tissue",
+      "slug": "subcutaneous-tissue",
+      "definition": "The layer of fat and connective tissue beneath the skin consisting of fat, blood vessels, and nerves providing insulation and cushioning for the body.",
+      "relatedTerms": ["dermis", "epidermis", "skin-anatomy"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Superficial",
+      "slug": "superficial",
+      "definition": "Wounds affecting only the top layers of skin.",
+      "relatedTerms": ["deep", "epidermis", "abrasion"],
+      "category": "medical"
+    },
+    {
+      "term": "Sutures",
+      "slug": "sutures",
+      "definition": "Stitches or other materials used to hold wound edges together during healing.",
+      "relatedTerms": ["stitches", "surgical-wound", "primary-intention"],
+      "category": "treatment"
+    },
+    {
+      "term": "Tunneling",
+      "slug": "tunneling",
+      "definition": "Narrow channels extending from the wound bed into surrounding tissue.",
+      "relatedTerms": ["undermining", "sinus-tract", "wound-depth"],
+      "category": "medical"
+    },
+    {
+      "term": "Ulcer",
+      "slug": "ulcer",
+      "definition": "A sore on the skin or mucous membrane, often due to poor circulation or pressure.",
+      "relatedTerms": ["chronic-wound", "pressure-ulcer", "venous-ulcer"],
+      "category": "medical"
+    },
+    {
+      "term": "Undermining",
+      "slug": "undermining",
+      "definition": "The formation of a pocket or ledge beneath the intact skin at the wound edge.",
+      "relatedTerms": ["tunneling", "wound-depth", "wound-assessment"],
+      "category": "medical"
+    },
+    {
+      "term": "Venous Insufficiency",
+      "slug": "venous-insufficiency",
+      "definition": "A condition where veins have problems sending blood from the legs back to the heart, often leading to leg swelling and venous ulcers.",
+      "relatedTerms": ["venous-ulcer", "edema", "leg-swelling"],
+      "category": "medical"
+    },
+    {
+      "term": "Vitamins",
+      "slug": "vitamins",
+      "definition": "Essential micronutrients that support various bodily functions, including wound healing (e.g., vitamin C, vitamin D).",
+      "relatedTerms": ["nutrition", "antioxidants", "wound-healing"],
+      "category": "general"
+    },
+    {
+      "term": "Wound Assessment",
+      "slug": "wound-assessment",
+      "definition": "The evaluation of a wound's size, depth, appearance, and healing progress.",
+      "relatedTerms": ["wound-documentation", "wound-measurement"],
+      "category": "treatment"
+    },
+    {
+      "term": "Wound Bed",
+      "slug": "wound-bed",
+      "definition": "The base or bottom of the wound where new tissue forms.",
+      "relatedTerms": ["granulation-tissue", "wound-healing"],
+      "category": "anatomy"
+    },
+    {
+      "term": "Wound Dehiscence",
+      "slug": "wound-dehiscence",
+      "definition": "The separation or bursting open of a previously closed wound.",
+      "relatedTerms": ["dehiscence", "surgical-wound", "wound-separation"],
+      "category": "medical"
+    },
+    {
+      "term": "Wound Healing Stages",
+      "slug": "wound-healing-stages",
+      "definition": "The process of wound healing, typically divided into 4 stages - hemostasis, inflammation, proliferation, and then maturation.",
+      "relatedTerms": [
+        "hemostasis",
+        "inflammation",
+        "proliferation",
+        "maturation"
+      ],
+      "category": "medical"
+    },
+    {
+      "term": "Wound Irrigation",
+      "slug": "wound-irrigation",
+      "definition": "The process of rinsing a wound with a sterile solution to clean and remove debris.",
+      "relatedTerms": ["wound-cleansing", "saline", "wound-care"],
+      "category": "treatment"
+    },
+    {
+      "term": "Wound VAC",
+      "slug": "wound-vac",
+      "definition": "Vacuum-Assisted Closure. A device that uses negative pressure (suction) to promote wound healing by removing excess fluid and promoting tissue growth.",
+      "relatedTerms": [
+        "npwt",
+        "negative-pressure-wound-therapy",
+        "advanced-therapy"
+      ],
+      "category": "treatment"
+    },
+    {
+      "term": "Zinc",
+      "slug": "zinc",
+      "definition": "A mineral that promotes cell growth, collagen formation, and immune function in wound healing as well as a component of many body systems.",
+      "relatedTerms": ["minerals", "nutrition", "wound-healing"],
+      "category": "general"
     }
   ]
 }

@@ -1,0 +1,253 @@
+{
+  "slug": "end-of-life-wounds",
+  "title": "Wound Healing at the End-of-Life: Compassionate Palliative Care",
+  "subtitle": "Comfort-Focused Wound Management in Terminal Illness",
+  "description": "Understanding wound management in terminal illness and end-of-life care, focusing on comfort, dignity, and quality of life when healing may not be possible.",
+  "quickInfo": {
+    "riskFactors": [
+      "Terminal cancer or advanced malignancy",
+      "Multiple organ system failure",
+      "Severe malnutrition or cachexia",
+      "Immobility or bedbound status",
+      "Poor circulation from heart or vascular disease",
+      "Immunosuppression from disease or treatment",
+      "Advanced age with multiple comorbidities"
+    ],
+    "warningSigns": [
+      "Uncontrolled wound pain despite medication",
+      "Severe wound odor affecting quality of life",
+      "Heavy bleeding from wound",
+      "Signs of systemic infection (fever, confusion, lethargy)",
+      "Rapid wound deterioration or expansion",
+      "Caregiver burnout or inability to manage care",
+      "Patient distress related to wound"
+    ],
+    "prevention": [
+      "Regular repositioning to prevent new pressure injuries",
+      "Gentle skin care with mild cleansers",
+      "Keep skin clean and dry, especially if incontinent",
+      "Use pressure-relief surfaces (specialty mattresses)",
+      "Maintain nutrition and hydration as tolerated",
+      "Minimize skin trauma (gentle tape removal, soft clothing)",
+      "Early palliative care consultation"
+    ]
+  },
+  "icon": "heart-handshake",
+  "heroImage": "/images/wounds/end-of-life-hero.jpg",
+  "relatedTreatments": [
+    "pain-management",
+    "wound-dressings",
+    "moisture-management",
+    "infection-control"
+  ],
+  "sections": [
+    {
+      "heading": "Understanding Wounds at the End-of-Life",
+      "content": "Facing reality as we approach the end of someone's life can be difficult. Similarly, wound healing in the end-of-life setting can be daunting and overwhelming. Wounds occurring at this terminal stage of life may not heal, despite our best efforts and advanced medical interventions. Understanding this is crucial, but it's equally important not to lose hope. Effective and compassionate wound management can significantly improve comfort and quality of life.\n\nAt this stage of life, the goals of wound care fundamentally shift. Rather than focusing solely on healing, we focus on managing symptoms, preventing complications, maintaining dignity, and maximizing comfort. This doesn't mean we give up—it means we redirect our efforts toward what matters most: quality of life and comfort for the patient and peace of mind for the family.",
+      "callout": {
+        "type": "info",
+        "title": "A Different Kind of Success",
+        "content": "In palliative wound care, success is not always measured by wound closure. Success means keeping the patient comfortable, preventing pain and odor, maintaining skin integrity around the wound, and preserving the person's dignity. These are worthy and achievable goals even when healing is not possible."
+      }
+    },
+    {
+      "heading": "Why Wounds May Not Heal at End-of-Life",
+      "content": "Several factors can influence wound healing in end-of-life care, and understanding these helps set realistic expectations and guide treatment decisions:",
+      "subsections": [
+        {
+          "subheading": "Advanced Disease States",
+          "content": "As we've discussed before, chronic conditions such as advanced stages of cancer, kidney failure, or heart disease can severely impair the body's natural healing processes. In terminal illness, multiple organ systems are often failing simultaneously.\n\n**Cancer:** Advanced cancer diverts the body's resources to tumor growth rather than wound healing. Tumors can also directly invade and destroy healthy tissue, creating wounds that cannot close. Cachexia (severe weight loss and muscle wasting) robs the body of protein needed for tissue repair.\n\n**Kidney failure:** When kidneys fail, waste products accumulate in the blood, creating a toxic environment that impairs healing. Fluid retention causes tissue swelling that stretches skin and wounds. Severe protein loss occurs.\n\n**Heart failure:** Poor circulation means inadequate oxygen and nutrient delivery to wounds. Fluid backup causes severe tissue swelling (edema) that impairs healing and increases skin breakdown risk.\n\n**Liver failure:** The liver produces proteins essential for healing and blood clotting. When it fails, wounds cannot repair themselves and bleeding becomes problematic."
+        },
+        {
+          "subheading": "Weakened Immune Response",
+          "content": "The body's immune response is often weakened in this stage of life, making it harder to fight infections that can delay healing. A healthy immune system is essential for wound healing—it fights bacteria, removes dead tissue, and signals the healing process to begin.\n\nIn terminal illness:\n• White blood cell counts may be low (from disease or treatment)\n• Existing white blood cells may function poorly\n• The inflammatory response (essential for healing) is blunted\n• The body cannot mount an effective defense against wound bacteria\n\nThis creates a situation where even minor wounds can develop serious infections, and infections are difficult or impossible to clear."
+        },
+        {
+          "subheading": "Medication Effects",
+          "content": "Medications commonly used in palliative care can impede wound healing, though they serve critical purposes for comfort:\n\n**Steroids (prednisone, dexamethasone):**\n• Used to reduce swelling, improve appetite, decrease inflammation\n• But: suppress immune function, thin skin, impair collagen production\n• Result: significantly slower healing, increased infection risk\n\n**Chemotherapy agents:**\n• Necessary for cancer treatment or symptom control\n• But: kill rapidly dividing cells (including healing cells)\n• Result: wounds cannot generate new tissue\n\n**Immunosuppressive drugs:**\n• May be needed for organ transplant patients or autoimmune conditions\n• But: deliberately suppress the immune response\n• Result: healing cannot proceed normally, high infection risk\n\n**The dilemma:** These medications may be essential for the patient's comfort and quality of life, even though they impair healing. In palliative care, we prioritize comfort over healing when necessary."
+        },
+        {
+          "subheading": "Reduced Mobility and Nutritional Deficits",
+          "content": "Reduced mobility and nutritional deficits can further complicate the situation, as the body struggles to repair itself.\n\n**Immobility issues:**\n• Bedridden or chairbound patients develop pressure wounds unavoidably\n• Cannot reposition adequately without assistance\n• Prolonged pressure creates new wounds while existing wounds worsen\n• Muscle wasting removes protective padding over bones\n\n**Nutritional challenges:**\nTerminal illness often causes:\n• Loss of appetite (disease, medications, depression)\n• Difficulty swallowing or keeping food down\n• Intestinal dysfunction preventing nutrient absorption\n• Cachexia (severe wasting syndrome)\n• Dehydration\n\nWithout adequate protein, calories, vitamins, and hydration, the body simply lacks the building blocks needed for healing. It's like asking a construction crew to build a house without any materials—impossible, no matter how hard they try."
+        },
+        {
+          "subheading": "Tissue Damage from Prior Treatment",
+          "content": "Additionally, old scarring and tissue damage from an old injury, prior surgery, or radiation therapy may have damaged tissues and blood flow to a wound bed enough to prevent it from coming together and healing.\n\n**Radiation damage:**\nRadiation therapy for cancer can cause:\n• Permanent damage to blood vessels (they become scarred and narrowed)\n• Skin that's thin, fragile, and easily injured\n• Tissue that's been 'cooked' and can never fully recover\n• Wounds in radiated tissue that simply cannot heal (inadequate blood supply)\n\n**Surgical scarring:**\n• Multiple previous surgeries in the same area\n• Scar tissue has poor blood supply\n• Creates areas vulnerable to breakdown\n\nThese factors create a 'perfect storm' where wounds develop easily but healing is nearly impossible."
+        }
+      ]
+    },
+    {
+      "heading": "Goals of Palliative Wound Care",
+      "content": "When healing is not realistic, the goals of wound care shift dramatically. The focus becomes comfort, dignity, and quality of life:",
+      "subsections": [
+        {
+          "subheading": "Symptom Management",
+          "content": "**Pain control:** Wounds at end-of-life can be extremely painful. Adequate pain management is the highest priority.\n• Topical pain medications (lidocaine gels, morphine gels applied directly to wound)\n• Systemic pain medications (oral, IV, or patch narcotics)\n• Non-drug approaches (positioning, gentle dressing techniques)\n• Pain medication timed before dressing changes\n\n**Odor control:** Infected or necrotic wounds can produce extremely distressing odors.\n• Antimicrobial dressings (silver, honey, metronidazole gel)\n• Charcoal-activated dressings that trap odor molecules\n• Frequent dressing changes\n• Room deodorizers, aromatherapy, open windows\n• Addressing underlying infection when appropriate\n\n**Drainage management:** Excessive wound drainage can be uncomfortable and distressing.\n• Highly absorbent dressings\n• Frequent changes to keep patient dry\n• Skin protection around wound to prevent maceration\n• Negative pressure therapy in select cases\n\n**Bleeding control:** Some wounds (especially cancer wounds) can bleed.\n• Hemostatic dressings (stop bleeding on contact)\n• Gentle handling during dressing changes\n• Dark-colored dressings (blood less visible, less distressing)\n• Topical medications (tranexamic acid) to reduce bleeding"
+        },
+        {
+          "subheading": "Prevention of New Wounds",
+          "content": "While existing wounds may not heal, preventing NEW wounds is both achievable and important for comfort:\n\n• **Pressure redistribution:** High-quality pressure-relieving mattresses and cushions\n• **Repositioning:** Turn and reposition every 2-4 hours if patient can tolerate\n• **Skin care:** Gentle cleansing, moisturizing, protection from moisture/friction\n• **Nutrition support:** Provide what the patient can tolerate and wants\n• **Vigilant monitoring:** Inspect skin daily for early signs of breakdown"
+        },
+        {
+          "subheading": "Maintaining Dignity and Comfort",
+          "content": "Perhaps most importantly, palliative wound care focuses on preserving the patient's dignity:\n\n• **Respectful wound care:** Privacy, gentle handling, communication\n• **Odor control:** So patient can have visitors without embarrassment\n• **Comfortable dressings:** Not too bulky, don't restrict movement, changed before leaking\n• **Minimizing dressing change frequency:** Balance between wound needs and patient comfort\n• **Patient preferences:** Honor wishes about treatment intensity\n• **Appearance:** For visible wounds, cosmetic appearance may matter to patient"
+        }
+      ]
+    },
+    {
+      "heading": "Treatment Strategies for End-of-Life Wounds",
+      "content": "While wounds may not heal, there are strategies to manage them effectively and compassionately:",
+      "subsections": [
+        {
+          "subheading": "Regular Assessment and Meticulous Care",
+          "content": "Regular assessment and meticulous care can prevent further complications and alleviate discomfort. This often involves a team of healthcare professionals, including wound care specialists, palliative care doctors, and nurses, who can provide tailored care plans.\n\n**Assessment focuses on:**\n• Pain level (most important metric)\n• Odor presence and severity\n• Drainage amount and type\n• Signs of infection\n• Wound appearance changes\n• Skin condition around wound\n• Patient and family concerns\n\n**Documentation:** While comprehensive documentation is less critical in palliative care than in healing-focused care, basic tracking helps identify trends and guide treatment adjustments."
+        },
+        {
+          "subheading": "Advanced Wound Care Techniques",
+          "content": "Advanced wound care techniques, such as specialized dressings, negative pressure wound therapy, and pain management strategies, can play a crucial role in maintaining comfort and dignity.\n\n**Specialized dressings for palliative care:**\n\n• **Foam dressings:** Highly absorbent, cushioning, conformable\n  - Use: Heavy drainage, pressure protection\n  - Advantage: Can stay in place for several days, reducing dressing change frequency\n\n• **Alginate dressings:** Made from seaweed, extremely absorbent, turn to gel\n  - Use: Heavy drainage, bleeding wounds\n  - Advantage: Hemostatic properties, conforms to wound irregularities\n\n• **Hydrocolloid dressings:** Moisture-retaining, adherent, protective\n  - Use: Minimal to moderate drainage, shallow wounds\n  - Advantage: Can stay in place 5-7 days, reduces change frequency\n\n• **Silver dressings:** Antimicrobial properties\n  - Use: Infected wounds, odor control\n  - Advantage: Reduces bacterial load, controls odor\n\n• **Honey-impregnated dressings:** Natural antimicrobial, promotes autolytic debridement\n  - Use: Infected wounds, slough\n  - Advantage: Antimicrobial without systemic medication, odor control\n\n• **Metronidazole gel:** Topical antibiotic\n  - Use: Anaerobic bacteria (common cause of wound odor)\n  - Advantage: Excellent odor control without systemic antibiotics\n\n• **Activated charcoal dressings:** Contains charcoal that absorbs odor molecules\n  - Use: Malodorous wounds\n  - Advantage: Can be used as secondary dressing over primary dressing\n\n• **Non-adherent dressings:** Silicone or petroleum-based, don't stick\n  - Use: Painful wounds, fragile skin\n  - Advantage: Atraumatic removal, less painful dressing changes\n\n**Negative Pressure Wound Therapy (NPWT):**\nTraditionally used to promote healing, but in palliative care, may be used to:\n• Manage extremely heavy drainage\n• Reduce dressing change frequency (comfort benefit)\n• Decrease wound odor\n• Reduce edema and improve comfort\n\nNote: Only used if patient can tolerate it and it improves quality of life. Not appropriate for all patients."
+        },
+        {
+          "subheading": "Debridement Decisions",
+          "content": "In palliative care, debridement (removal of dead tissue) requires careful consideration:\n\n**When debridement may be appropriate:**\n• Dead tissue is causing pain\n• Dead tissue is source of odor that distresses patient\n• Dead tissue is causing infection\n• Wound edges are curling under (epibole) preventing drainage\n• Patient life expectancy is weeks to months (not days)\n• Patient wants intervention\n\n**When debridement may NOT be appropriate:**\n• Patient is actively dying (days to weeks left)\n• Debridement would cause significant pain without proportional benefit\n• Stable eschar (dry, adherent, black tissue) that's not infected—this may serve as natural dressing\n• Patient or family prefer non-intervention\n• Debridement might cause bleeding that would be distressing\n\n**Gentle debridement options for palliative care:**\n• Autolytic debridement (body's own enzymes, using moisture-retaining dressings)\n• Enzymatic debridement (collagenase ointment)\n• Very conservative sharp debridement if absolutely needed\n• Avoid aggressive mechanical debridement"
+        }
+      ]
+    },
+    {
+      "heading": "Fungating Wounds: A Special Challenge",
+      "content": "Fungating wounds deserve special mention—these are wounds caused by cancerous tumors growing through the skin. They present unique challenges in palliative care.",
+      "subsections": [
+        {
+          "subheading": "What Are Fungating Wounds?",
+          "content": "Fungating wounds occur when malignant tumors break through the skin surface, creating wounds that:\n• Bleed easily (friable tissue, rich blood supply)\n• Produce copious drainage\n• Have terrible odor (tumor tissue dies and becomes necrotic)\n• Are very painful\n• Have irregular, cauliflower-like appearance\n• Will NOT heal (actively growing tumor)\n• Progressively worsen\n\nMost commonly occur with:\n• Breast cancer (cancer invading chest wall)\n• Head and neck cancers\n• Melanoma\n• Gynecologic cancers\n• Any cancer with skin metastases"
+        },
+        {
+          "subheading": "Management Strategies",
+          "content": "**Bleeding control:**\n• Hemostatic dressings (calcium alginate, gelatin-based)\n• Topical tranexamic acid\n• Gentle handling (wounds bleed with minimal trauma)\n• Dark dressings (blood less visible)\n• Radiation therapy (can shrink tumor and reduce bleeding)\n\n**Odor management:**\n• Metronidazole gel (excellent for anaerobic bacteria)\n• Activated charcoal dressings\n• Frequent dressing changes\n• Systemic metronidazole if appropriate\n• Environmental interventions (ventilation, aromatherapy)\n\n**Exudate management:**\n• Highly absorbent dressings (foam, alginate)\n• Frequent changes\n• Negative pressure therapy (in select cases)\n• Skin protection around wound\n\n**Pain management:**\n• Topical opioids (morphine gel)\n• Systemic pain medications\n• Radiation therapy (can shrink tumor and reduce pain)\n• Non-drug approaches (positioning, relaxation)\n\n**Psychological support:**\nFungating wounds are often visible, malodorous, and deeply distressing to both patient and family. Psychological support is essential."
+        }
+      ]
+    },
+    {
+      "heading": "The Role of the Healthcare Team",
+      "content": "Palliative wound care is truly a team effort:",
+      "subsections": [
+        {
+          "subheading": "Wound Care Specialists",
+          "content": "• Expert dressing selection\n• Debridement when appropriate\n• Advanced treatment options\n• Education for patient, family, other caregivers"
+        },
+        {
+          "subheading": "Palliative Care Physicians and Nurses",
+          "content": "• Overall symptom management\n• Pain and nausea medication management\n• Coordination of care\n• Goals of care discussions\n• Support for patient and family decision-making"
+        },
+        {
+          "subheading": "Home Health Nurses",
+          "content": "• Regular home visits for wound care\n• Monitoring for complications\n• Medication administration\n• Education and support for family caregivers\n• Communication with wound care and palliative care teams"
+        },
+        {
+          "subheading": "Family Caregivers",
+          "content": "• Day-to-day wound care between nurse visits\n• Monitoring pain and other symptoms\n• Providing comfort measures\n• Advocating for patient needs\n\nFamily caregivers need significant education, support, and resources. They often feel overwhelmed by wound care responsibilities."
+        },
+        {
+          "subheading": "Hospice Team (if patient is on hospice)",
+          "content": "• Comprehensive end-of-life care\n• 24/7 support for patient and family\n• Medication and supply provision\n• Chaplain and social work support\n• Bereavement services"
+        }
+      ]
+    },
+    {
+      "heading": "Communication and Shared Decision-Making",
+      "content": "Open, honest communication is perhaps more important in palliative wound care than in any other setting:",
+      "subsections": [
+        {
+          "subheading": "Honest Discussions About Prognosis",
+          "content": "Healthcare providers must:\n• Clearly explain that the wound may not heal\n• Discuss realistic expectations\n• Explain what CAN be achieved (comfort, symptom control)\n• Answer questions honestly and compassionately\n• Revisit these discussions as patient's condition changes\n\nMany patients and families have unrealistic expectations about healing. While we must preserve hope, we also must be truthful about what's possible."
+        },
+        {
+          "subheading": "Goals of Care Discussions",
+          "content": "What matters most to the patient?\n• Pain control above all else?\n• Minimal intervention, even if wound worsens?\n• Aggressive symptom management even with burdensome treatments?\n• Ability to have visitors without wound odor?\n• Remaining at home versus facility care?\n\nTreatment plans should align with patient values and goals."
+        },
+        {
+          "subheading": "When to Transition Care",
+          "content": "Sometimes wound care goals need to change:\n\n• **From aggressive to comfort-focused:** As disease progresses, shift from trying to heal toward pure comfort\n• **From home to facility:** When wound care needs exceed family capabilities\n• **To hospice:** When prognosis is 6 months or less and focus is comfort\n\nThese transitions can be emotionally difficult and require sensitive discussions."
+        }
+      ]
+    },
+    {
+      "heading": "Supporting Family Caregivers",
+      "content": "Family members providing wound care at end-of-life need significant support:",
+      "subsections": [
+        {
+          "subheading": "Education and Training",
+          "content": "• Hands-on training for dressing changes\n• Written instructions (step-by-step with pictures)\n• Demonstration and return demonstration\n• Emergency contact information\n• When to call healthcare provider"
+        },
+        {
+          "subheading": "Emotional Support",
+          "content": "Wound care can be emotionally overwhelming:\n• Seeing loved one's wound can be distressing\n• Odor can trigger nausea and emotional reactions\n• Fear of hurting the patient during care\n• Guilt about not doing 'enough'\n• Anticipatory grief\n\nOffer:\n• Validation of feelings\n• Counseling referrals\n• Caregiver support groups\n• Respite care options\n• Reassurance that they're doing a good job"
+        },
+        {
+          "subheading": "Practical Support",
+          "content": "• Ensure adequate supplies delivered to home\n• Home health nurse visits for complex care\n• Equipment (hospital bed, pressure-relieving mattress)\n• Financial assistance for supplies if needed\n• Meal delivery, housekeeping assistance to reduce burden"
+        }
+      ]
+    },
+    {
+      "heading": "Staying Positive and Engaged",
+      "content": "Staying positive and engaged in the care process is essential. Everyone's journey is unique, and adapting care plans to meet individual needs and preferences is key. By focusing on comfort and quality of life, and through the support of a dedicated healthcare team, it is possible to manage wounds effectively, ensuring that the patient remains as comfortable as possible during this challenging transition.\n\nRemember:\n• **Comfort is achievable** even when healing is not\n• **Small victories matter:** reducing pain, controlling odor, preventing new wounds\n• **Dignity is paramount:** respectful, compassionate care always\n• **You are not alone:** healthcare teams are there to support patient and family\n• **Quality time matters more than wound closure:** Focus on meaningful moments together\n\nWhile the wound may not heal, the patient can still experience comfort, maintain dignity, and enjoy quality time with loved ones. These are the true measures of success in palliative wound care.",
+      "callout": {
+        "type": "tip",
+        "title": "Redefining Success",
+        "content": "In end-of-life wound care, success means: the patient is comfortable, pain is well-controlled, odor is managed, the patient can have visitors, family feels supported and equipped to provide care, and the patient maintains dignity and quality of life. These goals are worthy, achievable, and profound."
+      }
+    },
+    {
+      "heading": "Resources for Patients and Families",
+      "content": "Organizations offering support:\n\n• **Hospice care:** Comprehensive end-of-life support, available when prognosis is 6 months or less\n• **Palliative care programs:** Available at any stage of serious illness, focus on comfort\n• **Wound care specialists:** Can provide consultation even for non-healing wounds\n• **Social workers:** Help with resources, advance directives, family support\n• **Chaplains:** Spiritual support for patient and family\n• **Caregiver support groups:** Connect with others in similar situations\n• **Respite care:** Temporary relief for family caregivers\n\nYou don't have to navigate this journey alone. Resources and support are available."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do we know when it's time to stop trying to heal the wound?",
+      "answer": "This difficult decision should be made collaboratively with your healthcare team. Indicators include: patient's overall health is declining despite treatment, wound is stable or worsening despite optimal care for several weeks, aggressive wound treatment is causing more distress than benefit, patient's life expectancy is limited (weeks to months), or patient/family wish to shift focus to comfort. It's not 'giving up'—it's redirecting efforts toward achievable goals like comfort and quality of life."
+    },
+    {
+      "question": "Can wounds cause death?",
+      "answer": "While chronic wounds themselves rarely directly cause death, complications from wounds can contribute to decline: severe infections can become systemic (sepsis), chronic wounds can cause severe anemia from slow blood loss, pain and suffering from wounds can reduce quality of life and hasten decline, and wounds are often a marker of overall poor health. However, in terminal illness, the underlying disease (cancer, organ failure) is typically the primary cause of death, not the wound itself."
+    },
+    {
+      "question": "How do we manage wound odor when family wants to visit?",
+      "answer": "Odor management is crucial for maintaining patient dignity and allowing meaningful visits. Strategies include: changing dressings before visitors arrive, using odor-absorbing dressings (activated charcoal), applying metronidazole gel to wound (very effective for odor), ensuring good room ventilation, using subtle aromatherapy or air fresheners, keeping the room temperature moderate (heat intensifies odor), and being honest with visitors—most family members want to visit despite wound odor and appreciate being prepared for what to expect."
+    },
+    {
+      "question": "Is it okay to refuse aggressive wound treatment at end-of-life?",
+      "answer": "Absolutely yes. Patients have the right to refuse any treatment, including wound care, at any time. If aggressive wound treatment (frequent painful dressing changes, debridement procedures, etc.) is causing more suffering than benefit, it's entirely appropriate to choose a comfort-focused approach instead. This might mean: less frequent dressing changes, no debridement, focus solely on pain and odor control, or allowing wound to remain covered without frequent assessment. Discuss your preferences with your healthcare team—they will respect your wishes."
+    },
+    {
+      "question": "What happens to the wound after the patient passes away?",
+      "answer": "After death, wound care is no longer needed. The hospice nurse or funeral home will prepare the body, which may include covering or dressing the wound for cosmetic purposes if family will view the body. If the patient is to be viewed at a funeral, the funeral director can apply appropriate coverings or dressings. Family members should not feel they need to perform wound care after death—this becomes the responsibility of professional caregivers. Focus on grieving and being with family rather than wound care responsibilities."
+    },
+    {
+      "question": "How do I cope with the emotional burden of caring for a loved one's wound?",
+      "answer": "Wound care for a dying loved one is emotionally difficult. Coping strategies: acknowledge your feelings—it's normal to feel overwhelmed, sad, or even nauseated; ask for help—you don't have to do all wound care yourself; use resources like home health nurses who can handle complex care; join a caregiver support group; practice self-care—take breaks, eat well, rest when possible; remember you're providing comfort even when you can't provide healing; and seek counseling if emotional burden becomes overwhelming. You're doing something profound by providing loving care during this difficult time."
+    }
+  ],
+  "relatedProducts": [],
+  "metadata": {
+    "title": "End-of-Life Wound Care: Compassionate Palliative Management | WoundWise",
+    "description": "Expert palliative wound care guidance for terminal illness. Learn comfort-focused strategies, symptom management, and dignified care from Dr. Alvin May.",
+    "keywords": [
+      "end of life wound care",
+      "palliative wound care",
+      "terminal illness wounds",
+      "hospice wound management",
+      "comfort care wounds",
+      "dying patient wounds",
+      "Kennedy terminal ulcer",
+      "quality of life wound care",
+      "compassionate wound care",
+      "wound care at death"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2025-01-15",
+    "lastUpdated": "2025-01-15",
+    "readingTime": 18,
+    "featured": false
+  }
+}

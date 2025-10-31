@@ -1,0 +1,158 @@
+{
+  "slug": "burns",
+  "title": "Burn Wounds: Understanding Thermal Injuries",
+  "subtitle": "From Minor First-Degree to Serious Thermal Injuries",
+  "description": "Comprehensive guide to burn wound care, from minor first-degree burns to more serious thermal injuries, including healing strategies and complication prevention.",
+  "quickInfo": {
+    "riskFactors": [
+      "Working with or near open flames (cooking, welding)",
+      "Exposure to hot liquids or steam",
+      "Handling chemicals without protection",
+      "Electrical work or faulty wiring",
+      "Prolonged sun exposure without protection",
+      "House fires or heating equipment",
+      "Young children and elderly (thinner skin)"
+    ],
+    "warningSigns": [
+      "Burns larger than 3 inches in diameter",
+      "Deep burns with white or charred appearance",
+      "Burns on face, hands, feet, joints, or genitals",
+      "Electrical or chemical burns",
+      "Difficulty breathing after smoke inhalation",
+      "Signs of infection (increased pain, redness, swelling, pus)",
+      "Burns that don't heal within 2-3 weeks"
+    ],
+    "prevention": [
+      "Keep pot handles turned inward while cooking",
+      "Test bath water temperature before bathing children or elderly",
+      "Use sunscreen with SPF 30+ for outdoor activities",
+      "Wear protective equipment when handling chemicals",
+      "Install and maintain smoke detectors",
+      "Keep fire extinguisher accessible in kitchen",
+      "Childproof electrical outlets and cords"
+    ]
+  },
+  "icon": "flame",
+  "heroImage": "/images/wounds/burns-hero.jpg",
+  "relatedTreatments": [
+    "pain-management",
+    "wound-cleansing",
+    "infection-control",
+    "moisture-management"
+  ],
+  "sections": [
+    {
+      "heading": "What Are Burn Wounds?",
+      "content": "Burn wounds are injuries to the skin and underlying tissues caused by heat, electricity, chemicals, friction, or radiation. The severity of a burn depends on how deep it penetrates the skin layers and how much body surface area is affected.\n\nWhile minor burns often heal quickly with simple home care, more serious burns can become chronic wounds requiring specialized treatment. Understanding the type and severity of your burn is the first step in proper care and recovery.",
+      "callout": {
+        "type": "warning",
+        "title": "When to Seek Immediate Medical Care",
+        "content": "Seek emergency medical attention for: burns larger than 3 inches in diameter, burns on the face, hands, feet, joints, or genitals, deep burns with white or charred appearance, electrical or chemical burns, difficulty breathing after smoke inhalation, or signs of shock (pale/clammy skin, weakness, shallow breathing)."
+      }
+    },
+    {
+      "heading": "Degrees of Burns",
+      "content": "Burns are classified by how deeply they damage the skin layers. Understanding the classification helps determine appropriate treatment:",
+      "subsections": [
+        {
+          "subheading": "First-Degree Burns (Superficial)",
+          "content": "**Depth:** Affects only the outer layer of skin (epidermis)\n\n**Appearance:** Red, painful, dry, no blisters. Skin may peel after a few days. Think of a mild sunburn.\n\n**Healing Time:** Usually heals within 3-6 days without scarring\n\n**Treatment:** Cool compresses, moisturizing lotions, over-the-counter pain relievers, protection from further sun exposure\n\n**Example:** Sunburn, brief contact with a hot object, minor scalding from steam"
+        },
+        {
+          "subheading": "Second-Degree Burns (Partial Thickness)",
+          "content": "**Depth:** Affects the epidermis and part of the dermis (second layer of skin)\n\n**Appearance:** Deep red or mottled, painful, swollen, blistered. Wound may weep clear fluid. Surface has a wet, shiny appearance.\n\n**Healing Time:** Superficial second-degree: 2-3 weeks; Deep second-degree: 3-8 weeks. May result in scarring, especially with deeper burns.\n\n**Treatment:** Professional medical care recommended. Gentle cleansing, specialized burn dressings, pain management, possible topical antibiotics. Blisters should NOT be popped at home.\n\n**Example:** Severe sunburn with blisters, hot liquid scalds, flame contact"
+        },
+        {
+          "subheading": "Third-Degree Burns (Full Thickness)",
+          "content": "**Depth:** Destroys both epidermis and dermis, may extend into subcutaneous tissue\n\n**Appearance:** White, brown, or charred black. Leathery texture. Surprisingly may be painless in the center (nerve endings destroyed), but extremely painful at edges.\n\n**Healing Time:** Requires surgical intervention (skin grafting). Will not heal on its own due to destruction of all skin layers.\n\n**Treatment:** Immediate emergency medical care required. Hospitalization, surgical debridement, skin grafting, intensive wound care, long-term rehabilitation.\n\n**Example:** Prolonged flame contact, electrical burns, immersion in hot liquids"
+        },
+        {
+          "subheading": "Fourth-Degree Burns",
+          "content": "**Depth:** Extends through all skin layers into muscle, tendon, and bone\n\n**Appearance:** Charred, black. Affected area appears completely destroyed.\n\n**Healing Time:** Extensive surgery required, possible amputation, long-term rehabilitation\n\n**Treatment:** Life-threatening emergency. Requires immediate emergency response, intensive care, multiple surgeries.\n\n**Example:** Prolonged fire exposure, high-voltage electrical injuries"
+        }
+      ]
+    },
+    {
+      "heading": "Why Burns Can Become Chronic Wounds",
+      "content": "While minor first-degree burns heal quickly, second and third-degree burns can develop into chronic wounds due to several factors:\n\n• **Infection**: Burn wounds have a high infection risk due to loss of the skin's protective barrier and the moist, protein-rich environment that attracts bacteria\n\n• **Poor blood supply**: Deep burns damage blood vessels, reducing oxygen and nutrient delivery needed for healing\n\n• **Compromised healing**: Conditions like diabetes, poor nutrition, or smoking can significantly slow burn wound healing\n\n• **Scar contracture**: As burns heal, scar tissue can tighten and restrict movement, especially over joints\n\n• **Depth of injury**: Third-degree burns destroy the skin's regenerative capacity and require surgical intervention",
+      "callout": {
+        "type": "info",
+        "title": "The Healing Challenge",
+        "content": "Unlike other wounds that heal from the edges inward, deep burns must often heal through skin grafting because the body's skin-regenerating cells have been destroyed. This is why third-degree burns cannot close on their own and require surgical intervention."
+      }
+    },
+    {
+      "heading": "Immediate First Aid for Burns",
+      "content": "Proper first aid can significantly impact healing outcomes for minor to moderate burns:\n\n**1. Stop the burning process**\n• Remove the person from the heat source\n• For chemical burns, brush off dry chemicals first, then rinse with water\n• Remove jewelry, belts, tight clothing before swelling begins\n\n**2. Cool the burn**\n• Run cool (not cold) water over the burn for 10-20 minutes\n• Do NOT use ice—this can cause further damage\n• Do NOT apply butter, oils, or home remedies\n\n**3. Cover the burn**\n• Use a sterile, non-stick bandage or clean cloth\n• Do NOT pop blisters\n• Loosely wrap to avoid pressure\n\n**4. Manage pain**\n• Over-the-counter pain relievers (acetaminophen or ibuprofen)\n• Elevate burned area above heart level if possible\n\n**5. Seek medical care**\n• For any serious burns or burns on sensitive areas\n• If burn covers a large area\n• For all chemical and electrical burns"
+    },
+    {
+      "heading": "Professional Treatment for Serious Burns",
+      "content": "Second and third-degree burns require professional medical care:\n\n• **Wound assessment**: Healthcare providers determine burn depth and extent using standardized assessment tools\n\n• **Debridement**: Removal of dead tissue and ruptured blisters to prevent infection and promote healing\n\n• **Specialized dressings**: Burns require specific moisture-retaining and antimicrobial dressings that protect while promoting healing\n\n• **Topical antimicrobials**: Silver-based products (like silver sulfadiazine) help prevent infection\n\n• **Skin grafting**: For third-degree burns, surgical placement of healthy skin from another body area\n\n• **Physical therapy**: Essential for burns over joints to prevent contractures and maintain range of motion\n\n• **Pain management**: Burns are extremely painful and require comprehensive pain control strategies\n\n• **Nutritional support**: Burn healing requires significant protein and calories—sometimes 2-3 times normal needs"
+    },
+    {
+      "heading": "Preventing Burn Wound Infection",
+      "content": "Infection is one of the most serious complications of burn wounds. Signs of infection include:\n\n• Increasing pain, redness, or swelling\n• Pus or cloudy drainage\n• Foul odor\n• Fever or chills\n• Red streaks extending from the wound\n• Wound edges that are pulling apart\n\n**Prevention strategies:**\n• Strict hand hygiene before wound care\n• Gentle cleansing with prescribed solutions\n• Using prescribed antimicrobial ointments\n• Changing dressings as directed\n• Keeping the wound covered and protected\n• Maintaining good overall hygiene\n• Adequate protein and vitamin intake to support immune function"
+    },
+    {
+      "heading": "Scar Management and Contracture Prevention",
+      "content": "Burn scars can be thick, raised, discolored, and tight. Preventing and managing scar formation is an important part of burn recovery:\n\n• **Pressure garments**: Special elastic garments worn continuously for months help flatten and soften scars\n\n• **Silicone sheeting**: Applied to healing burns to reduce scar thickness and improve appearance\n\n• **Physical therapy**: Essential for burns over joints to maintain range of motion and prevent contractures\n\n• **Moisturization**: Keeping healed burn skin moisturized improves flexibility and appearance\n\n• **Sun protection**: Healed burn scars are extremely sensitive to sun and can darken permanently; use SPF 30+ sunscreen\n\n• **Massage**: Once fully healed, gentle scar massage can improve flexibility and appearance",
+      "callout": {
+        "type": "tip",
+        "title": "Start Early",
+        "content": "Scar prevention strategies work best when started early in the healing process. Discuss pressure garments, silicone products, and physical therapy with your healthcare provider as soon as appropriate for your specific burn."
+      }
+    },
+    {
+      "heading": "Special Considerations",
+      "content": "Certain factors complicate burn wound healing:\n\n• **Diabetes**: Impairs healing and increases infection risk significantly\n• **Age**: Very young and elderly patients face higher complication rates\n• **Smoking**: Constricts blood vessels and dramatically slows healing\n• **Poor nutrition**: Burns require substantial protein and calories to heal\n• **Location**: Burns on hands, feet, face, and joints require specialized care\n• **Inhalation injury**: Smoke inhalation adds respiratory complications to burn care\n• **Pre-existing conditions**: Heart disease, kidney disease, or immune disorders complicate recovery"
+    },
+    {
+      "heading": "Long-Term Recovery",
+      "content": "Recovery from serious burns is a marathon, not a sprint. The healing journey may include:\n\n• **Psychological support**: Burns can be traumatic; counseling helps with anxiety, depression, and body image concerns\n• **Occupational therapy**: Helps regain functional abilities for daily activities\n• **Reconstructive surgery**: May be needed months or years later to improve function or appearance\n• **Pain management**: Some patients experience chronic pain even after wounds heal\n• **Skin care routine**: Healed burn skin requires lifelong moisturizing and sun protection\n• **Regular follow-up**: Ongoing monitoring for late complications like scar contracture or skin cancer in burn scars"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I pop the blisters on my burn?",
+      "answer": "No. Do not pop blisters. Intact blisters provide a natural, sterile barrier that protects the underlying tissue from infection and helps with healing. Popping blisters increases infection risk and can lead to complications. If a blister breaks on its own, gently clean it with mild soap and water, apply antibiotic ointment, and cover with a sterile bandage. See a healthcare provider for large or multiple blisters."
+    },
+    {
+      "question": "Why doesn't the center of my deep burn hurt, but the edges are excruciating?",
+      "answer": "Third-degree burns destroy nerve endings in the center of the burn, so that area may feel numb. However, the edges of the burn typically have second-degree damage where nerve endings are still intact and highly sensitized, causing severe pain. This paradoxical lack of pain in the center is actually a sign of a more serious burn requiring immediate medical attention."
+    },
+    {
+      "question": "How long does it take for a burn to heal?",
+      "answer": "Healing time depends on burn depth: First-degree burns heal in 3-6 days, superficial second-degree burns in 2-3 weeks, deep second-degree burns in 3-8 weeks. Third-degree burns cannot heal on their own and require skin grafting. Healing time also depends on burn size, location, your overall health, age, and whether complications like infection occur."
+    },
+    {
+      "question": "Will my burn scar?",
+      "answer": "First-degree burns typically don't scar. Superficial second-degree burns may leave minimal scarring. Deep second-degree and all third-degree burns will scar. Scar severity depends on burn depth, size, location, your genetics, age, and how well you follow scar prevention strategies (pressure garments, silicone sheeting, physical therapy). Early intervention significantly improves scar outcomes."
+    },
+    {
+      "question": "Can burns get infected even with proper care?",
+      "answer": "Yes. Burns have high infection risk because the protective skin barrier is destroyed, creating an entry point for bacteria. Even with excellent care, infections can occur. Watch for warning signs: increasing pain, redness spreading beyond the burn, pus or cloudy drainage, foul odor, fever, or red streaks. Contact your healthcare provider immediately if you suspect infection—early treatment is critical."
+    }
+  ],
+  "relatedProducts": [],
+  "metadata": {
+    "title": "Burn Wounds: Complete Guide to Thermal Injury Care | WoundWise",
+    "description": "Expert guide to burn wound care from first to third-degree burns. Learn proper first aid, healing stages, infection prevention, and scar management from Dr. Alvin May.",
+    "keywords": [
+      "burn wounds",
+      "thermal injuries",
+      "first degree burns",
+      "second degree burns",
+      "third degree burns",
+      "burn care",
+      "burn treatment",
+      "burn healing",
+      "scar prevention",
+      "burn first aid"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2025-01-15",
+    "lastUpdated": "2025-01-15",
+    "readingTime": 12,
+    "featured": false
+  }
+}

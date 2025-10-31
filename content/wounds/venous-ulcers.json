@@ -3,24 +3,6 @@
   "title": "Venous Leg Ulcers",
   "subtitle": "Understanding and Managing Venous Insufficiency Wounds",
   "description": "Venous leg ulcers result from damaged vein valves that cause blood to pool in the legs, leading to swelling, skin changes, and ultimately open wounds. Learn about the causes, prevention strategies, and evidence-based treatments for venous stasis ulcers.",
-  "featured": true,
-  "metadata": {
-    "title": "Venous Leg Ulcers: Causes, Prevention & Treatment | WoundWise",
-    "description": "Expert guidance on venous leg ulcers from Dr. Alvin May. Learn about vein valve dysfunction, compression therapy, edema management, and treatments for venous insufficiency wounds.",
-    "keywords": [
-      "venous ulcers",
-      "venous leg ulcers",
-      "venous insufficiency",
-      "stasis ulcers",
-      "leg swelling",
-      "edema",
-      "compression therapy",
-      "varicose veins",
-      "Dr. Alvin May"
-    ],
-    "lastUpdated": "2024-01-15",
-    "readingTime": 12
-  },
   "quickInfo": {
     "riskFactors": [
       "History of blood clots (deep vein thrombosis)",
@@ -199,15 +181,29 @@
       "answer": "Surgical or interventional procedures can help by eliminating specific damaged veins, but they typically don't 'cure' venous insufficiency entirely. Procedures like vein ablation can significantly improve symptoms and may help ulcers heal, especially when combined with compression. However, venous disease tends to be progressive, and other veins may develop problems over time. Most patients still require compression therapy long-term even after successful vein procedures. Discuss with your vascular specialist whether you're a candidate for intervention and what outcomes you can realistically expect."
     }
   ],
-  "relatedProducts": [
-    "compression-socks",
-    "foam-dressing",
-    "body-wedge",
-    "protein-supplement"
-  ],
+  "relatedProducts": [],
   "relatedTreatments": [
     "offloading-positioning",
     "wound-dressings",
     "nutrition-healing"
-  ]
+  ],
+  "metadata": {
+    "title": "Venous Leg Ulcers: Causes, Prevention & Treatment | WoundWise",
+    "description": "Expert guidance on venous leg ulcers from Dr. Alvin May. Learn about causes, symptoms, compression therapy, and evidence-based treatments for chronic venous insufficiency wounds.",
+    "keywords": [
+      "venous ulcers",
+      "venous leg ulcers",
+      "venous stasis ulcers",
+      "chronic venous insufficiency",
+      "leg wound care",
+      "compression therapy",
+      "venous disease",
+      "lower leg ulcers"
+    ],
+    "author": "Dr. Alvin May",
+    "publishDate": "2024-01-15",
+    "lastUpdated": "2024-01-15",
+    "readingTime": 12,
+    "featured": true
+  }
 }

@@ -91,7 +91,7 @@ export default async function WoundsPage() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3">
                 <BookOpen className="h-6 w-6 text-primary" />
               </div>
-              <div className="text-3xl font-bold text-primary mb-1">6</div>
+              <div className="text-3xl font-bold text-primary mb-1">12</div>
               <div className="text-sm text-muted-foreground">
                 Wound Type Guides
               </div>
@@ -132,7 +132,7 @@ export default async function WoundsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredWounds.map((wound, index) => (
               <div
-                key={wound.id}
+                key={index}
                 className="animate-in fade-in slide-in-from-bottom-4"
                 style={{ animationDelay: `${index * 100}ms` }}
               >

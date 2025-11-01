@@ -113,7 +113,7 @@ export default function Home() {
         className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background"
       >
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto p-4">
           {/* Left Column - Text Content */}
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <Badge

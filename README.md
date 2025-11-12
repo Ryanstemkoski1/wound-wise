@@ -6,9 +6,42 @@
 
 WoundWise is a patient-focused educational platform delivering comprehensive wound care information based on Dr. Alvin May's published works: "Heal Your Wound" and "Wound Healing Journal". The site empowers patients with doctor-authored content, evidence-based treatment strategies, and curated product recommendations.
 
+**Content Management**: Now powered by Sanity CMS for easy admin management with JSON fallback support.
+
 ## 🏗️ Current Status
 
-**Phase 2.5: Layout Consistency & Multi-Vendor Products** - ✅ COMPLETE
+**Phase 3: Sanity CMS Integration** - ✅ COMPLETE
+
+### ✅ Phase 3 Complete (Sanity CMS Integration)
+
+**1. Full CMS Implementation**
+- Sanity v4 installed and configured
+- 6 comprehensive content schemas (wounds, treatments, products, glossary, FAQs, metadata)
+- Embedded Studio at `/studio` route
+- Standalone Studio support (`npm run studio`)
+- GROQ queries for all content types
+- Image handling with CDN support
+- Portable text (rich text) editor integration
+
+**2. Content Migration System**
+- Automated migration script (`npm run migrate`)
+- Converts all JSON files to Sanity documents
+- Preserves relationships between content
+- One-time migration process
+- 30+ documents migrated (wounds, treatments, products, glossary)
+
+**3. Dual-Loading Architecture**
+- New content loader with Sanity support
+- Backward compatibility with JSON files
+- Automatic fallback if Sanity not configured
+- ISR (Incremental Static Regeneration) for performance
+- 1-hour revalidation cache strategy
+
+**4. Documentation & Developer Experience**
+- Comprehensive setup guide (`SANITY_SETUP.md`)
+- Environment variable templates (`.env.example`)
+- Admin workflow documentation
+- Troubleshooting guide
 
 ### ✅ Phase 1 Complete (Foundation & Core Content)
 
@@ -239,26 +272,66 @@ wound-wise/
 
 ## 🚀 Development
 
+### First Time Setup
+
+1. **Clone and install dependencies**
 ```bash
-# Install dependencies
 npm install
+```
 
-# Run development server (localhost:3000)
+2. **Set up Sanity CMS** (Optional - JSON fallback available)
+
+   a. Create a Sanity account at https://www.sanity.io/
+   
+   b. Create a new project or use existing one
+   
+   c. Copy `.env.example` to `.env.local` and fill in your Sanity credentials:
+   ```bash
+   NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+   NEXT_PUBLIC_SANITY_DATASET=production
+   SANITY_API_TOKEN=your_write_token
+   ```
+   
+   d. Run the migration to import existing JSON content:
+   ```bash
+   npm run migrate
+   ```
+
+3. **Run development server**
+```bash
 npm run dev
-
-# Build for production (SSG - all pages pre-rendered)
-npm run build
-
-# Run production server
-npm start
-
-# Lint code (ESLint v9 flat config)
-npm run lint
 ```
 
 Visit [http://localhost:3000](http://localhost:3000)
 
-### Key Features to Test
+### Content Management
+
+**Option 1: Sanity CMS (Recommended for Admins)**
+- Access the Studio at: http://localhost:3000/studio
+- Edit content through visual interface
+- Changes reflect immediately (with revalidation)
+- Run standalone Studio: `npm run studio` (port 3333)
+
+**Option 2: JSON Files (Developer Fallback)**
+- Edit files in `content/` directory
+- Requires rebuild for changes to appear
+- Useful for bulk updates or version control
+
+### Available Scripts
+
+```bash
+# Development
+npm run dev          # Start Next.js dev server (localhost:3000)
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+
+# CMS Management
+npm run studio       # Start Sanity Studio standalone (localhost:3333)
+npm run migrate      # Migrate JSON content to Sanity (one-time)
+```
+
+### Testing the Application
 
 After running `npm run dev`, explore:
 
@@ -331,6 +404,63 @@ After running `npm run dev`, explore:
 
 ## 📝 Content Management
 
+**Now powered by Sanity CMS** with JSON fallback for backward compatibility.
+
+### Sanity Studio Access
+
+1. **Embedded in Next.js App** (Recommended)
+   - URL: http://localhost:3000/studio
+   - Runs within the Next.js app
+   - Same authentication as production
+
+2. **Standalone Studio**
+   ```bash
+   npm run studio
+   ```
+   - URL: http://localhost:3333
+   - Separate from Next.js app
+   - Useful for content-only work
+
+### Content Types in CMS
+
+- **Wound Types**: 6 major chronic wound categories
+- **Treatments**: 10 evidence-based treatment approaches
+- **Products**: 18 affiliate product recommendations (Amazon + La Roche-Posay)
+- **Glossary Terms**: Medical terminology and definitions
+- **FAQs**: Frequently asked questions
+- **Site Metadata**: Global site settings
+
+### Admin Workflow
+
+1. **Access Studio**: Visit `/studio` route or run `npm run studio`
+2. **Edit Content**: Use visual editor with rich text support
+3. **Preview Changes**: Content updates reflect with ISR (Incremental Static Regeneration)
+4. **Publish**: Changes go live automatically after saving
+
+### Migration from JSON
+
+First-time setup includes a one-time migration:
+
+```bash
+npm run migrate
+```
+
+This script:
+- Reads all JSON files from `content/` directory
+- Creates Sanity documents with proper relationships
+- Preserves all existing content and metadata
+- Maintains backward compatibility
+
+### Content Architecture
+
+The app uses a **dual-loading strategy**:
+- **Primary**: Fetch from Sanity CMS (if configured)
+- **Fallback**: Load from JSON files (if Sanity unavailable)
+
+This ensures the site works even without Sanity configured, making it developer-friendly.
+
+## 📝 Content Management (Legacy JSON)
+
 Content is stored in JSON files (no CMS) for simplicity and version control:
 
 - **Wound Types**: `content/wounds/*.json`
@@ -358,6 +488,7 @@ npx shadcn@latest add accordion alert dialog
 ## 📚 Documentation
 
 - **SYSTEM_DESIGN.md**: Complete project architecture, content strategy, implementation phases
+- **SANITY_SETUP.md**: Step-by-step CMS setup guide for admins
 - **.github/copilot-instructions.md**: Guidelines for AI coding agents
 - **Source Materials**: `docs/` folder contains Dr. May's original content
 

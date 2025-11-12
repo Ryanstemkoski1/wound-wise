@@ -10,7 +10,7 @@ import {
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
-import { getAllTreatments } from "@/lib/content-loader";
+import { getAllTreatments } from "@/lib/content-loader-sanity";
 import { TreatmentCard } from "@/components/cards/treatment-card";
 import {
   Card,

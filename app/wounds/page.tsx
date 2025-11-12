@@ -9,7 +9,7 @@ import {
   AlertCircle,
   CheckCircle2,
 } from "lucide-react";
-import { getAllWoundTypes } from "@/lib/content-loader";
+import { getAllWoundTypes } from "@/lib/content-loader-sanity";
 import { WoundCard } from "@/components/cards/wound-card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";

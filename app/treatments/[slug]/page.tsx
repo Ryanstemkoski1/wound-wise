@@ -9,7 +9,7 @@ import {
   getTreatment,
   getTreatmentSlugs,
   getAllProducts,
-} from "@/lib/content-loader";
+} from "@/lib/content-loader-sanity";
 import { Callout } from "@/components/common/callout";
 import { RelatedContent } from "@/components/features/related-content";
 import { YouMayAlsoLike } from "@/components/features/you-may-also-like";

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ChevronRight, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/common/section";
-import { getGlossaryTerms } from "@/lib/content-loader";
+import { getGlossaryTerms } from "@/lib/content-loader-sanity";
 import { GlossaryClient } from "./glossary-client";
 
 export const metadata = {

@@ -6,7 +6,7 @@ import {
   getWoundType,
   getWoundTypeSlugs,
   getProductsForWound,
-} from "@/lib/content-loader";
+} from "@/lib/content-loader-sanity";
 import { Callout } from "@/components/common/callout";
 import { ProductCard } from "@/components/cards/product-card";
 import { Badge } from "@/components/ui/badge";
